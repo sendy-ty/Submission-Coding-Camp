@@ -257,7 +257,7 @@ plt.subplots_adjust(hspace=0.5, wspace=0.3)
 plt.show()
 ```
 
-https://github.com/sendy-ty/Submission-Coding-Camp/blob/6e3f00e8b12e9b113cd76f4488b08dc2a6b90027/Predictive%20analysis/Gambar/1.png
+https://raw.githubusercontent.com/sendy-ty/Submission-Coding-Camp/refs/heads/main/Predictive%20analysis/Gambar/1.png
 
 Tampilan grafik menunjukkan bahwa terdapat beberapa datum yang berada di luar batas kuartil pada beberapa fitur, seperti pada distribusi berat badan dan BMI. Meskipun demikian, data-data tersebut masih dapat dianggap wajar dalam konteks pusat kebugaran. Hal ini dikarenakan pusat kebugaran merupakan tempat yang mengakomodasi berbagai program, termasuk program penurunan berat badan. Oleh karena itu, memiliki berat badan yang tinggi bukan merupakan anomali. Demikian pula, data kalori terbakar juga memiliki beberapa datum yang berada di luar kuartil atas. Namun, ini tidak serta merta menjadi pencilan yang harus dihilangkan. Hal ini dikarenakan sangat memungkinkan bagi seseorang yang mahir dalam latihan kebugaran untuk membakar kalori dalam jumlah yang lebih besar dalam satu kali sesi latihan. Selain itu, beberapa faktor seperti jenis latihan, durasi sesi, dan tingkat keahlian dapat mempengaruhi jumlah kalori yang terbakar. Dalam hal ini, data tersebut masih relevan dan dapat memberikan wawasan yang berharga tentang pola latihan dan pencapaian tujuan kebugaran bagi anggota pusat kebugaran.
 
@@ -382,7 +382,7 @@ deskripsi_fitur = ['Usia', 'Berat Badan', 'Tinggi Badan', 'Maks BPM', 'Rata-rata
                    'Frekuensi Latihan', 'Tingkat Pengalaman', 'BMI']
 
 for i, fitur in enumerate(fitur_numerik):
-    if i < len(axes):
+    if i &lt; len(axes):
         colors = ['skyblue', 'lightgreen', 'lightcoral', 'mediumpurple', 'lightyellow',
                   'lightpink', 'lightgoldenrodyellow', 'lightcyan', 'wheat', 'powderblue']
         color = colors[i % len(colors)]
