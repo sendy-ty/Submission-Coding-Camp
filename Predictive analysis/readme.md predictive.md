@@ -326,7 +326,8 @@ for i, v in enumerate(size):
 plt.show()
 ```
 
-![output 1](images/output_1.png)
+![image](https://github.com/user-attachments/assets/951926d4-cbc4-474f-bbdf-9fc2246d1ba6)
+
 
 Penyebaran jumlah pelanggan berdasarkan jenis latihan terlihat cukup seimbang, dengan latihan Strength menjadi yang paling populer, meskipun selisihnya tidak terlalu signifikan dibandingkan jenis latihan lain.
 
@@ -359,7 +360,8 @@ plt.tight_layout()
 plt.show()
 ```
 
-![output 2](images/output_2.png)
+![image](https://github.com/user-attachments/assets/8ea0c068-c2fd-4016-9c8c-501945d69089)
+
 
 Pada pusat kebugaran, jumlah pengunjung laki-laki sedikit lebih banyak dibandingkan perempuan, namun perbedaan jumlahnya tidak signifikan. Sebagian besar pengunjung datang untuk berolahraga sebanyak tiga kali seminggu. Menariknya, sebagian besar anggota memiliki tingkat keahlian yang rendah hingga sedang, di mana tingkat keahlian tertinggi mempunyai jumlah anggota paling sedikit. Hal ini menunjukkan bahwa pusat kebugaran ini melayani berbagai kalangan dengan tingkat keahlian yang berbeda-beda.
 
@@ -402,7 +404,8 @@ plt.tight_layout()
 plt.show()
 ```
 
-![Output 3](images/output_3.png)
+![image](https://github.com/user-attachments/assets/f7940dfc-b97c-41c7-aacb-5512b1bf5c80)
+
 
 Variabel `Durasi Latihan` dan `Kalori Terbakar` memperlihatkan distribusi data yang cukup simetris dan normal. Variabel seperti `Berat Badan`, `Tinggi Badan`, dan `BMI` menunjukkan distribusi miring ke kanan (positif), yang menandakan bahwa mayoritas anggota memiliki nilai di bawah rata-rata. Sebaliknya, variabel `Kadar Lemak Tubuh` dan `Asupan Air` menunjukkan distribusi miring ke kiri (negatif), yang berarti kebanyakan anggota memiliki nilai di atas rata-rata. Sementara itu, variabel `Usia`, `Max BPM`, `Resting BPM`, `Avg BPM`, `Frekuensi Latihan`, dan `Tingkat Kemahiran` tidak menunjukkan distribusi normal. Usia dan BPM (maksimal, rata-rata, dan istirahat) menunjukkan distribusi bimodal atau pola yang tidak teratur. Frekuensi latihan dan tingkat kemahiran juga menunjukkan distribusi tidak normal. Berdasarkan visualisasi plot, terdapat variasi dan pola yang berbeda untuk setiap variabel, yang mungkin memerlukan pendekatan analisis yang berbeda untuk setiap variabel.
 
@@ -483,9 +486,10 @@ plt.tight_layout(rect=[0, 0, 1, 0.96])
 plt.show()
 ```
 
-![Output 4](images/output_4.png)
+![image](https://github.com/user-attachments/assets/175fdd69-7ead-4907-890b-ec0ee2ed5bfb)
 
-Analisis distribusi kategori berdasarkan jenis kelamin menunjukkan bahwa laki-laki dan perempuan memiliki pola yang serupa dalam tingkat kemahiran dan frekuensi latihan. Kebanyakan anggota berada pada tingkat kemahiran rendah dan cenderung berlatih 3-4 kali seminggu. Perbedaan terlihat pada preferensi jenis latihan, di mana perempuan lebih memilih `Kardio` dan `Yoga`, sedangkan laki-laki tersebar merata di antara `Kardio`, `HIIT`, dan `Strength`. Laki-laki juga lebih banyak memilih `Yoga`. Selain itu, laki-laki dengan tingkat kemahiran tinggi cenderung lebih muda.
+
+Analisis distribusi kategori berdasarkan jenis kelamin menunjukkan bahwa laki-laki dan perempuan memiliki pola yang serupa dalam tingkat kemahiran dan frekuensi latihan. Kebanyakan anggota berada pada tingkat kemahiran rendah dan cenderung berlatih 3-4 kali seminggu. Perbedaan terlihat pada preferensi jenis latihan, di mana perempuan lebih memilih `Kardio` dan `yoga`, sedangkan laki-laki tersebar merata di antara `Kardio`, `HIIT`, dan `Strength`. Laki-laki juga lebih banyak memilih `yoga`. Selain itu, laki-laki dengan tingkat kemahiran tinggi cenderung lebih muda.
 
 
 #### 2. Distribusi Jenis Latihan Berdasarkan Level Kemahiran
@@ -515,9 +519,10 @@ plt.tight_layout()
 plt.show()
 ```
 
-![Output 5](images/output_5.png)
+![image](https://github.com/user-attachments/assets/d91b3062-a109-4ad5-9c56-fa9fa1cfc524)
 
-`Tingkat Kemahiran` tidak secara signifikan memengaruhi preferensi jenis latihan, karena distribusi persentase jenis latihan pada setiap tingkat kemahiran relatif serupa. Baik pada `Tingkat Kemahiran` 1, 2, maupun 3, jumlah peserta untuk setiap jenis latihan (`Cardio`, `HIIT`, `Strength`, dan `Yoga`) tetap konsisten. Meskipun demikian, terdapat sedikit variasi di mana pada Tingkat Kemahiran 1 dan 2, jenis latihan Strength lebih populer, sedangkan pada `Tingkat Kemahiran` 3, `Yoga` memiliki jumlah peserta yang lebih banyak.
+
+`Tingkat Kemahiran` tidak secara signifikan memengaruhi preferensi jenis latihan, karena distribusi persentase jenis latihan pada setiap tingkat kemahiran relatif serupa. Baik pada `Tingkat Kemahiran` 1, 2, maupun 3, jumlah peserta untuk setiap jenis latihan (`Cardio`, `HIIT`, `Strength`, dan `yoga`) tetap konsisten. Meskipun demikian, terdapat sedikit variasi di mana pada Tingkat Kemahiran 1 dan 2, jenis latihan Strength lebih populer, sedangkan pada `Tingkat Kemahiran` 3, `yoga` memiliki jumlah peserta yang lebih banyak.
 
 
 #### 3. Distribusi Nilai Kadar Lemak Tubuh dari berbagai Kategori
@@ -554,7 +559,8 @@ plt.tight_layout()
 plt.show()
 ```
 
-![Output 6](images/output_6.png)
+![image](https://github.com/user-attachments/assets/597db54c-4ed8-45d4-9ffb-1e905b74265c)
+
 
 `Tingkat Kemahiran` 3 memiliki `Kadar Lemak Tubuh` antara 10-15%, sedangkan `Tingkat Kemahiran` 1 dan 2 memiliki rentang 20-35%. Pengunjung yang datang dua hingga tiga kali seminggu (`Frekuensi Latihan`) menunjukkan `Kadar Lemak Tubuh` yang relatif tinggi, yakni antara 20-35%. Sebaliknya, pengunjung yang datang lima kali seminggu memiliki `Kadar Lemak Tubuh` yang lebih rendah, sekitar 10-20%. Pengunjung yang datang empat kali seminggu menunjukkan distribusi yang lebih luas, dari 10% hingga 35%.
 
@@ -591,7 +597,8 @@ plt.tight_layout()
 plt.show()
 ```
 
-![Output 7](images/output_7.png)
+![image](https://github.com/user-attachments/assets/0ed66d90-0ae8-4e56-a5ce-40c074190619)
+
 
 `Tingkat Kemahiran` 1 memiliki sebaran yang lebih luas dengan rentang `Kalori Terbakar` antara 400-1300 per latihan. `Tingkat Kemahiran` 2 menunjukkan sebaran yang lebih terfokus di antara 600-1400 kalori. `Tingkat Kemahiran` 3 memiliki distribusi yang lebih sempit tetapi dengan rentang yang lebih tinggi, mencapai 900-1800 kalori. Pengunjung yang datang 2-3 kali seminggu (`Frekuensi Latihan`) menunjukkan `Kalori Terbakar` antara 400-1400. Pengunjung dengan kehadiran 4 kali seminggu menunjukkan distribusi yang lebih luas, dari 600 hingga 1800 kalori. Pengunjung yang datang 5 kali seminggu memiliki rentang `Kalori Terbakar` yang paling tinggi, yakni antara 900-1800 kalori per latihan.
 
@@ -628,13 +635,14 @@ plt.tight_layout()
 plt.show()
 ```
 
-![Output 8](images/output_8.png)
+![image](https://github.com/user-attachments/assets/bbb4760b-fee0-4736-aa41-2b35f04d0fce)
+
 
 `Tingkat Kemahiran` 1 menunjukkan nilai `Indeks Massa Tubuh` yang tersebar luas dari sekitar 15 hingga 50. Pada `Tingkat Kemahiran` 2, distribusi menjadi lebih sempit dengan sedikit pencilan pada nilai IMT tinggi. Sementara itu, `Tingkat Kemahiran` 3 memiliki nilai IMT yang lebih terkonsentrasi dalam rentang 25-35.
 
 Peserta yang berlatih 2-3 kali seminggu (`Frekuensi Latihan`) menunjukkan nilai IMT yang tersebar luas, termasuk beberapa pencilan di atas 40. Ketika frekuensi latihan meningkat menjadi 4-5 kali seminggu, distribusi IMT lebih terkonsentrasi pada rentang 20-35.
 
-Peserta `Yoga` dan `HIIT` memiliki distribusi IMT yang luas, termasuk beberapa nilai di atas 40. Sebaliknya, peserta `Cardio` dan `Strength` cenderung terkonsentrasi dalam rentang IMT 25-35.
+Peserta `yoga` dan `HIIT` memiliki distribusi IMT yang luas, termasuk beberapa nilai di atas 40. Sebaliknya, peserta `Cardio` dan `Strength` cenderung terkonsentrasi dalam rentang IMT 25-35.
 
 
 #### 6. Plot Heat Map
@@ -663,16 +671,17 @@ min_corr = korelasi.values[~np.eye(korelasi.shape[0], dtype=bool)].min()
 max_var = korelasi.stack().idxmax()
 min_var = korelasi.stack().idxmin()
 
-plt.text(len(korelasi)/2, -1, f"Korelasi Tertinggi: {max_var[0]} & {max_var[1]} ({max_corr:.2f})", fontsize=9, ha='center', color='darkslategray')
-plt.text(len(korelasi)/2, len(korelasi), f"Korelasi Terendah: {min_var[0]} & {min_var[1]} ({min_corr:.2f})", fontsize=9, ha='center', color='darkslategray')
+plt.text(len(korelasi)/2, -1, f"Korelasi Tertinggi: {max_var[0]} &amp; {max_var[1]} ({max_corr:.2f})", fontsize=9, ha='center', color='darkslategray')
+plt.text(len(korelasi)/2, len(korelasi), f"Korelasi Terendah: {min_var[0]} &amp; {min_var[1]} ({min_corr:.2f})", fontsize=9, ha='center', color='darkslategray')
 
 plt.tight_layout()
 plt.show()
 ```
 
-![Output 9](images/output_9.png)
+![image](https://github.com/user-attachments/assets/758ac2af-2d23-434e-bf43-5221da4cf1c9)
 
-Berdasarkan heatmap korelasi, `BMI` memiliki korelasi positif yang sangat kuat dengan `Weight` (0.85), karena memang merupakan faktor utama dalam perhitungan BMI. `Workout_Frequency` berhubungan positif dengan `Session_Duration` (0.64) dan `Calories_Burned` (0.36), serta juga menunjukkan korelasi positif dengan `Experience_Level` (0.69 dan 0.76). Hal ini mencerminkan bahwa semakin tinggi frekuensi latihan, durasi latihan dan pembakaran kalori juga cenderung meningkat, dan demikian pula dengan tingkat kemahiran.
+
+Berdasarkan heatmap korelasi, `BMI` memiliki korelasi positif yang sangat kuat dengan `Weight` (0.85), karena memang merupakan faktor utama dalam perhitungan BMI. `Workout_Frequency` berhubungan positif dengan `Session_Duration` (0.64) dan `Calories_Burned` (0.36), serta juga menunjukkan korelasi positif dengan `experience_level` (0.69 dan 0.76). Hal ini mencerminkan bahwa semakin tinggi frekuensi latihan, durasi latihan dan pembakaran kalori juga cenderung meningkat, dan demikian pula dengan tingkat kemahiran.
 
 Selain itu, `Water_Intake` memiliki hubungan positif dengan `Workout_Frequency` (0.44) dan `Session_Duration` (0.28), menunjukkan bahwa peserta yang lebih aktif cenderung mengonsumsi lebih banyak air. Di sisi lain, `Fat_Percentage` memiliki korelasi negatif dengan `Calories_Burned` (-0.60) dan `Workout_Frequency` (-0.54), mengindikasikan bahwa aktivitas fisik yang lebih sering dan pembakaran kalori yang lebih tinggi cenderung berhubungan dengan lemak tubuh yang lebih rendah.
 
@@ -702,9 +711,10 @@ plt.tight_layout()
 plt.show()
 ```
 
-![Output 10](images/output_10.png)
+![image](https://github.com/user-attachments/assets/be897b92-09c6-4039-8467-142a246c2d45)
 
-Berdasarkan pairplot, variabel numerik seperti `Weight`, `Height`, dan `Session_Duration` menunjukkan distribusi yang mendekati normal. Variabel seperti `Workout_Frequency` dan `Experience_Level` bersifat kategorikal. Terdapat hubungan positif yang kuat antara `BMI` dan `Weight`, serta antara `Calories_Burned` dan `Session_Duration`, menunjukkan bahwa peningkatan berat badan berdampak pada BMI dan durasi latihan yang lebih lama menghasilkan pembakaran kalori yang lebih banyak.
+
+Berdasarkan pairplot, variabel numerik seperti `Weight`, `Height`, dan `Session_Duration` menunjukkan distribusi yang mendekati normal. Variabel seperti `Workout_Frequency` dan `experience_level` bersifat kategorikal. Terdapat hubungan positif yang kuat antara `BMI` dan `Weight`, serta antara `Calories_Burned` dan `Session_Duration`, menunjukkan bahwa peningkatan berat badan berdampak pada BMI dan durasi latihan yang lebih lama menghasilkan pembakaran kalori yang lebih banyak.
 
 `Water_Intak`e cenderung meningkat seiring dengan `Workout_Frequency`. Sebaliknya, variabel seperti `Max_BPM` dan `Resting_BPM` tidak menunjukkan hubungan yang jelas dengan variabel lain. Beberapa pencilan teridentifikasi pada `BMI` dan `Calories_Burned`, yang dapat mencerminkan pola unik pada peserta tertentu.
 
@@ -732,7 +742,8 @@ plt.grid(True, linestyle='--', alpha=0.7)
 plt.show()
 ```
 
-![Output 11](images/output_11.png)
+![image](https://github.com/user-attachments/assets/c3051a48-0541-49ad-94d5-52ab85d1e566)
+
 
 Berdasarkan plot, terdapat korelasi negatif antara `Kalori Terbakar` dan `Kadar Lemak Tubuh`. Plot menunjukkan bahwa semakin tinggi kalori yang terbakar selama latihan, semakin rendah kadar lemak tubuh yang diamati. Garis tren merah menurun dari kiri atas ke kanan bawah, mengindikasikan hubungan negatif yang signifikan antara kedua variabel tersebut.
 
@@ -803,7 +814,8 @@ plt.tight_layout()
 plt.show()
 ```
 
-![Output 12](images/output_12.png)
+![image](https://github.com/user-attachments/assets/8ae8e859-f585-45c0-a4b7-1a66525abc86)
+
 
 Grafik ini menunjukkan hubungan antara `Kadar Lemak Tubuh` dengan berbagai variabel numerik. Terdapat korelasi negatif antara `Kadar Lemak Tubuh` dan `Asupan Air`, di mana semakin tinggi kadar lemak tubuh, asupan air cenderung menurun. Pola serupa juga terlihat pada hubungan dengan `Durasi Sesi Latihan`, dimana individu dengan kadar lemak tubuh lebih tinggi cenderung memiliki durasi latihan yang lebih pendek. Namun, untuk variabel seperti `Maks BPM`, `Rata-rata BPM`, `Istirahat BPM`, dan `Usia`, data tampak tersebar secara acak, menunjukkan tidak adanya korelasi yang signifikan. Secara keseluruhan, hubungan yang paling menonjol adalah antara `Kadar Lemak Tubuh` dengan `Asupan Air` dan `Durasi Sesi Latihan`, sedangkan variabel lain tidak menunjukkan pola yang jelas.
 
@@ -873,7 +885,8 @@ plt.tight_layout()
 plt.show()
 ```
 
-![Output 13](images/output_13.png)
+![image](https://github.com/user-attachments/assets/c8f806b4-97ab-4d8a-b432-123cc4f01061)
+
 
 Grafik ini menunjukkan hubungan antara `Kalori Terbakar` dengan berbagai variabel numerik. Terdapat korelasi linear yang kuat antara `Kalori Terbakar` dan `Durasi Sesi Latihan`, di mana semakin lama durasi latihan, semakin banyak kalori yang terbakar. `Asupan Air` juga menunjukkan korelasi positif ringan dengan `Kalori Terbakar`, meskipun data lebih tersebar. `Rata-rata BPM` memiliki korelasi positif dengan `Kalori Terbakar`, menunjukkan bahwa aktivitas dengan denyut jantung rata-rata lebih tinggi cenderung membakar lebih banyak kalori. Sebaliknya, `Maks BPM` dan `Istirahat BPM` tidak menunjukkan hubungan yang signifikan, dengan data tersebar secara acak. `Usia` menunjukkan korelasi negatif lemah, di mana kalori yang terbakar sedikit menurun pada individu yang lebih tua. Secara keseluruhan, `Durasi Sesi Latihan` adalah variabel yang paling signifikan dalam memengaruhi jumlah `Kalori Terbakar`.
 
@@ -919,14 +932,15 @@ plt.tight_layout()
 plt.show()
 ```
 
-![Output 14](images/output_14.png)
+![image](https://github.com/user-attachments/assets/890c6198-d5b7-428f-a3c6-8f5ac78d37bb)
 
-`Skor intensitas` menunjukkan hubungan yang signifikan dengan `Kadar Lemak Tubuh` dan `Kalori Terbakar`. Plot menunjukkan bahwa semakin tinggi `skor intensitas`, kadar lemak tubuh cenderung lebih rendah, mengindikasikan bahwa aktivitas dengan intensitas lebih tinggi dapat membantu mengurangi lemak tubuh. Sebaliknya, terdapat hubungan positif yang kuat antara `skor intensitas` dan `Kalori Terbakar`, di mana semakin tinggi intensitas aktivitas, semakin banyak kalori yang terbakar. Hal ini menunjukkan bahwa `skor intensitas` dapat menjadi indikator yang baik untuk menilai efektivitas aktivitas fisik dalam membakar kalori dan mengurangi lemak tubuh.
+
+`Skor Intensitas` menunjukkan hubungan yang signifikan dengan `Kadar Lemak Tubuh` dan `Kalori Terbakar`. Plot menunjukkan bahwa semakin tinggi `Skor Intensitas`, kadar lemak tubuh cenderung lebih rendah, mengindikasikan bahwa aktivitas dengan intensitas lebih tinggi dapat membantu mengurangi lemak tubuh. Sebaliknya, terdapat hubungan positif yang kuat antara `Skor Intensitas` dan `Kalori Terbakar`, di mana semakin tinggi intensitas aktivitas, semakin banyak kalori yang terbakar. Hal ini menunjukkan bahwa `Skor Intensitas` dapat menjadi indikator yang baik untuk menilai efektivitas aktivitas fisik dalam membakar kalori dan mengurangi lemak tubuh.
 
 
 **HR Index**  
 
-Langkah Ini Melakukan rekayasa Fitur untuk Menghasilkan `HR index`, sebuah Metrik yang dirancang untuk menunjukkan Tingkat Intensitas Aktivitas fisik Berdasarkan Variabel Terkait denyut Jantung. Fitur Ini dihitung dengan menggabungkan `HR index`, juga dikenal sebagai `heart rate index`, yang mencakup rasio antara denyut Jantung Saat Aktivitas dan denyut Jantung Saat Istirahat.  diharapkan, `HR index` Dapat Memberikan Gambaran yang lebih akurat Tentang Tingkat usaha seseorang Saat Melakukan Aktivitas fisik. Ini Akan menjadi alat utama untuk Menganalisis Performa atau Memprediksi Tingkat kebugaran.
+Langkah ini melakukan rekayasa fitur untuk menghasilkan `HR Index`, sebuah Metrik yang dirancang untuk menunjukkan Tingkat Intensitas Aktivitas fisik Berdasarkan Variabel Terkait denyut Jantung. Fitur Ini dihitung dengan menggabungkan `HR Index`, juga dikenal sebagai `heart rate index`, yang mencakup rasio antara denyut Jantung Saat Aktivitas dan denyut Jantung Saat Istirahat.  diharapkan, `HR Index` Dapat Memberikan Gambaran yang lebih akurat Tentang Tingkat usaha seseorang Saat Melakukan Aktivitas fisik. Ini Akan menjadi alat utama untuk Menganalisis Performa atau Memprediksi Tingkat kebugaran.
 
 
 ```python
@@ -951,9 +965,10 @@ plt.tight_layout()
 plt.show()
 ```
 
-![Output 15](images/output_15.png)
+![image](https://github.com/user-attachments/assets/03b3ec40-f666-4386-83d9-ffb3b424d4cf)
 
-Analisis plot menunjukkan bahwa tidak ada korelasi yang signifikan antara `persen_lemak` dan `indeks_hr`, dengan data yang tersebar secara acak di sekitar garis regresi yang mendatar, mengindikasi bahwa `indeks_hr` tidak dipengaruhi oleh `persen_lemak`. Sementara itu, hubungan antara `kalori_terbakar` dan `indeks_hr` menunjukkan korelasi negatif yang lemah, di mana `indeks_hr` sedikit menurun seiring dengan peningkatan `kalori_terbakar`. Meskipun demikian, data masih tersebar di sekitar garis regresi, yang menunjukkan bahwa korelasi ini tidak terlalu kuat.
+
+Analisis plot menunjukkan bahwa tidak ada korelasi yang signifikan antara `persen_lemak` dan `indeks_hr`, dengan data yang tersebar secara acak di sekitar garis regresi yang mendatar, mengindikasi bahwa `indeks_hr` tidak dipengaruhi oleh `persen_lemak`. Sementara itu, hubungan antara `Kalori_Terbakar` dan `indeks_hr` menunjukkan korelasi negatif yang lemah, di mana `indeks_hr` sedikit menurun seiring dengan peningkatan `Kalori_Terbakar`. Meskipun demikian, data masih tersebar di sekitar garis regresi, yang menunjukkan bahwa korelasi ini tidak terlalu kuat.
 
 
 ## **Reduksi Variabel**
@@ -964,7 +979,7 @@ Kolom `Workout_Frequency_cat` dan `Experiences_Level_cat` sejatinya adalah kolom
 
 ## **Encoding**
 
-`LabelEncoder()` Digunakan untuk mengencoding kolon `Gender` dan `Workout_Type`, yang Menghasilkan output Encoding ordinal.
+`LabelEncoder()` Digunakan untuk mengencoding kolon `Gender` dan `Workout_Type`, yang menghasilkan output encoding ordinal.
 
 
 
@@ -1001,7 +1016,8 @@ plt.title('Peta Korelasi Fitur dengan HR Index')
 plt.show()
 ```
 
-![Output 16](images/output_16.png)
+![image](https://github.com/user-attachments/assets/ba589521-1610-4a62-90f2-3f2c28a435e8)
+
 
 ```python
 # Membuat plot distribusi HR Index berdasarkan jenis kelamin
@@ -1012,7 +1028,8 @@ plt.ylabel('Indeks HR')
 plt.show()
 ```
 
-![Output 17](images/output_17.png)
+![image](https://github.com/user-attachments/assets/12d28171-cf15-499d-bdf6-a032466c2bea)
+
 
 Hasil visualisasi korelasi menunjukkan bahwa variabel yang paling berkaitan dengan `indeks_hr` adalah `Max_BPM`, `Avg_BPM`, `Session_Duration`, dan `Calories_Burned`, yang mencerminkan intensitas latihan. Sebaliknya, variabel demografis seperti `Age`, `Gender`, `Weight`, dan `Height` memiliki pengaruh yang sangat lemah terhadap `indeks_hr`. Normalisasi dilakukan menggunakan StandardScaler untuk menyamakan skala seluruh fitur numerik, sehingga proses pemodelan menjadi lebih konsisten. Sementara itu, distribusi `indeks_hr` berdasarkan gender menunjukkan bahwa tidak ada perbedaan signifikan antar kelompok gender, yang sejalan dengan nilai korelasi yang rendah pada fitur tersebut.
 
@@ -1083,7 +1100,7 @@ hasil_evaluasi_model.head()
 
 Analisis model mencakup dua pilar utama: `Model Optimasi Pengeluaran Energi` dan `Model Penyesuaian Kadar Lemak Tubuh`. Model Optimasi Pengeluaran Energi bertujuan untuk mengidentifikasi faktor-faktor yang memengaruhi efektivitas latihan di gym.
 
-Sementara itu, Model Penyesuaian Kadar Lemak Tubuh dirancang untuk mengungkap pola kebiasaan latihan yang dapat membantu mencapai target tipe tubuh tertentu. Empat algoritma dipilih untuk mendukung analisis ini, yaitu `Random Forest`, `K-Nearest Neighbors`, `Support Vector Regression`, dan `XGBoost`.
+Sementara itu, Model Penyesuaian Kadar Lemak Tubuh dirancang untuk mengungkap pola kebiasaan latihan yang dapat membantu mencapai target tipe tubuh tertentu. Empat algoritma dipilih untuk mendukung analisis ini, yaitu `Random Forest`, `K-Nearest Neighbors`, `support vector regression`, dan `XGBoost`.
 
 Setiap algoritma memiliki kelebihan dan kekurangan, seperti Random Forest yang mampu menangani data kompleks namun kurang efisien dalam pelatihan, K-Nearest Neighbors yang sederhana dan intuitif namun sensitif terhadap noise, Support Vector Regression yang efektif untuk data berdimensi tinggi namun membutuhkan pemilihan kernel yang tepat, dan XGBoost yang cepat dan akurat namun memerlukan tuning hyperparameter yang cermat.
 
@@ -1104,7 +1121,7 @@ rf_model.fit(fitur_train, target_train)
 
 `K-Nearest Neighbors (KNN)` adalah teknik analisis data yang sangat mudah dipahami dan tidak memerlukan tahap pelatihan yang kompleks. Metode ini bekerja dengan menentukan `k` data terdekat dengan titik data yang akan diprediksi melalui metrik jarak seperti Euclidean. Prediksi dihasilkan dari rata-rata atau mode dari `k` neighbor tersebut. `KNN` cocok untuk dataset kecil karena sifatnya yang sederhana dan transparan serta fleksibel terhadap berbagai distribusi data. Namun, algoritma ini kurang efisien pada dataset besar karena kompleksitas perhitungan jarak dan sensitif terhadap noise serta ketidakseimbangan data.
 
-Untuk model `K-Nearest Neighbors`, diimplementasikan dengan jumlah `n_neighbors` sebesar 10.
+Untuk Model `K-Nearest Neighbors`, diimplementasikan dengan jumlah `n_neighbors` sebesar 10.
 
 
 ```python
@@ -1114,9 +1131,9 @@ knn_model.fit(fitur_train, target_train)
 ```
 
 ### Support Vector Regressor
-`Support Vector Regression (SVR)` adalah teknik analisis regresi yang menggunakan konsep dari `Support Vector Machine (SVM)` untuk memodelkan hubungan data. Dengan mencari `hyperplane` optimal dalam ruang berdimensi tinggi, SVR dapat memprediksi nilai target dengan efektif. Melalui penggunaan kernel seperti linear, polinomial, atau `RBF`, algoritma ini mampu menangani hubungan non-linear yang kompleks. `SVR` sangat efisien dalam menangani data berdimensi tinggi dan memiliki daya tahan terhadap noise. Namun, algoritma ini kurang efisien untuk dataset besar karena membutuhkan banyak perhitungan, dan hasilnya sulit diinterpretasi karena sangat bergantung pada pemilihan kernel dan parameter yang tepat seperti `C`, `epsilon`, dan `gamma`.
+`Support Vector Regression (SVR)` adalah teknik analisis regresi yang menggunakan konsep dari `Support Vector Machine (SVM)` untuk memodelkan hubungan data. Dengan mencari `hyperplane` optimal dalam ruang berdimensi tinggi, SVR dapat memprediksi nilai target dengan efektif. Melalui penggunaan kernel seperti linear, polinomial, atau `RBF`, algoritma ini mampu menangani hubungan non-linear yang kompleks. `svr` sangat efisien dalam menangani data berdimensi tinggi dan memiliki daya tahan terhadap noise. Namun, algoritma ini kurang efisien untuk dataset besar karena membutuhkan banyak perhitungan, dan hasilnya sulit diinterpretasi karena sangat bergantung pada pemilihan kernel dan parameter yang tepat seperti `c`, `epsilon`, dan `Gamma`.
 
-Untuk `Model Optimasi Pengeluaran Energi`, diimplementasikan dengan menggunakan `Support Vector Regression` yang dikonfigurasi dengan parameter standar. Spesifiknya, parameter `C` diatur ke 100 dan `epsilon` diatur ke 0.1 untuk meningkatkan akurasi prediksi dalam melakukan regresi.
+untuk `Model Optimasi Pengeluaran Energi`, diimplementasikan dengan menggunakan `support vector regression` yang dikonfigurasi dengan parameter standar. Spesifiknya, parameter `c` diatur ke 100 dan `epsilon` diatur ke 0.1 untuk meningkatkan akurasi prediksi dalam melakukan regresi.
 
 
 ```python
@@ -1125,13 +1142,13 @@ svr_model = SVR(kernel='rbf', C=100, epsilon=0.1)
 svr_model.fit(fitur_train, target_train)
 ```
 
-`Model Support Vector Regression` pada `Model Penyesuaian Kadar Lemak Tubuh` menggunakan teknik `GridSearch` untuk menentukan parameter optimal. `GridSearc`h diterapkan karena performa model SVR awal memiliki nilai metrik akurasi yang sangat rendah. Hasil dari `GridSearch` adalah sebagai berikut.
+`Model Support Vector Regression` pada `Model Penyesuaian Kadar Lemak Tubuh` Menggunakan teknik `GridSearch` untuk menentukan parameter optimal. `GridSearc`h diterapkan karena performa model SVR awal memiliki nilai metrik akurasi yang sangat rendah. Hasil dari `GridSearch` adalah sebagai berikut.
 
 
 ```python
 # Mendefinisikan grid parameter untuk pencarian
 parameter_grid = {
-    'C': [0.1, 1, 10, 100],
+    'c': [0.1, 1, 10, 100],
     'epsilon': [0.01, 0.1, 0.5, 1],
     'gamma': ['scale', 0.1, 1, 10]
 }
@@ -1158,7 +1175,8 @@ plt.grid(True)
 plt.show()
 ```
 
-![Output 18](images/output_18.png)
+![image](https://github.com/user-attachments/assets/be8d42ec-6ba1-4749-ab4b-10a21b9f3f2b)
+
 
 Berdasarkan hasil GridSearch, parameter model terbaik yang diperoleh adalah nilai C sama dengan 1, epsilon sebesar 0.5 dan nilai gamma dengan pengaturan 'scale'.
 
@@ -1174,16 +1192,16 @@ Hasil pencarian parameter untuk model XGBoost menunjukkan bahwa kombinasi terbai
 
 ## Model Terbaik
 
-Berdasarkan hasil evaluasi menggunakan metrik performa utama, model paling optimal untuk memprediksi `kalori terbakar` adalah algoritma **XGBoost**, sementara model yang memberikan hasil terbaik untuk estimasi `kadar lemak tubuh` adalah **Random Forest**. Kedua model ini dipilih karena menghasilkan nilai `Adjusted R-squared` yang paling mendekati angka 1 serta memiliki nilai `MSE` (Mean Squared Error) terendah dibandingkan model lainnya. Penjabaran lebih rinci mengenai metrik evaluasi akan dijelaskan pada bagian khusus yang membahas evaluasi model.
+Berdasarkan hasil evaluasi menggunakan metrik performa utama, model paling optimal untuk memprediksi `Kalori Terbakar` adalah algoritma **XGBoost**, sementara model yang memberikan hasil terbaik untuk estimasi `Kadar Lemak Tubuh` adalah **Random Forest**. Kedua model ini dipilih karena menghasilkan nilai `Adjusted R-squared` yang paling mendekati angka 1 serta memiliki nilai `mse` (Mean Squared Error) terendah dibandingkan model lainnya. Penjabaran lebih rinci mengenai metrik evaluasi akan dijelaskan pada bagian khusus yang membahas evaluasi model.
 
 
 
-# **Evaluasi**
+# **evaluasi**
 
 
 ### **Metrik Evaluasi**
 
-Untuk membandingkan performa model, digunakan dua metrik utama, yaitu `Adjusted R²` dan `Mean Squared Error (MSE)`. Keduanya dipilih karena model melibatkan lebih dari satu variabel bebas, sehingga dibutuhkan ukuran evaluasi yang mempertimbangkan kompleksitas model.
+Untuk membandingkan performa model, digunakan dua metrik utama, yaitu `adjusted R²` dan `Mean Squared Error (MSE)`. Keduanya dipilih karena model melibatkan lebih dari satu variabel bebas, sehingga dibutuhkan ukuran evaluasi yang mempertimbangkan kompleksitas model.
 
 **Adjusted R² (Koefisien Determinasi yang Disesuaikan)**
 
@@ -1197,10 +1215,10 @@ $$
 
 $$
 \begin{aligned}
-R^2 & : \text{Koefisien determinasi} \\
-n & : \text{Jumlah data (observasi)} \\
-p & : \text{Jumlah variabel bebas} \\
-R_{\text{adj}}^2 & : \text{Adjusted } R^2
+r^2 &amp; : \text{Koefisien determinasi} \\
+n &amp; : \text{Jumlah data (observasi)} \\
+p &amp; : \text{Jumlah variabel bebas} \\
+R_{\text{adj}}^2 &amp; : \text{Adjusted } R^2
 \end{aligned}
 $$
 
@@ -1210,16 +1228,16 @@ $$
 
 Cara Kerja:
 
-`Adjusted R²` menyesuaikan nilai `R²` berdasarkan jumlah fitur dan ukuran data. Hal ini membuatnya lebih cocok untuk membandingkan model dengan kompleksitas berbeda.
-Jika variabel baru ditambahkan dan relevan, `Adjusted R²` akan naik. Namun jika variabel tersebut tidak memberikan kontribusi yang berarti, nilai `Adjusted R²` bisa menurun, menandakan kompleksitas model yang tidak perlu.
+`adjusted R²` menyesuaikan nilai `r²` berdasarkan jumlah fitur dan ukuran data. Hal ini membuatnya lebih cocok untuk membandingkan model dengan kompleksitas berbeda.
+Jika variabel baru ditambahkan dan relevan, `adjusted R²` akan naik. Namun jika variabel tersebut tidak memberikan kontribusi yang berarti, nilai `adjusted R²` bisa menurun, menandakan kompleksitas model yang tidak perlu.
 Metrik ini sangat bermanfaat saat melakukan perbandingan antar model dengan jumlah fitur yang tidak sama.
 
 Contoh:
-Jika sebuah model memiliki `Adjusted R²` sebesar 0.85, maka model tersebut mampu menjelaskan 85% variasi dalam data, dengan mempertimbangkan jumlah fitur yang digunakan.
+Jika sebuah model memiliki `adjusted R²` sebesar 0.85, maka model tersebut mampu menjelaskan 85% variasi dalam data, dengan mempertimbangkan jumlah fitur yang digunakan.
 
 **MSE (Mean Squared Error)**
 
-`MSE` digunakan untuk menghitung rata-rata dari kuadrat selisih antara nilai yang diprediksi dan nilai aktual. Metrik ini berguna untuk mengevaluasi seberapa akurat hasil prediksi model.
+`mse` digunakan untuk menghitung rata-rata dari kuadrat selisih antara nilai yang diprediksi dan nilai aktual. Metrik ini berguna untuk mengevaluasi seberapa akurat hasil prediksi model.
 
 Rumus MSE:
 
@@ -1230,9 +1248,9 @@ $$
 
 $$
 \begin{aligned}
-y_i & : \text{Nilai aktual (observasi sebenarnya)} \\
-\hat{y}_i & : \text{Nilai prediksi model} \\
-n & : \text{Jumlah data (observasi)}
+y_i &amp; : \text{Nilai aktual (observasi sebenarnya)} \\
+\hat{y}_i &amp; : \text{Nilai prediksi model} \\
+n &amp; : \text{Jumlah data (observasi)}
 \end{aligned}
 $$
 
@@ -1240,12 +1258,12 @@ $$
 
 Cara Kerja:
 
-`MSE` menghitung rata-rata kuadrat dari selisih antara prediksi dan nilai aktual.
-Nilai `MSE` yang rendah mengindikasikan performa model yang baik karena error prediksinya kecil.
+`mse` menghitung rata-rata kuadrat dari selisih antara prediksi dan nilai aktual.
+Nilai `mse` yang rendah mengindikasikan performa model yang baik karena error prediksinya kecil.
 Namun, metrik ini cukup peka terhadap nilai ekstrem karena selisih dikuadratkan, sehingga satu nilai yang sangat berbeda bisa memengaruhi hasil secara signifikan.
 
 Contoh:
-Jika model menghasilkan `MSE` sebesar 4, maka rata-rata kesalahan kuadrat prediksi terhadap nilai aktual adalah 4.
+Jika model menghasilkan `mse` sebesar 4, maka rata-rata kesalahan kuadrat prediksi terhadap nilai aktual adalah 4.
 
 Selain dua metrik utama tersebut, digunakan pula beberapa metrik tambahan untuk mendukung analisis performa model.
 
@@ -1265,7 +1283,7 @@ $$
 $$
 
 
-`RMSE` mengukur rata-rata kesalahan prediksi dalam satuan yang sama seperti data aslinya. Nilai lebih rendah berarti model lebih akurat.
+`rmse` mengukur rata-rata kesalahan prediksi dalam satuan yang sama seperti data aslinya. Nilai lebih rendah berarti model lebih akurat.
 
 **Mean Absolute Error (MAE)**
    
@@ -1285,16 +1303,16 @@ $$
    
 `Explained Variance` menunjukkan proporsi varians dalam target yang bisa dijelaskan oleh model. Nilai yang lebih tinggi mengindikasikan kemampuan model dalam menjelaskan variasi data.
 
-Penjelasan simbol:
+penjelasan simbol:
 
 
 $$
 \begin{aligned}
-y_i & : \text{nilai aktual} \\
-\hat{y}_i & : \text{nilai prediksi} \\
-\bar{y} & : \text{rata-rata dari nilai aktual} \\
-n & : \text{jumlah data} \\
-\text{Var}(x) & : \text{varians dari } x
+y_i &amp; : \text{nilai aktual} \\
+\hat{y}_i &amp; : \text{nilai prediksi} \\
+\bar{y} &amp; : \text{rata-rata dari nilai aktual} \\
+n &amp; : \text{jumlah data} \\
+\text{Var}(x) &amp; : \text{varians dari } x
 \end{aligned}
 $$
 
@@ -1325,17 +1343,17 @@ scaler_y = StandardScaler()
 X_scaled = scaler_X.fit_transform(X)
 y_scaled = scaler_y.fit_transform(y.reshape(-1, 1)).ravel()
 
-# Split Data
+# split data
 X_train, X_test, y_train, y_test = train_test_split(X_scaled, y_scaled, test_size=0.2, random_state=42)
 
-# Train Model RF
+# Train model RF
 modelRF = RandomForestRegressor(n_estimators=100, random_state=42)
 modelRF.fit(X_train, y_train)
 
 # Prediksi
 y_pred = modelRF.predict(X_test)
 
-# Evaluasi
+# evaluasi
 n = len(y_test)
 p = X_test.shape[1]
 r2 = r2_score(y_test, y_pred)
@@ -1371,7 +1389,8 @@ plt.show()
 
 ```
 
-![Output 19](images/output_19.png)
+![image](https://github.com/user-attachments/assets/ec3eeb33-a6bc-4630-92dd-47ebd7976a92)
+
 
 Model yang dihasilkan cukup bagus dengan Adjusted Rsquared sebesar 0.887641 dan MSE 0.090355 yang berada dibawah 0.1 nilainya.
 
@@ -1390,7 +1409,7 @@ scaler_y = StandardScaler()
 X_scaled = scaler_X.fit_transform(X)
 y_scaled = scaler_y.fit_transform(y.reshape(-1, 1)).ravel()
 
-# Split Data
+# split data
 X_train, X_test, y_train, y_test = train_test_split(X_scaled, y_scaled, test_size=0.2, random_state=42)
 
 # Tuning hyperparameter KNN
@@ -1418,7 +1437,7 @@ print("Best Parameters (KNN):", grid_search_knn.best_params_)
 # Prediksi
 y_pred = modelknn.predict(X_test)
 
-# Evaluasi
+# evaluasi
 n = len(y_test)
 p = X_test.shape[1]
 r2 = r2_score(y_test, y_pred)
@@ -1430,7 +1449,7 @@ r2_adj = 1 - (1 - r2) * (n - 1) / (n - p - 1)
 
 # Simpan ke DataFrame
 new_row = pd.DataFrame({
-    "Model": ["KNN (Tuned & Scaled)"],
+    "Model": ["KNN (Tuned &amp; Scaled)"],
     "R2 Score": [r2],
     "Adjusted R2": [r2_adj],
     "RMSE": [rmse],
@@ -1446,27 +1465,28 @@ except NameError:
 
 metrics_df = pd.concat([metrics_df, new_row], ignore_index=True)
 
-# Cetak hasil evaluasi
-print("\nModel Performance (KNN Tuned & Scaled):")
+# Cetak Hasil Evaluasi
+print("\nModel Performance (KNN Tuned &amp; Scaled):")
 print(new_row.T)
 
 # Plot Actual vs Predicted
 plt.figure(figsize=(8, 6))
 plt.scatter(y_test, y_pred, color='blue', alpha=0.6)
 plt.plot([min(y_test), max(y_test)], [min(y_test), max(y_test)], color='red', linestyle='--')
-plt.title("Actual vs Predicted Values (KNN Tuned & Scaled)")
+plt.title("Actual vs Predicted Values (KNN Tuned &amp; Scaled)")
 plt.xlabel("Actual Values")
 plt.ylabel("Predicted Values")
 plt.grid(True)
 plt.show()
 ```
 
-![Output 20](images/output_20.png)
+![image](https://github.com/user-attachments/assets/47bbbf9b-a66e-45b7-a440-aadebb6ed033)
+
 
 Model ini tidak sebagus model sebelumnya namun masih cukup bagus di Adjusted Rsquared sebesar 0.8365 dan R2 Score sebesar 0.822085, sementara untuk nilai MSE di atas 0.1 yaitu 0.164113 pada model ini.
 
 
-### SVR
+### svr
 
 
 ```python
@@ -1479,7 +1499,7 @@ modelSVR.fit(X_train, y_train)
 # Prediksi data uji
 y_pred = modelSVR.predict(X_test)
 
-# Evaluasi model
+# Evaluasi Model
 n = len(y_test)
 p = X_test.shape[1]
 r2 = r2_score(y_test, y_pred)
@@ -1491,7 +1511,7 @@ r2_adj = 1 - (1 - r2) * (n - 1) / (n - p - 1)
 
 # Simpan hasil evaluasi ke DataFrame
 new_row = pd.DataFrame({
-    "Model": ["SVR (Tuned & Scaled)"],
+    "Model": ["SVR (Tuned &amp; Scaled)"],
     "R2 Score": [r2],
     "Adjusted R2": [r2_adj],
     "RMSE": [rmse],
@@ -1509,21 +1529,22 @@ except NameError:
 metrics_df = pd.concat([metrics_df, new_row], ignore_index=True)
 
 # Cetak hasil evaluasi SVR
-print(f"\nModel Performance (SVR Tuned & Scaled):")
+print(f"\nModel Performance (SVR Tuned &amp; Scaled):")
 print(new_row.T)
 
 # Visualisasi: Actual vs Predicted
 plt.figure(figsize=(8, 6))
 plt.scatter(y_test, y_pred, color='blue', alpha=0.6)
 plt.plot([min(y_test), max(y_test)], [min(y_test), max(y_test)], color='red', linestyle='--')
-plt.title("Actual vs Predicted Values (SVR Tuned & Scaled)")
+plt.title("Actual vs Predicted Values (SVR Tuned &amp; Scaled)")
 plt.xlabel("Actual Values")
 plt.ylabel("Predicted Values")
 plt.grid(True)
 plt.show()
 ```
 
-![Output 21](images/output_21.png)
+![image](https://github.com/user-attachments/assets/ad426143-6f7a-4803-999f-522b2a95cbd9)
+
 
 Hasil dari model ini sangat baik dengan R2 Score sebesar 0.888236 dan Explained Variance sebesar 0.889767.
 
@@ -1556,7 +1577,8 @@ plt.ylabel('Adjusted R²')
 plt.show()
 ```
 
-![Output 22](images/output_22.png)
+![image](https://github.com/user-attachments/assets/12949c46-d79f-474e-a7a6-1e3e120aa929)
+
 
 Model terbaik untuk variabel Kalori Terbakar adalah dengan Metode Random Forest yaitu dengan Adjusted Rsquared  0.887641.
 
@@ -1575,7 +1597,7 @@ prediksi_rf = modelRF.predict(X_test)
 jumlah_data = len(y_test)
 jumlah_fitur = X_test.shape[1]
 
-# Evaluasi performa model
+# Evaluasi Performa Model
 skor_r2 = r2_score(y_test, prediksi_rf)
 nilai_rmse = np.sqrt(mean_squared_error(y_test, prediksi_rf))
 nilai_mae = mean_absolute_error(y_test, prediksi_rf)
@@ -1611,7 +1633,8 @@ plt.grid(True)
 plt.show()
 ```
 
-![Output 23](images/output_23.png)
+![image](https://github.com/user-attachments/assets/c9d0a1e7-d2fb-4138-a7d2-7c4018438195)
+
 
 Model RF ini memiliki performa yang cukup baik dalam memprediksi nilai target. Dari tabel performa model, nilai R2 Score sebesar 0.902046 dan Adjusted R2 sebesar 0.887641 menunjukkan bahwa model mampu menjelaskan sekitar 90% variabilitas data yang ada. Nilai RMSE sebesar 0.300591, MAE sebesar 0.235834, serta MSE sebesar 0.090355 menunjukkan bahwa model memiliki tingkat kesalahan prediksi yang relatif rendah.
 
@@ -1663,12 +1686,13 @@ plt.grid(True)
 plt.show()
 ```
 
-![Output 24](images/output_24.png)
+![image](https://github.com/user-attachments/assets/724f5944-9261-48b1-b28b-cbbf998a3fb6)
+
 
 Model KNN ini menunjukkan kinerja yang cukup baik meski tidak sebaik model Random Forest. Dari tabel kinerja model, nilai R2 Score sebesar 0.822885 dan Adjusted R2 sebesar 0.795921 menunjukkan bahwa model mampu menjelaskan sekitar 82% variabilitas data. Nilai RMSE sebesar 0.405109, MAE sebesar 0.32197, serta MSE sebesar 0.184115 menunjukkan bahwa model memiliki tingkat kesalahan prediksi yang lebih tinggi dibandingkan Random Forest.
 
 
-### SVR
+### svr
 
 
 ```python
@@ -1715,7 +1739,8 @@ plt.grid(True)
 plt.show()
 ```
 
-![Output 25](images/output_25.png)
+![image](https://github.com/user-attachments/assets/f1eba6b8-332e-4ad5-b7d7-491edffeaf68)
+
 
 Model SVR menunjukkan performa yang cukup baik dalam melakukan prediksi. Nilai R2 Score sebesar 0.888236 dan Adjusted R2 sebesar 0.871801 menunjukkan bahwa model mampu menjelaskan sekitar 88% variabilitas data yang ada. Nilai RMSE sebesar 0.321082, MAE sebesar 0.242121, dan MSE sebesar 0.103994.
 
@@ -1749,7 +1774,8 @@ plt.tight_layout()
 plt.show()
 ```
 
-![Output 26](images/output_26.png)
+![image](https://github.com/user-attachments/assets/a5e4f2b5-19f7-4794-9a4a-0d6edcba6ace)
+
 
 Model Random Forest memiliki nilai Adjusted R² tertinggi sebesar 0.8876, diikuti oleh Support Vector Regression (SVR) dengan 0.8718, dan K-Nearest Neighbors (KNN) yang paling rendah dengan 0.7959. Hal ini menunjukkan bahwa model Random Forest lebih baik dalam menjelaskan variabilitas data dibandingkan dua model lainnya.
 
@@ -1757,37 +1783,37 @@ Model Random Forest memiliki nilai Adjusted R² tertinggi sebesar 0.8876, diikut
 # Kesimpulan
 
 
-Kesimpulan berdasarkan hasil dari *goal* yang telah dicapai:  
+Kesimpulan berdasarkan hasil dari *Goal* yang telah dicapai:  
 
 1. **Model Optimasi Pengeluaran Energi**  
-   `Model Optimasi Pengeluaran Energi` terbaik diantara algoritma **Random Forest (RF**), **K-Nearest Neighbors (KNN)**, **Support Vector Regressor (SVR)**, dan **Extreme Gradient Boosting (XGBoost)** adalah dengan menggunakan algoritma **Extreme Gradient Boosting (XGBoost)**. Model menunjukkan kinerja yang sangat baik dengan *adjusted R²* sebesar **0.9854** dan *MSE* **0.0151**, menandakan bahwa model mampu menjelaskan sebagian besar variabilitas dalam jumlah kalori yang terbakar. Hal ini menunjukkan potensi yang tinggi untuk mengimplementasikan model ini dalam memberikan rekomendasi latihan yang efisien.
+   `Model Optimasi Pengeluaran Energi` terbaik diantara algoritma **Random Forest (RF**), **K-Nearest Neighbors (KNN)**, **Support Vector Regressor (SVR)**, dan **Extreme Gradient Boosting (XGBoost)** adalah dengan menggunakan algoritma **Extreme Gradient Boosting (XGBoost)**. Model menunjukkan kinerja yang sangat baik dengan *adjusted R²* sebesar **0.9854** dan *mse* **0.0151**, menandakan bahwa model mampu menjelaskan sebagian besar variabilitas dalam jumlah kalori yang terbakar. Hal ini menunjukkan potensi yang tinggi untuk mengimplementasikan model ini dalam memberikan rekomendasi latihan yang efisien.
 
 
 2. **Model Penyesuaian Kadar Lemak Tubuh**  
-   `Model Penyesuaian Kadar Lemak Tubuh` terbaik diantara algoritma **Random Forest (RF)**, **K-Nearest Neighbors (KNN)**, **Support Vector Regressor (SVR)**, dan **Extreme Gradient Boosting (XGBoost)** adalah dengan menggunakan algoritma **Random Forest (RF)**. Model ini memiliki *adjusted R²* sebesar **0.7891** dan *MSE* **0.1981**, menunjukkan bahwa model ini cukup baik dalam memprediksi kadar lemak tubuh. Namun, masih ada ruang untuk meningkatkan akurasi model, mungkin dengan menambahkan variabel atau data yang lebih relevan.  
+   `Model Penyesuaian Kadar Lemak Tubuh` terbaik diantara algoritma **Random Forest (RF)**, **K-Nearest Neighbors (KNN)**, **Support Vector Regressor (SVR)**, dan **Extreme Gradient Boosting (XGBoost)** adalah dengan menggunakan algoritma **Random Forest (RF)**. Model ini memiliki *adjusted R²* sebesar **0.7891** dan *mse* **0.1981**, menunjukkan bahwa model ini cukup baik dalam memprediksi kadar lemak tubuh. Namun, masih ada ruang untuk meningkatkan akurasi model, mungkin dengan menambahkan variabel atau data yang lebih relevan.  
 
 3. **Preferensi Latihan Berdasarkan Gender**  
-   Analisis **EDA** tidak menemukan perbedaan yang signifikan dalam preferensi latihan antara laki-laki dan perempuan. Hal ini mengindikasikan bahwa program latihan dapat dirancang dengan pendekatan yang lebih umum tanpa perlu pemisahan berdasarkan gender.  
+   Analisis **eda** tidak menemukan perbedaan yang signifikan dalam preferensi latihan antara laki-laki dan perempuan. Hal ini mengindikasikan bahwa program latihan dapat dirancang dengan pendekatan yang lebih umum tanpa perlu pemisahan berdasarkan gender.  
 
 4. **Preferensi Berdasarkan Tingkat Kemahiran**  
-   Tidak ada hubungan signifikan yang ditemukan antara tingkat kemahiran dan preferensi latihan dari analisis **EDA**. Artinya, preferensi latihan kemungkinan lebih dipengaruhi oleh faktor lain, seperti tujuan kebugaran individu atau akses ke fasilitas, daripada tingkat kemahiran.  
+   Tidak ada hubungan signifikan yang ditemukan antara tingkat kemahiran dan preferensi latihan dari analisis **eda**. Artinya, preferensi latihan kemungkinan lebih dipengaruhi oleh faktor lain, seperti tujuan kebugaran individu atau akses ke fasilitas, daripada tingkat kemahiran.  
 
 
-Secara keseluruhan, `model optimasi pengeluaran energi` dan `model penyesuaian kadar lemak tubuh` telah berhasil dibuat. Hasil analisis preferensi menunjukkan bahwa pendekatan umum dapat diambil tanpa perlu memperhatikan perbedaan gender atau tingkat kemahiran. Langkah selanjutnya dapat difokuskan pada pengembangan program latihan berbasis data, peningkatan `model penyesuaian kadar lemak tubuh`, atau eksplorasi faktor-faktor lain yang mungkin memengaruhi preferensi individu.
+Secara keseluruhan, `Model Optimasi Pengeluaran Energi` dan `Model Penyesuaian Kadar Lemak Tubuh` telah berhasil dibuat. Hasil analisis preferensi menunjukkan bahwa pendekatan umum dapat diambil tanpa perlu memperhatikan perbedaan gender atau tingkat kemahiran. Langkah selanjutnya dapat difokuskan pada pengembangan program latihan berbasis data, peningkatan `Model Penyesuaian Kadar Lemak Tubuh`, atau eksplorasi faktor-faktor lain yang mungkin memengaruhi preferensi individu.
 
 
 # Referensi
 
 
-- Gough, A., et al. (2018). Personalized Fitness: Trends in the Digital Fitness Industry. *Journal of Health & Wellness*.
+- Gough, A., et al. (2018). Personalized Fitness: Trends in the Digital Fitness Industry. *Journal of Health &amp; wellness*.
 
 - McAuley, E., et al. (2011). Social Support and Self-Efficacy in Exercise. *Health Psychology*.
 
-- World Health Organization. (2020). *Physical Activity*. Retrieved from [WHO](https://www.who.int/news-room/fact-sheets/detail/physical-activity).
+- World Health Organization. (2020). *Physical Activity*. Retrieved from [Who](https://www.who.int/news-room/fact-sheets/detail/physical-activity).
 
-- Md. Sihab Bhuiyan, Md Nahid Hosain Likhon, A.K.M. Ahsanul Habib, Monjurul Aziz Fahim, & Afifa Zain Apurba. (2024). Revolutionizing Workout Analytics: Machine Learning Models for Calorie Burn Estimation. Asian Journal Of Medical Technology, 4(2), 33–45. https://doi.org/10.32896/ajmedtech.v4n2.33-45
+- Md. Sihab Bhuiyan, Md Nahid Hosain Likhon, A.K.M. Ahsanul Habib, Monjurul Aziz Fahim, &amp; Afifa Zain Apurba. (2024). Revolutionizing Workout Analytics: Machine Learning Models for Calorie Burn Estimation. Asian Journal Of Medical Technology, 4(2), 33–45. https://doi.org/10.32896/ajmedtech.v4n2.33-45
 
-- Binumon Joseph, & Sona P Vinoy. (2023). Calorie Burn Prediction Analysis Using XGBoost Regressor and Linear Regression Algorithms. National Conference on Emerging Computer Applications, 4(1), 187–191. Retrieved from https://ajcejournal.in/nceca/article/view/174
+- Binumon Joseph, &amp; Sona P Vinoy. (2023). Calorie Burn Prediction Analysis Using XGBoost Regressor and Linear Regression Algorithms. National Conference on Emerging Computer Applications, 4(1), 187–191. Retrieved from https://ajcejournal.in/nceca/article/view/174
 
-- Kadam, A., Shrivastava, A., Pawar, S. K., Patil, V. H., Michaelson, J., & Singh, A. (n.d.). *Calories Burned Prediction Using Machine Learning*. IEEE. Retrieved from [Calories Burn Prediction](https://hossainlab.github.io/projects/Calories_Burnt/02_Calories%20Burnt%20Prediction.html)
+- Kadam, A., Shrivastava, A., Pawar, S. K., Patil, V. H., Michaelson, J., &amp; Singh, A. (n.d.). *Calories Burned Prediction Using Machine Learning*. IEEE. Retrieved from [Calories Burn Prediction](https://hossainlab.github.io/projects/Calories_Burnt/02_Calories%20Burnt%20Prediction.html)
 
