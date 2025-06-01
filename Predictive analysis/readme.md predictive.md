@@ -1,4 +1,3 @@
-![image](https://github.com/user-attachments/assets/4e8b3e4f-8ac2-48a9-9e8c-42fc3ee925ef)
 # Laporan Proyek Machine Learning - Sandy Tirta Yudha
 
 ## Domain Proyek
@@ -256,7 +255,7 @@ for idx, fitur in enumerate(fitur_numerik):
 plt.subplots_adjust(hspace=0.5, wspace=0.3)
 plt.show()
 ```
-https://raw.githubusercontent.com/sendy-ty/Submission-Coding-Camp/refs/heads/main/Predictive%20analysis/Gambar/1.png
+![image](https://github.com/user-attachments/assets/4e8b3e4f-8ac2-48a9-9e8c-42fc3ee925ef)
 
 Tampilan grafik menunjukkan bahwa terdapat beberapa datum yang berada di luar batas kuartil pada beberapa fitur, seperti pada distribusi berat badan dan BMI. Meskipun demikian, data-data tersebut masih dapat dianggap wajar dalam konteks pusat kebugaran. Hal ini dikarenakan pusat kebugaran merupakan tempat yang mengakomodasi berbagai program, termasuk program penurunan berat badan. Oleh karena itu, memiliki berat badan yang tinggi bukan merupakan anomali. Demikian pula, data kalori terbakar juga memiliki beberapa datum yang berada di luar kuartil atas. Namun, ini tidak serta merta menjadi pencilan yang harus dihilangkan. Hal ini dikarenakan sangat memungkinkan bagi seseorang yang mahir dalam latihan kebugaran untuk membakar kalori dalam jumlah yang lebih besar dalam satu kali sesi latihan. Selain itu, beberapa faktor seperti jenis latihan, durasi sesi, dan tingkat keahlian dapat mempengaruhi jumlah kalori yang terbakar. Dalam hal ini, data tersebut masih relevan dan dapat memberikan wawasan yang berharga tentang pola latihan dan pencapaian tujuan kebugaran bagi anggota pusat kebugaran.
 
