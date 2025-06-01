@@ -1,53 +1,56 @@
-# Laporan Proyek Machine Learning - Fikri Zulfialdi
+# Laporan Proyek Machine Learning - Sandy Tirta Yudha
 
 ## Domain Proyek
 
-Optimalisasi aktivitas latihan di pusat kebugaran telah menjadi fokus utama dalam upaya meningkatkan kesehatan masyarakat modern, terutama dalam konteks efektivitas pembakaran kalori. Pemahaman mendalam tentang aktivitas yang menghasilkan pembakaran kalori optimal tidak hanya penting bagi individu yang mengejar tujuan kebugaran pribadi, tetapi juga memiliki implikasi signifikan terhadap kesehatan masyarakat secara keseluruhan. Data dari Organisasi Kesehatan Dunia (WHO, 2020) menunjukkan bahwa tingkat aktivitas fisik yang memadai dapat secara substansial mengurangi risiko berbagai penyakit kronis, namun mayoritas populasi global masih belum mencapai tingkat aktivitas fisik yang direkomendasikan. Tantangan ini semakin diperumit oleh keterbatasan waktu yang dihadapi masyarakat modern, mendorong kebutuhan akan pemahaman yang lebih baik tentang efektivitas berbagai jenis latihan dalam memaksimalkan pembakaran kalori dalam waktu yang tersedia.
+Meningkatkan efektivitas latihan di pusat kebugaran telah menjadi perhatian utama dalam mendukung kesehatan masyarakat masa kini, khususnya terkait efisiensi dalam membakar kalori. Memahami secara mendalam jenis-jenis aktivitas yang mampu membakar kalori secara optimal tidak hanya penting bagi individu yang ingin mencapai target kebugaran pribadi, tetapi juga berdampak besar pada kesehatan populasi secara umum. Berdasarkan data dari World Health Organization (WHO, 2020), aktivitas fisik yang cukup berperan penting dalam menurunkan risiko berbagai penyakit kronis. Sayangnya, sebagian besar penduduk dunia masih belum mencapai standar aktivitas fisik yang dianjurkan. Terbatasnya waktu dalam kehidupan modern memperumit situasi ini, sehingga diperlukan pemahaman yang lebih komprehensif mengenai efektivitas berbagai jenis latihan dalam mengoptimalkan pembakaran kalori dalam durasi yang terbatas.
 
-Penelitian yang dilakukan oleh Gough et al. (2018) mengungkapkan adanya pergeseran signifikan dalam preferensi masyarakat terhadap program latihan yang lebih efisien namun tetap efektif, mencerminkan kebutuhan akan optimalisasi waktu dalam konteks kesehatan modern. Tren ini memperkuat pentingnya mengidentifikasi dan memahami aktivitas gym yang memberikan manfaat maksimal dalam durasi minimal, memungkinkan individu untuk mencapai tujuan kesehatan mereka meskipun menghadapi kendala waktu. Lebih lanjut, McAuley et al. (2011) menekankan peran krusial faktor psikososial dalam efektivitas latihan, menunjukkan bahwa dukungan sosial dan kepercayaan diri secara signifikan mempengaruhi intensitas dan konsistensi latihan. Temuan ini menggarisbawahi pentingnya mempertimbangkan tidak hanya aspek fisiologis dari pembakaran kalori, tetapi juga konteks psikologis dan sosial yang mempengaruhi efektivitas latihan secara keseluruhan.
+Gough et al. (2018) menemukan bahwa masyarakat kini semakin cenderung memilih program latihan yang mampu memberikan hasil maksimal dengan durasi yang lebih singkat. Pergeseran ini mencerminkan kebutuhan akan efisiensi dalam berolahraga, terutama di tengah keterbatasan waktu yang dihadapi banyak orang di era modern. Oleh karena itu, penting untuk mengetahui jenis latihan yang paling efektif dalam membakar kalori dalam waktu yang terbatas. Selain faktor efisiensi, aspek psikososial juga berperan penting dalam keberhasilan program kebugaran. McAuley et al. (2011) menyoroti bahwa motivasi, rasa percaya diri, dan dukungan sosial berkontribusi besar terhadap seberapa intens dan konsisten seseorang menjalani latihan. Dengan demikian, efektivitas latihan tidak hanya ditentukan oleh faktor fisik semata, tetapi juga oleh kondisi mental dan sosial yang menyertainya.
 
-Dalam konteks kesehatan masyarakat yang lebih luas, pemahaman tentang efektivitas pembakaran kalori dalam berbagai aktivitas gym memiliki implikasi penting untuk pengembangan strategi intervensi kesehatan yang lebih efektif. Hal ini menjadi semakin relevan mengingat meningkatnya prevalensi penyakit terkait gaya hidup sedenter, seperti obesitas, diabetes, dan penyakit kardiovaskular. Optimalisasi program latihan berdasarkan pemahaman yang lebih baik tentang efektivitas pembakaran kalori dapat membantu mengatasi tantangan kesehatan ini dengan lebih efektif, sambil mempertimbangkan keterbatasan waktu dan sumber daya yang dihadapi masyarakat modern. Dengan demikian, penelitian tentang efektivitas pembakaran kalori dalam aktivitas gym tidak hanya berkontribusi pada pengembangan program kebugaran yang lebih efisien, tetapi juga berperan penting dalam upaya yang lebih luas untuk meningkatkan kesehatan masyarakat dan mengurangi beban penyakit kronis.
+Dalam skala kesehatan masyarakat secara keseluruhan, memahami seberapa efektif berbagai jenis latihan gym dalam membakar kalori memiliki peran strategis dalam merancang intervensi kesehatan yang lebih tepat sasaran. Hal ini menjadi semakin penting seiring dengan meningkatnya kasus penyakit akibat gaya hidup pasif, seperti obesitas, diabetes tipe 2, dan gangguan jantung. Dengan memanfaatkan wawasan mengenai efektivitas tiap jenis latihan, program kebugaran dapat disusun secara lebih optimal guna menyesuaikan dengan keterbatasan waktu dan sumber daya yang sering dihadapi oleh masyarakat saat ini. Oleh karena itu, penelitian yang mendalami efisiensi pembakaran kalori dalam aktivitas kebugaran bukan hanya berguna untuk meningkatkan hasil latihan individu, tetapi juga berkontribusi dalam mendukung kebijakan kesehatan publik yang bertujuan menurunkan prevalensi penyakit kronis.
 
-Penerapan machine learning memungkinkan identifikasi perilaku gym yang paling efektif, dengan algoritma seperti k-Nearest Neighbors (KNN), Random Forest, dan Boosting. KNN dapat menyarankan latihan berdasarkan karakteristik individu, sementara Random Forest menggabungkan berbagai faktor untuk prediksi pembakaran kalori yang akurat. Boosting meningkatkan ketepatan rekomendasi latihan dengan terus belajar dari kesalahan sebelumnya. Dengan model ini, pusat kebugaran bisa memberikan rekomendasi yang lebih dipersonalisasi, membantu pengguna mencapai tujuan kebugaran secara efisien sekaligus mendukung peningkatan kesehatan masyarakat melalui gaya hidup aktif. Data yang digunakan diambil dari kaggle yang bisa diakses dari link [berikut](https://www.kaggle.com/datasets/valakhorasani/gym-members-exercise-dataset/data)
+Pemanfaatan algoritma machine learning memungkinkan analisis dan identifikasi aktivitas gym yang paling efisien dalam mendukung tujuan kebugaran. Beberapa algoritma yang digunakan antara lain k-Nearest Neighbors (KNN), Random Forest, dan Boosting. Algoritma KNN mampu memberikan saran jenis latihan yang sesuai dengan profil dan karakteristik masing-masing individu. Sementara itu, Random Forest memproses berbagai variabel untuk menghasilkan prediksi yang lebih akurat terkait jumlah kalori yang terbakar. Di sisi lain, Boosting terus menyempurnakan hasil prediksi dengan mempelajari pola kesalahan sebelumnya, sehingga meningkatkan akurasi model secara keseluruhan. Melalui pendekatan ini, pusat kebugaran dapat menyediakan rekomendasi latihan yang bersifat personal, membantu individu mencapai target kebugaran mereka secara lebih efektif, serta mendorong gaya hidup sehat secara luas dalam masyarakat. Data yang digunakan diambil dari kaggle yang bisa diakses dari link [Berikut](https://www.kaggle.com/datasets/valakhorasani/gym-members-exercise-dataset/data).
 
+Dataset ini menyediakan informasi menyeluruh mengenai kondisi fisik individu yang berlatih di pusat kebugaran. Data mencakup elemen demografis seperti `Usia` dan `jenis_kelamin`, serta indikator komposisi tubuh seperti `berat_badan`, `tinggi_badan`, `BMI`, dan `persentase_lemak`. Selain itu, terdapat juga metrik kebugaran jantung seperti `Max_BPM`, `Avg_BPM`, dan `esting_BPM`. Nilai `BMI` dan `persentase_lemak` digunakan untuk mengidentifikasi komposisi tubuh, di mana `persentase_lemak` dianggap lebih akurat dalam menilai kadar lemak tubuh, khususnya pada individu dengan otot yang dominan.
 
-
-
-Dataset ini mencakup profil kebugaran individu, meliputi detail demografis (usia, jenis kelamin), komposisi tubuh (berat badan, tinggi badan, BMI, persentase lemak), metrik detak jantung (Max_BPM, Avg_BPM, Resting_BPM), dan kebiasaan olahraga (Jenis Olahraga, Durasi Sesi, Kalori Terbakar, Frekuensi Olahraga). **BMI** dan **Persentase Lemak** memberikan gambaran tentang komposisi tubuh, dengan **Persentase Lemak** yang biasanya memberikan gambaran yang lebih akurat dibandingkan BMI, terutama untuk individu dengan massa otot yang tinggi. Metrik detak jantung menyoroti kebugaran kardiovaskular, di mana **Resting_BPM** sering kali lebih rendah pada individu yang lebih fit.
-
-Data olahraga menunjukkan intensitas dan preferensi, dengan aktivitas berintensitas tinggi (seperti HIIT atau Kardio) yang cenderung membakar lebih banyak kalori dan memiliki **Avg_BPM** lebih tinggi dibandingkan dengan latihan berintensitas rendah seperti Yoga. **Asupan Air** dan **Tingkat Pengalaman** menambah kedalaman informasi, menunjukkan kebiasaan hidrasi dan tingkat keakraban dengan kebugaran, yang dapat memengaruhi hasil latihan dan detak jantung saat istirahat. Dataset ini memungkinkan pemahaman yang luas tentang tingkat kebugaran individu dan memberikan wawasan yang berguna untuk personalisasi rencana kebugaran dan kesehatan.
+Variabel lain yang disertakan adalah kebiasaan latihan, meliputi `Jenis_Olahraga`, `Durasi_Sesi`, `Kalori_Terbakar`, dan `Frekuensi_Olahraga`, yang menggambarkan pola dan intensitas aktivitas fisik. Aktivitas seperti HIIT atau kardio, yang termasuk latihan intensitas tinggi, umumnya menghasilkan `Avg_BPM` yang lebih tinggi dan membakar lebih banyak kalori dibandingkan dengan latihan ringan seperti yoga. Penambahan fitur seperti `Asupan_Air` dan `Tingkat_Pengalaman` memberikan konteks tambahan mengenai kebiasaan hidrasi dan tingkat familiaritas peserta terhadap latihan, yang turut memengaruhi performa dan detak jantung saat istirahat. Informasi yang lengkap ini membuka peluang untuk menyusun program kebugaran yang lebih personal dan sesuai kebutuhan masing-masing individu.
 
 
 ## Business Understanding
 ### Problem Statement
-1. Bagaimana cara meningkatkan efektifitas jumlah Kalori Terbakar pada Latihan?
-2. Bagaimana cara optimalkan latihan, jika ingin mencapai target Kadar Lemak Tubuh tertentu?
-3. Apakah ada perbedaan antara Laki-laki dan Perempuan dalam preferensi latihan?
-4. Apakah Tingkat Kemahiran mempengaruhi preferensi latihan?
+1. Bagaimana strategi yang tepat untuk memaksimalkan jumlah kalori yang terbakar selama sesi latihan fisik?
+
+2. Apa langkah-langkah yang dapat dilakukan untuk mengatur pola latihan agar selaras dengan tujuan penurunan kadar lemak tubuh yang diinginkan?
+
+3. Apakah terdapat perbedaan kecenderungan dalam memilih jenis latihan antara pria dan wanita?
+
+4. Sejauh mana tingkat keahlian atau pengalaman seseorang dalam berolahraga memengaruhi pilihan latihan yang mereka lakukan?
 
 ### Goals
-1. Membuat model yang memprediksi Kalori Terbakar dalam Latihan.
-2. Membuat model yang memprediksi Kadar Lemak Tubuh.
-3. Mencari perbedaan preferensi Laki-laki dan Perempuan.
-4. Mencari preferensi setiap tingkat Kemahiran.
+1. Mengembangkan model prediktif untuk memperkirakan jumlah kalori yang dibakar selama aktivitas latihan.
+
+2. Membangun sistem prediksi untuk memperkirakan kadar lemak tubuh berdasarkan data latihan dan faktor terkait.
+
+3. Mengidentifikasi perbedaan kecenderungan latihan antara jenis kelamin pria dan wanita.
+
+4. Menganalisis preferensi jenis latihan berdasarkan tingkat kemahiran atau pengalaman individu.
 
 ### Solution
-1. Menggunakan 4 Algoritma Machine Learning untuk membuat model yang memprediksi Kalori Terbakar dan Kadar Lemak Tubuh.
-2. Menggunakan Exploratory Data Analysis (EDA) untuk menentukan pengaruh Jenis Kelamin dan Tingkat Kemahiran dalam preferensi Latihan.
+1. Menerapkan empat algoritma machine learning untuk membangun model prediktif dalam mengestimasi kalori yang terbakar serta kadar lemak tubuh.
+
+2. Melakukan eksplorasi data (EDA) guna menganalisis sejauh mana faktor jenis kelamin dan tingkat keahlian memengaruhi pilihan dalam aktivitas latihan.
 
 
-## **Pemahaman Data**
+## **Data Understanding**
 
 
-### Pemuatan Data
+### Data Loading
 
-Data diambil dari kaggle pada tautan berikut https://www.kaggle.com/datasets/valakhorasani/gym-members-exercise-dataset/data, dengan usability 10.00 dan view sebesar 103k pada saat diakses, yang selanjutnya diunduh ke dalam root sistem Google Colab. Data dipindahkan ke dalam drive agar dapat memudahkan penggunaan di Google Colab.
-Data dibuka melalui dataframe dan ditampilkan sekilas menggunakan fungsi `.head()` dan `.shape` sebagai berikut
+Dataset diambil dari platform kaggle pada tautan berikut https://www.kaggle.com/datasets/valakhorasani/gym-members-exercise-dataset/data
 
   
-<table border="1" class="dataframe">
+<Table border="1" Class="DataFrame">
   <thead>
-    <tr style="text-align: right;">
+    <tr Style="text-align: right;">
       <th></th>
       <th>Age</th>
       <th>Gender</th>
@@ -62,7 +65,7 @@ Data dibuka melalui dataframe dan ditampilkan sekilas menggunakan fungsi `.head(
       <th>Fat_Percentage</th>
       <th>Water_Intake (liters)</th>
       <th>Workout_Frequency (days/week)</th>
-      <th>Experience_Level</th>
+      <th>experience_level</th>
       <th>BMI</th>
     </tr>
   </thead>
@@ -78,7 +81,7 @@ Data dibuka melalui dataframe dan ditampilkan sekilas menggunakan fungsi `.head(
       <td>60</td>
       <td>1.69</td>
       <td>1313.0</td>
-      <td>Yoga</td>
+      <td>yoga</td>
       <td>12.6</td>
       <td>3.5</td>
       <td>4</td>
@@ -158,7 +161,7 @@ Data dibuka melalui dataframe dan ditampilkan sekilas menggunakan fungsi `.head(
       <td>14.39</td>
     </tr>
   </tbody>
-</table>
+</Table>
 
 Tampilan diatas menunjukkan ada 973 rekod data dengan 15 jenis informasi yang dapat dianalisis.
 
@@ -237,9 +240,9 @@ Ditemukan ada enam variabel bertipe int64, dua variabel bertipe object dan tujuh
 ##### Deskripsi statistik dari data
 
  
-<table border="1" class="dataframe">
+<Table border="1" Class="DataFrame">
   <thead>
-    <tr style="text-align: right;">
+    <tr Style="text-align: right;">
       <th></th>
       <th>Age</th>
       <th>Weight (kg)</th>
@@ -1130,7 +1133,7 @@ Parameter yang didapat adalah n_estimators sebesar 50, learning rate 0.1, max_de
       <td style="background-color: #add8e6; color: #000;">XGBRegressor</td>
     </tr>
     <tr>
-      <td style="background-color: #e6f7ff; color: #000;"><code>XGBRegressor(base_score=None, booster=None, callbacks=None,
+      <td style="background-color: #e6f7ff; color: #000;"><Code>XGBRegressor(base_score=None, booster=None, callbacks=None,
              colsample_bylevel=None, colsample_bynode=None,
              colsample_bytree=0.8, device=None, early_stopping_rounds=None,
              enable_categorical=False, eval_metric=None, feature_types=None,
@@ -1222,7 +1225,7 @@ Selain metrik utama tersebut, Berikut metrik-metrik lain yang digunakan sebagai 
 **R² Score (Coefficient of Determination)**
 
 
-```math
+```Math
 R^2 = 1 - \frac{\sum_{i=1}^{n} (y_i - \hat{y}_i)^2}{\sum_{i=1}^{n} (y_i - \bar{y})^2}
 ```
 
@@ -1273,7 +1276,7 @@ $$
 
 Grafik yang disajikan dalam evaluasi ini adalah grafik antara hasil prediksi dengan nilai asli yang terdapat dalam data. seperti contoh berikut
 
-![png](gambar_files/gambar_97_2.png)
+![PNG](gambar_files/gambar_97_2.png)
 
 gambar tersebut menunjukan titik-titik berwarna biru hasil plot antara nilai prediksi pada sumbu y dan nilai sebenarnya pada sumbu X. Ketika nilai keduanya sama maka akan memenuhi garis diagonal 45 derajat berwarna merah. Jika nilai prediksi lebih kecil dari nilai sebenarnya maka titik akan berada diatas garis. Dan apabila nilai prediksi lebih besar dari nilai sebenarnya, titik tersebut akan berada di bawah garis. Grafik tersebut berguna untuk melihat persebaran data yang melenceng dari nilai prediksi
 
@@ -1286,13 +1289,13 @@ gambar tersebut menunjukan titik-titik berwarna biru hasil plot antara nilai pre
                                0
     Model                     RF
     R2 Score            0.970312
-    Adjusted R2         0.967643
-    RMSE                0.182629
+    adjusted R2         0.967643
+    rmse                0.182629
     MAE                  0.13895
-    MSE                 0.033353
+    mse                 0.033353
     Explained Variance  0.970519
 
-![png](gambar_files/gambar_97_2.png)
+![PNG](gambar_files/gambar_97_2.png)
     
 Model yang dihasilkan cukup bagus dengan Adjusted Rsquared sebesar 0.9676 dan MSE 0.0334 yang berada dibawah 0.1 nilainya.
 
@@ -1302,34 +1305,34 @@ Model yang dihasilkan cukup bagus dengan Adjusted Rsquared sebesar 0.9676 dan MS
                                0
     Model                    KNN
     R2 Score            0.849978
-    Adjusted R2         0.836493
-    RMSE                0.410542
+    adjusted R2         0.836493
+    rmse                0.410542
     MAE                 0.332696
-    MSE                 0.168544
+    mse                 0.168544
     Explained Variance  0.850501
     
-![png](gambar_files/gambar_102_1.png)
+![PNG](gambar_files/gambar_102_1.png)
     
 
 Model ini tidak sebagus model sebelumnya namun masih cukup bagus di Adjusted Rsquared sebesar 0.8365 dan nilai MSE di atas 0.1 yaitu 0.1685 pada model ini.
 
-#### SVR
+#### svr
 
     
     Model Performance (SVR):
                                0
     Model                    SVR
     R2 Score            0.972084
-    Adjusted R2         0.969575
-    RMSE                0.177094
+    adjusted R2         0.969575
+    rmse                0.177094
     MAE                 0.127105
-    MSE                 0.031362
+    mse                 0.031362
     Explained Variance  0.972092
 
 
 
     
-![png](gambar_files/gambar_107_1.png)
+![PNG](gambar_files/gambar_107_1.png)
     
 
 
@@ -1341,7 +1344,7 @@ Hasil dari model ini sangat baik dengan Adjusted Rsquared sebesar 0.9696 dan MSE
                                0
     Model                XGBoost
     R2 Score            0.986622
-    Adjusted R2         0.985419
+    adjusted R2         0.985419
     RMSE                0.122597
     MAE                  0.08944
     MSE                  0.01503
@@ -1364,7 +1367,7 @@ Hasilnya sangat bagus dengn Adjusted Rsquares sebesar 0.9854 dan MSE yang sangat
          Model  R2 Score  Adjusted R2      RMSE       MAE       MSE  \
     0       RF  0.970312     0.967643  0.182629  0.138950  0.033353   
     1      KNN  0.849978     0.836493  0.410542  0.332696  0.168544   
-    2      SVR  0.972084     0.969575  0.177094  0.127105  0.031362   
+    2      svr  0.972084     0.969575  0.177094  0.127105  0.031362   
     3  XGBoost  0.986622     0.985419  0.122597  0.089440  0.015030   
     
        Explained Variance  
@@ -1395,11 +1398,11 @@ Model terbaik dalam `Model Optimasi Pengeluaran Energi` adalah dengan Metode XGB
     Adjusted R2         0.789147
     RMSE                0.445087
     MAE                 0.377017
-    MSE                 0.198102
+    mse                 0.198102
     Explained Variance   0.80439
 
     
-![png](gambar_files/gambar_124_2.png)
+![PNG](gambar_files/gambar_124_2.png)
     
 Model yang dihasilkan kurang bagus dengan Adjusted Rsquared sebesar 0.7891 dan MSE 0.1981 yang relatif besar galatnya.
 
