@@ -9,9 +9,9 @@ Gough et al. (2018) menemukan bahwa masyarakat kini semakin cenderung memilih pr
 
 Dalam skala kesehatan masyarakat secara keseluruhan, memahami seberapa efektif berbagai jenis latihan gym dalam membakar kalori memiliki peran strategis dalam merancang intervensi kesehatan yang lebih tepat sasaran. Hal ini menjadi semakin penting seiring dengan meningkatnya kasus penyakit akibat gaya hidup pasif, seperti obesitas, diabetes tipe 2, dan gangguan jantung. Dengan memanfaatkan wawasan mengenai efektivitas tiap jenis latihan, program kebugaran dapat disusun secara lebih optimal guna menyesuaikan dengan keterbatasan waktu dan sumber daya yang sering dihadapi oleh masyarakat saat ini. Oleh karena itu, penelitian yang mendalami efisiensi pembakaran kalori dalam aktivitas kebugaran bukan hanya berguna untuk meningkatkan hasil latihan individu, tetapi juga berkontribusi dalam mendukung kebijakan kesehatan publik yang bertujuan menurunkan prevalensi penyakit kronis.
 
-Pemanfaatan algoritma machine learning memungkinkan analisis dan identifikasi aktivitas gym yang paling efisien dalam mendukung tujuan kebugaran. Beberapa algoritma yang digunakan antara lain k-Nearest Neighbors (KNN), Random Forest, dan Boosting. Algoritma KNN mampu memberikan saran jenis latihan yang sesuai dengan profil dan karakteristik masing-masing individu. Sementara itu, Random Forest memproses berbagai variabel untuk menghasilkan prediksi yang lebih akurat terkait jumlah kalori yang terbakar. Di sisi lain, Boosting terus menyempurnakan hasil prediksi dengan mempelajari pola kesalahan sebelumnya, sehingga meningkatkan akurasi model secara keseluruhan. Melalui pendekatan ini, pusat kebugaran dapat menyediakan rekomendasi latihan yang bersifat personal, membantu individu mencapai target kebugaran mereka secara lebih efektif, serta mendorong gaya hidup sehat secara luas dalam masyarakat. Data yang digunakan diambil dari kaggle yang bisa diakses dari link [berikut](https://www.kaggle.com/datasets/valakhorasani/gym-members-exercise-dataset/data).
+Pemanfaatan algoritma machine learning memungkinkan analisis dan identifikasi aktivitas gym yang paling efisien dalam mendukung tujuan kebugaran. Beberapa algoritma yang digunakan antara lain k-Nearest Neighbors (KNN), Random Forest, dan Boosting. Algoritma KNN mampu memberikan saran jenis latihan yang sesuai dengan profil dan karakteristik masing-masing individu. Sementara itu, Random Forest memproses berbagai variabel untuk menghasilkan prediksi yang lebih akurat terkait jumlah kalori yang terbakar. Di sisi lain, Boosting terus menyempurnakan hasil prediksi dengan mempelajari pola kesalahan sebelumnya, sehingga meningkatkan akurasi model secara keseluruhan. Melalui pendekatan ini, pusat kebugaran dapat menyediakan rekomendasi latihan yang bersifat personal, membantu individu mencapai target kebugaran mereka secara lebih efektif, serta mendorong gaya hidup sehat secara luas dalam masyarakat. Data yang digunakan diambil dari kaggle yang bisa diakses dari link [Berikut](https://www.kaggle.com/datasets/valakhorasani/gym-members-exercise-dataset/data).
 
-Dataset ini menyediakan informasi menyeluruh mengenai kondisi fisik individu yang berlatih di pusat kebugaran. Data mencakup elemen demografis seperti `usia` dan `jenis_kelamin`, serta indikator komposisi tubuh seperti `berat_badan`, `tinggi_badan`, `BMI`, dan `persentase_lemak`. Selain itu, terdapat juga metrik kebugaran jantung seperti `Max_BPM`, `Avg_BPM`, dan `esting_BPM`. Nilai `BMI` dan `persentase_lemak` digunakan untuk mengidentifikasi komposisi tubuh, di mana `persentase_lemak` dianggap lebih akurat dalam menilai kadar lemak tubuh, khususnya pada individu dengan otot yang dominan.
+Dataset ini menyediakan informasi menyeluruh mengenai kondisi fisik individu yang berlatih di pusat kebugaran. Data mencakup elemen demografis seperti `Usia` dan `jenis_kelamin`, serta indikator komposisi tubuh seperti `berat_badan`, `tinggi_badan`, `BMI`, dan `persentase_lemak`. Selain itu, terdapat juga metrik kebugaran jantung seperti `Max_BPM`, `Avg_BPM`, dan `esting_BPM`. Nilai `BMI` dan `persentase_lemak` digunakan untuk mengidentifikasi komposisi tubuh, di mana `persentase_lemak` dianggap lebih akurat dalam menilai kadar lemak tubuh, khususnya pada individu dengan otot yang dominan.
 
 Variabel lain yang disertakan adalah kebiasaan latihan, meliputi `Jenis_Olahraga`, `Durasi_Sesi`, `Kalori_Terbakar`, dan `Frekuensi_Olahraga`, yang menggambarkan pola dan intensitas aktivitas fisik. Aktivitas seperti HIIT atau kardio, yang termasuk latihan intensitas tinggi, umumnya menghasilkan `Avg_BPM` yang lebih tinggi dan membakar lebih banyak kalori dibandingkan dengan latihan ringan seperti yoga. Penambahan fitur seperti `Asupan_Air` dan `Tingkat_Pengalaman` memberikan konteks tambahan mengenai kebiasaan hidrasi dan tingkat familiaritas peserta terhadap latihan, yang turut memengaruhi performa dan detak jantung saat istirahat. Informasi yang lengkap ini membuka peluang untuk menyusun program kebugaran yang lebih personal dan sesuai kebutuhan masing-masing individu.
 
@@ -163,7 +163,7 @@ Berikut ini adalah arti dari setiap variabel yang akan digunakan.
 | Fat_Percentage                       | Persentase kadar lemak tubuh dari peserta pusat kebugaran(%) |
 | Water_Intake (liters)               | Volume konsumsi air selama sesi latihan, diukur dalam liter.|
 | Workout_Frequency (days/week)       | 	Jumlah hari latihan atau kunjungan ke gym dalam satu minggu.|
-| Experience_Level                     | Tingkat kemahiran dalam melakukan latihan dalam tiga tingkatan (1, 2, 3) |
+| experience_level                     | Tingkat kemahiran dalam melakukan latihan dalam tiga tingkatan (1, 2, 3) |
 | BMI                                  | Nilai indeks massa tubuh (IMT) dari pengguna pusat kebugaran.|
 
 
@@ -177,7 +177,7 @@ Nilai variabel `Workout_Type` yang berarti Jenis Latihan, dijelaskan sebagai ber
 |-------------------------------------|-------------------|
 | HIIT| High-Intensity Interval Training merupakan jenis latihan berdurasi singkat namun intens, yang diselingi waktu istirahat dan variasi gerakan secara cepat.|
 | Strength| Latihan fisik yang difokuskan untuk meningkatkan kekuatan otot, biasanya melalui aktivitas seperti mengangkat beban atau melakukan bench press bench-press |
-| Yoga| 	Latihan yang memadukan postur tubuh, teknik pernapasan, serta meditasi untuk menunjang kesehatan fisik dan keseimbangan mental.|
+| yoga| 	Latihan yang memadukan postur tubuh, teknik pernapasan, serta meditasi untuk menunjang kesehatan fisik dan keseimbangan mental.|
 |Cardio|	Aktivitas yang berfungsi untuk menaikkan detak jantung dan mempercepat pernapasan, mencakup latihan seperti berlari, bersepeda, atau menggunakan treadmill dengan tingkat intensitas bervariasi.|
 
 
@@ -222,7 +222,7 @@ data[data.duplicated()].shape[0]
 Tidak ditemukan adanya duplikat/ganda.
 
 
-#### Outlier
+#### outlier
 
 
 Boxplot digunakan untuk menampilkan sebaran data secara visual.
@@ -257,7 +257,7 @@ plt.subplots_adjust(hspace=0.5, wspace=0.3)
 plt.show()
 ```
 
-![Output 0](images/output_0.png)
+https://github.com/sendy-ty/Submission-Coding-Camp/blob/6e3f00e8b12e9b113cd76f4488b08dc2a6b90027/Predictive%20analysis/Gambar/1.png
 
 Tampilan grafik menunjukkan bahwa terdapat beberapa datum yang berada di luar batas kuartil pada beberapa fitur, seperti pada distribusi berat badan dan BMI. Meskipun demikian, data-data tersebut masih dapat dianggap wajar dalam konteks pusat kebugaran. Hal ini dikarenakan pusat kebugaran merupakan tempat yang mengakomodasi berbagai program, termasuk program penurunan berat badan. Oleh karena itu, memiliki berat badan yang tinggi bukan merupakan anomali. Demikian pula, data kalori terbakar juga memiliki beberapa datum yang berada di luar kuartil atas. Namun, ini tidak serta merta menjadi pencilan yang harus dihilangkan. Hal ini dikarenakan sangat memungkinkan bagi seseorang yang mahir dalam latihan kebugaran untuk membakar kalori dalam jumlah yang lebih besar dalam satu kali sesi latihan. Selain itu, beberapa faktor seperti jenis latihan, durasi sesi, dan tingkat keahlian dapat mempengaruhi jumlah kalori yang terbakar. Dalam hal ini, data tersebut masih relevan dan dapat memberikan wawasan yang berharga tentang pola latihan dan pencapaian tujuan kebugaran bagi anggota pusat kebugaran.
 
@@ -291,7 +291,7 @@ fitur_numerik = ['Age',
                  'Fat_Percentage',
                  'Water_Intake (liters)',
                  'Workout_Frequency (days/week)',
-                 'Experience_Level',
+                 'experience_level',
                  'BMI']
 
 fitur_kategorik = ['Gender', 'Workout_Type', 'Workout_Frequency_cat', 'Experience_Level_cat']
@@ -328,7 +328,7 @@ for i, v in enumerate(size):
 plt.show()
 ```
 
-![Output 1](images/output_1.png)
+![output 1](images/output_1.png)
 
 Penyebaran jumlah pelanggan berdasarkan jenis latihan terlihat cukup seimbang, dengan latihan Strength menjadi yang paling populer, meskipun selisihnya tidak terlalu signifikan dibandingkan jenis latihan lain.
 
@@ -361,7 +361,7 @@ plt.tight_layout()
 plt.show()
 ```
 
-![Output 2](images/output_2.png)
+![output 2](images/output_2.png)
 
 Pada pusat kebugaran, jumlah pengunjung laki-laki sedikit lebih banyak dibandingkan perempuan, namun perbedaan jumlahnya tidak signifikan. Sebagian besar pengunjung datang untuk berolahraga sebanyak tiga kali seminggu. Menariknya, sebagian besar anggota memiliki tingkat keahlian yang rendah hingga sedang, di mana tingkat keahlian tertinggi mempunyai jumlah anggota paling sedikit. Hal ini menunjukkan bahwa pusat kebugaran ini melayani berbagai kalangan dengan tingkat keahlian yang berbeda-beda.
 
