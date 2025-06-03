@@ -130,6 +130,7 @@ data = pd.read_csv("/content/Predictive/gym_members_exercise_tracking.csv")
 print(data.shape)
 data.head()
 ```
+![image](https://github.com/user-attachments/assets/0a6bb0d2-b5be-492b-96db-19c7c163af02)
 
 973 rekod data terdiri dari 15 jenis informasi yang dapat dianalisis.
 
@@ -188,6 +189,7 @@ Nilai variabel `Workout_Type` yang berarti Jenis Latihan, dijelaskan sebagai ber
 ```python
 data.info()
 ```
+![image](https://github.com/user-attachments/assets/7869798c-b320-4ade-b759-4055ecb09811)
 
 Terdapat enam variabel dengan tipe data int64, dua variabel bertipe object, dan tujuh variabel bertipe float64. Variabel dengan tipe float64 seluruhnya termasuk dalam kategori numerik, sedangkan variabel bertipe object diklasifikasikan sebagai variabel kategorikal. Untuk tipe int64, dua variabel dapat dikategorikan sebagai data kategorikal, sementara empat lainnya merupakan variabel numerik.
 
@@ -198,8 +200,9 @@ Terdapat enam variabel dengan tipe data int64, dua variabel bertipe object, dan 
 ```python
 data.describe()
 ```
+![image](https://github.com/user-attachments/assets/b8cddf1d-5f19-4f3f-a3fb-bc2856d8618a)
 
-Data statistik tersebut memperlihatkan nilai simpangan baku yang relatif besar, yang mengindikasikan adanya variasi yang cukup mencolok antara satu responden dengan yang lainnya. Keberagaman ini dapat mencerminkan cakupan demografis yang luas dalam dataset, sehingga memungkinkan dilakukannya analisis terhadap berbagai karakteristik responden.
+Data statistik tersebut memperlihatkan nilai simpanGan baku yang relatif besar, yang mengindikasikan adanya variasi yang cukup mencolok antara satu responden dengan yang lainnya. Keberagaman ini dapat mencerminkan cakupan demografis yang luas dalam dataset, sehingga memungkinkan dilakukannya Analisis terhadap berbagai karakteristik responden.
 
 
 #### Data Cleaning
@@ -210,6 +213,7 @@ Data statistik tersebut memperlihatkan nilai simpangan baku yang relatif besar, 
 ```python
 pd.DataFrame({'Jumlah Missing Value': data.isna().sum()})
 ```
+![image](https://github.com/user-attachments/assets/08afd8be-c8d8-4f0a-be7d-26b6d57b48f2)
 
 Tidak ditemukan adanya data yang kosong.
 
@@ -303,6 +307,7 @@ total_unik = data[fitur_kategorikal].nunique()
 nilai_kategorikal = data[fitur_kategorikal].apply(lambda x: x.unique())
 pd.DataFrame({"Jumlah Nilai Unik": total_unik, "Nilai yang Tersedia": nilai_kategorikal})
 ```
+![image](https://github.com/user-attachments/assets/33fbeb1f-739f-4c9a-9e46-0a162c0d0a1d)
 
 Ada 4 variabel kategorik yang bisa digunakan untuk mengelompokkan data.
 
@@ -940,7 +945,7 @@ plt.show()
 
 **HR Index**  
 
-Langkah ini melakukan rekayasa fitur untuk menghasilkan `HR Index`, sebuah Metrik yang dirancang untuk menunjukkan Tingkat Intensitas Aktivitas fisik Berdasarkan Variabel Terkait denyut Jantung. Fitur Ini dihitung dengan menggabungkan `HR Index`, juga dikenal sebagai `heart rate index`, yang mencakup rasio antara denyut Jantung Saat Aktivitas dan denyut Jantung Saat Istirahat.  diharapkan, `HR Index` Dapat Memberikan Gambaran yang lebih akurat Tentang Tingkat usaha seseorang Saat Melakukan Aktivitas fisik. Ini Akan menjadi alat utama untuk Menganalisis Performa atau Memprediksi Tingkat kebugaran.
+Langkah ini merupakan bagian dari proses rekayasa fitur yang bertujuan menghasilkan metrik baru bernama HR Index. Metrik ini dirancang untuk merepresentasikan tingkat intensitas aktivitas fisik dengan memanfaatkan variabel yang berkaitan dengan denyut jantung. HR Index atau heart rate index dihitung sebagai rasio antara denyut jantung saat beraktivitas dengan denyut jantung saat istirahat. Dengan pendekatan ini, diharapkan HR Index mampu memberikan representasi yang lebih tepat mengenai tingkat usaha seseorang selama berolahraga. Metrik ini nantinya akan menjadi komponen penting dalam menganalisis performa maupun memprediksi tingkat kebugaran individu.
 
 
 ```python
@@ -973,7 +978,7 @@ Analisis plot menunjukkan bahwa tidak ada korelasi yang signifikan antara `perse
 
 ## **Reduksi Variabel**
 
-Kolom `Workout_Frequency_cat` dan `Experiences_Level_cat` sejatinya adalah kolom yang redundan karena sudah ada dalam data sebagai numerikal dalam bentuk integer atau bilangan bulat. Oleh Karena itu dilakukan drop pada kedua kolom ini.  Tidak diperlukan encoding lebih lanjut karena kolom aslinya sudah setara posisinya dengan bilangan ordinal.
+Kolom `Workout_Frequency_cat` dan `Experiences_Level_cat` pada dasarnya bersifat duplikatif, karena representasi numeriknya sudah tersedia dalam bentuk bilangan bulat pada dataset. Oleh karena itu, kedua kolom tersebut dihapus untuk menghindari redundansi. Proses encoding tambahan tidak diperlukan, mengingat versi numerik dari kolom tersebut sudah merepresentasikan nilai ordinal secara langsung.
 
 
 
@@ -1320,9 +1325,11 @@ $$
 # Grafik
 
 
-Grafik yang ditampilkan dalam bagian evaluasi ini menggambarkan perbandingan antara nilai prediksi yang dihasilkan oleh model dengan nilai sebenarnya yang terdapat dalam data. Grafik ini berfungsi untuk menilai seberapa baik model dalam merepresentasikan data asli.
+Grafik yang ditampilkan dalam bagian evaluasi ini menggambarkan perbandingan antara nilai pRediksi yang dihasilkan oleh model dengan nilai sebenarnya yang terdapat dalam data. Grafik ini berfungsi untuk menilai seberapa baik model dalam merepresentasikan data asli.
 
-Gambar di atas menampilkan sebaran titik-titik berwarna biru yang menggambarkan hubungan antara nilai prediksi (sumbu vertikal) dan nilai aktual (sumbu horizontal). Setiap titik mewakili pasangan antara hasil prediksi model dan nilai sebenarnya dari data. Garis putus-putus diagonal yang membentang pada sudut 45 derajat menunjukkan posisi ideal di mana prediksi dan nilai aktual sepenuhnya sama. Titik-titik yang berada di atas garis tersebut menandakan bahwa model memprediksi nilai lebih rendah dari kenyataan, sedangkan titik-titik di bawah garis menunjukkan bahwa nilai prediksi lebih tinggi dari nilai sebenarnya. Grafik ini membantu untuk mengidentifikasi pola penyimpangan dan mengevaluasi akurasi serta konsistensi model dalam memprediksi data.
+![image](https://github.com/user-attachments/assets/c2099421-0fef-4544-9e6b-e0308cfb1811)
+
+Gambar di atas menampilkan sebaran titik-titik berwarna biru yang menggambarkan hubungan antara nilai pRediksi (sumbu vertikal) dan nilai aktual (sumbu horizontal). Setiap titik mewakili pasangan antara hasil pRediksi model dan nilai sebenarnya dari data. Garis putus-putus diagonal yang membentang pada sudut 45 derajat menunjukkan posisi ideal di mana pRediksi dan nilai aktual sepenuhnya sama. Titik-titik yang berada di atas garis tersebut menandakan bahwa model mempRediksi nilai lebih rendah dari kenyataan, sedangkan titik-titik di bawah garis menunjukkan bahwa nilai prediksi lebih tinggi dari nilai sebenarnya. Grafik ini membantu untuk mengidentifikasi pola penyimpangan dan mengevaluasi akurasi serta konsistensi model dalam memprediksi data.
 
 
 
