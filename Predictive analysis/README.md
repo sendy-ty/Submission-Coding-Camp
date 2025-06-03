@@ -1777,7 +1777,7 @@ plt.show()
 ![image](https://github.com/user-attachments/assets/a5e4f2b5-19f7-4794-9a4a-0d6edcba6ace)
 
 
-Model Random Forest memiliki nilai Adjusted R² tertinggi sebesar 0.8876, diikuti oleh Support Vector Regression (SVR) dengan 0.8718, dan K-Nearest Neighbors (KNN) yang paling rendah dengan 0.7959. Hal ini menunjukkan bahwa model Random Forest lebih baik dalam menjelaskan variabilitas data dibandingkan dua model lainnya.
+
 
 
 # Kesimpulan
@@ -1786,20 +1786,20 @@ Model Random Forest memiliki nilai Adjusted R² tertinggi sebesar 0.8876, diikut
 Kesimpulan berdasarkan hasil dari *Goal* yang telah dicapai:  
 
 1. **Model Optimasi Pengeluaran Energi**  
-   `Model Optimasi Pengeluaran Energi` terbaik diantara algoritma **Random Forest (RF**), **K-Nearest Neighbors (KNN)**, **Support Vector Regressor (SVR)**, dan **Extreme Gradient Boosting (XGBoost)** adalah dengan menggunakan algoritma **Extreme Gradient Boosting (XGBoost)**. Model menunjukkan kinerja yang sangat baik dengan *adjusted R²* sebesar **0.9854** dan *mse* **0.0151**, menandakan bahwa model mampu menjelaskan sebagian besar variabilitas dalam jumlah kalori yang terbakar. Hal ini menunjukkan potensi yang tinggi untuk mengimplementasikan model ini dalam memberikan rekomendasi latihan yang efisien.
+    Dalam membangun Model Optimasi Pengeluaran Energi, dari ketiga algoritma yang diuji Random Forest (RF), K-Nearest Neighbors (KNN), dan Support Vector Regression (svr), model Random Forest memberikan performa terbaik dengan nilai adjusted R² sebesar 0.8876. Disusul oleh SVR dengan nilai 0.8718, sedangkan KNN mencatatkan nilai terendah sebesar 0.7959. Hal ini menunjukkan bahwa Random Forest paling efektif dalam menjelaskan variasi jumlah kalori yang terbakar dan layak diprioritaskan untuk implementasi model prediksi latihan yang efisien.
 
 
 2. **Model Penyesuaian Kadar Lemak Tubuh**  
-   `Model Penyesuaian Kadar Lemak Tubuh` terbaik diantara algoritma **Random Forest (RF)**, **K-Nearest Neighbors (KNN)**, **Support Vector Regressor (SVR)**, dan **Extreme Gradient Boosting (XGBoost)** adalah dengan menggunakan algoritma **Random Forest (RF)**. Model ini memiliki *adjusted R²* sebesar **0.7891** dan *mse* **0.1981**, menunjukkan bahwa model ini cukup baik dalam memprediksi kadar lemak tubuh. Namun, masih ada ruang untuk meningkatkan akurasi model, mungkin dengan menambahkan variabel atau data yang lebih relevan.  
+   Ketiga model yang sama juga diterapkan pada Model Penyesuaian Kadar Lemak Tubuh, dan hasil evaluasi menunjukkan bahwa Random Forest kembali menjadi model dengan kinerja terbaik. Ini memperkuat keandalan Random Forest dalam menangani prediksi berbasis data fisiologis. Meskipun demikian, nilai adjusted R² yang lebih rendah dibanding model kalori mengindikasikan adanya ruang untuk perbaikan, seperti dengan menambahkan fitur baru atau melakukan tuning lebih lanjut.
 
 3. **Preferensi Latihan Berdasarkan Gender**  
-   Analisis **eda** tidak menemukan perbedaan yang signifikan dalam preferensi latihan antara laki-laki dan perempuan. Hal ini mengindikasikan bahwa program latihan dapat dirancang dengan pendekatan yang lebih umum tanpa perlu pemisahan berdasarkan gender.  
+    Hasil eksplorasi data (EDA) tidak menunjukkan adanya perbedaan signifikan dalam preferensi jenis latihan antara peserta laki-laki dan perempuan. Ini menyiratkan bahwa program latihan dapat dirancang tanpa segmentasi gender, dan pendekatan yang lebih umum dapat diterapkan secara efektif.   
 
 4. **Preferensi Berdasarkan Tingkat Kemahiran**  
-   Tidak ada hubungan signifikan yang ditemukan antara tingkat kemahiran dan preferensi latihan dari analisis **eda**. Artinya, preferensi latihan kemungkinan lebih dipengaruhi oleh faktor lain, seperti tujuan kebugaran individu atau akses ke fasilitas, daripada tingkat kemahiran.  
+    Tidak ditemukan hubungan yang signifikan antara tingkat kemahiran (beginner, intermediate, atau advanced) dengan pilihan jenis latihan. Temuan ini menunjukkan bahwa preferensi latihan lebih mungkin dipengaruhi oleh faktor lain, seperti tujuan individu atau ketersediaan fasilitas latihan, daripada tingkat kemahiran semata.   
 
 
-Secara keseluruhan, `Model Optimasi Pengeluaran Energi` dan `Model Penyesuaian Kadar Lemak Tubuh` telah berhasil dibuat. Hasil analisis preferensi menunjukkan bahwa pendekatan umum dapat diambil tanpa perlu memperhatikan perbedaan gender atau tingkat kemahiran. Langkah selanjutnya dapat difokuskan pada pengembangan program latihan berbasis data, peningkatan `Model Penyesuaian Kadar Lemak Tubuh`, atau eksplorasi faktor-faktor lain yang mungkin memengaruhi preferensi individu.
+Secara keseluruhan, `Model Optimasi Pengeluaran Energi` dan `Model Penyesuaian Kadar Lemak Tubuh` telah berhasil telah berhasil dibangun menggunakan tiga algoritma utama, dengan Random Forest secara konsisten memberikan performa terbaik. Temuan analisis preferensi menunjukkan bahwa rancangan program latihan tidak perlu dibedakan berdasarkan gender atau tingkat kemahiran. Ke depan, fokus dapat diarahkan pada peningkatan akurasi model penyesuaian kadar lemak tubuh dan eksplorasi faktor tambahan yang berpengaruh terhadap preferensi latihan individual.
 
 
 # Referensi
