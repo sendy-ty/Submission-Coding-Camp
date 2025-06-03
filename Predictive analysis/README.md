@@ -49,7 +49,7 @@ Variabel lain yang disertakan adalah kebiasaan latihan, meliputi `Jenis_Olahraga
 
 
 
-1. Menerapkan empat algoritma machine learning untuk membangun model prediktif dalam mengestimasi kalori yang terbakar serta kadar lemak tubuh.
+1. Menerapkan tiga algoritma machine learning untuk membangun model prediktif dalam mengestimasi kalori yang terbakar serta kadar lemak tubuh.
 
 2. Melakukan eksplorasi data (EDA) guna menganalisis sejauh mana faktor jenis kelamin dan tingkat keahlian memengaruhi pilihan dalam aktivitas latihan.
 
