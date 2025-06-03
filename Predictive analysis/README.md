@@ -263,7 +263,7 @@ Tampilan grafik menunjukkan bahwa terdapat beberapa datum yang berada di luar ba
 #### Koreksi tipe data
 
 
-Dua kolom informasi bertipe int64 dapat diperlakukan sebagai data kategorik. Oleh karena itu dibuatlah kolom baru mengunakan data tersebut dengan mengubah jenis data menjadi string. Selanjutnya string tersebut diubah menjadi tipe data object agar bisa dikenali filter tipe object seperti data kategorik lainnya.
+Dua kolom bertipe data int64 dapat diperlakukan sebagai data kategorikal. Oleh karena itu, dibuat kolom baru dengan mengubah nilai pada kedua kolom tersebut menjadi format string. Setelah itu, tipe data dari string tersebut diubah menjadi object agar dapat dikenali sebagai data kategorikal oleh filter yang mendukung tipe object.
 
 
 ```python
