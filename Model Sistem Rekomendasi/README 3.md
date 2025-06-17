@@ -97,22 +97,6 @@ display(df_ponsel.head())
     Pratinjau Dataset Ponsel:
 
 
-
-
-  <div Class="colab-df-container" ID="df-a11b48d7-9fd6-4fab-949e-420546ee1b21">
-<div>
-<Style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: Middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 </Style>
 <Table border="1" Class="DataFrame">
 <thead>
