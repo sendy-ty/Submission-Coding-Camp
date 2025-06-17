@@ -71,7 +71,7 @@ drive.mount('/content/drive')
 
 Proses dimulai dengan membaca dataset utama yaitu :
 1. "Mobiles Dataset (2025).csv" yang telah diunduh dari Kaggle https://www.kaggle.com/datasets/abdulmalik1518/mobiles-dataset-2025, yang berisi informasi spesifikasi smartphone untuk pelatihan model, namun karena kolom processor hanya mencantumkan nama prosesor tanpa data performa.
-2. digunakan dataset tambahan dari AnTuTu Benchmark, yaitu Android_SoC.csv dan iOS_Performance.csv yang didapatkan melalui platform kaggle https://www.kaggle.com/datasets/ireddragonicy/antutu-benchmark, untuk menambahkan skor benchmark sebagai representasi kemampuan prosesor, dan seluruh data kemudian ditransformasikan secara dasar tanpa penambahan atau pengurangan nilai sebagai persiapan untuk tahap Exploratory Data Analysis (EDA).
+2. Digunakan Dataset tambahan Dari AnTuTu Benchmark, yaitu AnDroiD_SoC.csv Dan iOS_Performance.csv yang DiDapatkan melalui platform kaggle https://www.kaggle.com/Datasets/ireDDragonicy/antutu-benchmark, untuk menambahkan skor benchmark sebagai representasi kemampuan prosesor, Dan seluruh Data kemuDian Ditransformasikan secara Dasar tanpa penambahan atau pengurangan nilai sebagai persiapan untuk tahap Exploratory Data Analysis (EDa).
 
 ### Data Loading
 
@@ -83,7 +83,7 @@ path_dataset = "/content/drive/MyDrive/ML Terapan/Recommendation/Android_SoC.csv
 
 ## **Dataset 1**
 
-Memuat dataset "Mobiles Dataset (2025).csv", yang berisi informasi lengkap mengenai spesifikasi teknis dan fitur berbagai smartphone, seperti RAM, penyimpanan, ukuran layar, kapasitas baterai, kamera, harga, serta jenis prosesor, yang akan digunakan sebagai data utama dalam proses pelatihan model rekomendasi.
+Memuat Dataset "Mobiles Dataset (2025).csv", yang berisi informasi lengkap mengenai spesifikasi teknis Dan fitur berbagai smartphone, seperti RAM, penyimpanan, ukuran layar, kapasitas baterai, kamera, harga, serta jenis prosesor, yang akan Digunakan sebagai Data utama Dalam proses pelatihan model rekomenDasi.
 
 
 ```python
@@ -266,7 +266,7 @@ df_ponsel.info()
     memory usage: 109.1+ KB
 
 
-Dataset pertama terdiri dari **930 baris data** dan **15 kolom fitur**, yang seluruhnya telah terisi (non-null). Sebagian besar kolom (14 dari 15) memiliki tipe data **object**, yang menunjukkan bahwa meskipun nilainya berupa angka, masih berbentuk **string** atau teks—misalnya pada kolom **RAM**, **Battery Capacity**, dan **Launched Price** di berbagai negara. Hanya kolom **Launched Year** yang bertipe numerik (**int64**). Hal ini menunjukkan bahwa dataset masih perlu dilakukan **pembersihan dan konversi tipe data** (misalnya dari string ke float atau integer) agar dapat dianalisis secara kuantitatif dalam tahap selanjutnya seperti EDA atau pemodelan machine learning.
+Dataset pertama terdiri dari **930 baris data** dan **15 kolom fitur**, yang seluruhnya telah terisi (non-null). Sebagian besar kolom (14 dari 15) memiliki tipe data **OBJECT**, yang menunjukkan bahwa meskipun nilainya berupa angka, masih berbentuk **String** atau teks—misalnya pada kolom **ram**, **Battery Capacity**, dan **Launched Price** di berbagai negara. Hanya kolom **Launched Year** yang bertipe numerik (**int64**). Hal ini menunjukkan bahwa dataset masih perlu dilakukan **pembersihan dan konversi tipe data** (misalnya dari string ke float atau integer) agar dapat dianalisis secara kuantitatif dalam tahap selanjutnya seperti EDA atau pemodelan machine learning.
 
 
 ## **Dataset 2**
@@ -283,29 +283,13 @@ display(df_chipset.head())
 ```
 
     
-    Pratinjau Dataset Prosesor:
+Pratinjau Dataset Prosesor:
 
 
 
-
-  <div class="colab-df-container" id="df-a10878b7-8f38-41fc-a088-af700922f351">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+<Table border="1" Class="DataFrame">
 <thead>
-<tr style="text-align: right;">
+<tr Style="text-align: right;">
 <th></th>
 <th>Platform</th>
 <th>Category</th>
@@ -319,7 +303,7 @@ display(df_chipset.head())
 <tr>
 <th>0</th>
 <td>Android</td>
-<td>SoC</td>
+<td>soc</td>
 <td>1\n\n\r\n                                    Qualcomm Snapdragon 8 Elite                                \n\r\n                                    (2x 4.32GHz Oryon Prime &amp; 6x 3.53GHz Oryon Performance)</td>
 <td>574641</td>
 <td>1134820</td>
@@ -328,7 +312,7 @@ display(df_chipset.head())
 <tr>
 <th>1</th>
 <td>Android</td>
-<td>SoC</td>
+<td>soc</td>
 <td>2\n\n\r\n                                    MediaTek Dimensity 9400                                \n\r\n                                    (1x 3.626GHz Cortex-X925 &amp; 3x 3.3GHz Cortex-X4 &amp; 4x 2.4GHz Cortex-A720)</td>
 <td>568400</td>
 <td>1132849</td>
@@ -337,7 +321,7 @@ display(df_chipset.head())
 <tr>
 <th>2</th>
 <td>Android</td>
-<td>SoC</td>
+<td>soc</td>
 <td>3\n\n\r\n                                    MediaTek Dimensity 9400e                                \n\r\n                                    (1x 3.4GHz Cortex-X4 &amp; 3x 2.85GHz Cortex-X4 &amp; 4x 2.0GHz Cortex-A720)</td>
 <td>503132</td>
 <td>853891</td>
@@ -346,7 +330,7 @@ display(df_chipset.head())
 <tr>
 <th>3</th>
 <td>Android</td>
-<td>SoC</td>
+<td>soc</td>
 <td>4\n\n\r\n                                    MediaTek Dimensity 9300+                                \n\r\n                                    (1x 3.4GHz Cortex-X4 &amp; 3x 2.85GHz Cortex-X4 &amp; 4x 2.0GHz Cortex-A720)</td>
 <td>492484</td>
 <td>843854</td>
@@ -355,17 +339,17 @@ display(df_chipset.head())
 <tr>
 <th>4</th>
 <td>Android</td>
-<td>SoC</td>
+<td>soc</td>
 <td>5\n\n\r\n                                    MediaTek Dimensity 9300                                \n\r\n                                    (1x 3.25GHz Cortex-X4 &amp; 3x 2.85GHz Cortex-X4 &amp; 4x 2.0GHz Cortex-A720)</td>
 <td>492846</td>
 <td>821707</td>
 <td>1314553</td>
 </tr>
 </tbody>
-</table>
+</Table>
 </div>
-<div class="colab-df-buttons">
-<div class="colab-df-container">
+<div Class="colab-df-buttons">
+<div Class="colab-df-container">
 <button class="colab-df-convert" onclick="convertToInteractive('df-a10878b7-8f38-41fc-a088-af700922f351')" style="display:none;" title="Convert this dataframe to an interactive table.">
 <svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
 <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
@@ -415,7 +399,7 @@ df_chipset.info()
 Struktur dataset kedua terdiri dari 210 entri dengan 6 kolom, yang mencakup informasi platform, kategori, nama prosesor (Device), serta skor kinerja CPU, GPU, dan total performa berdasarkan benchmark.
 
 ## Dataset Merger
-Penggabungan dilakukan dengan mencocokkan kolom **"Processor"** dari dataset pertama dan kolom **"Device"** dari dataset kedua, karena keduanya merepresentasikan nama prosesor. Dari dataset kedua, hanya kolom **"Total Score"** yang ditambahkan ke dataset pertama karena sudah mencerminkan gabungan performa CPU dan GPU.
+Penggabungan dilakukan dengan mencocokkan kolom **"processor"** dari dataset pertama dan kolom **"Device"** dari dataset kedua, karena keduanya merepresentasikan nama prosesor. Dari dataset kedua, hanya kolom **"Total Score"** yang ditambahkan ke dataset pertama karena sudah mencerminkan gabungan performa CPU dan GPU.
 
 
 
@@ -426,47 +410,31 @@ data_gabungan = df_ponsel.merge(
     left_on="Processor",
     right_on="Device",
     how="left"
-).rename(
+).Rename(
     columns={"Total Score": "Performance Score"}
 ).drop(
     columns=["Device"]
 )
 
-print("Data setelah digabungkan dan dirapikan:")
-display(data_gabungan.head())
+Print("Data setelah digabungkan dan dirapikan:")
+Display(data_gabungan.head())
 ```
 
-    Data setelah digabungkan dan dirapikan:
+Data setelah digabungkan dan dirapikan:
 
 
 
-
-  <div class="colab-df-container" id="df-541ba2ab-7f17-42c9-9ddd-bf3cb779ab12">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+<Table border="1" Class="DataFrame">
 <thead>
-<tr style="text-align: right;">
+<tr Style="text-align: right;">
 <th></th>
-<th>Company Name</th>
+<th>Company name</th>
 <th>Model Name</th>
 <th>Mobile Weight</th>
-<th>RAM</th>
+<th>ram</th>
 <th>Front Camera</th>
 <th>Back Camera</th>
-<th>Processor</th>
+<th>processor</th>
 <th>Battery Capacity</th>
 <th>Screen Size</th>
 <th>Launched Price (Pakistan)</th>
@@ -483,7 +451,7 @@ display(data_gabungan.head())
 <th>0</th>
 <td>Apple</td>
 <td>iPhone 16 128GB</td>
-<td>174g</td>
+<td>174G</td>
 <td>6GB</td>
 <td>12MP</td>
 <td>48MP</td>
@@ -672,41 +640,26 @@ pemetaan_nama_kolom = {
 
 data_gabungan.rename(columns=pemetaan_nama_kolom, inplace=True)
 
-print("Tampilan data setelah transformasi:")
+Print("Tampilan data setelah transformasi:")
 display(data_gabungan.head())
 ```
 
-    Tampilan data setelah transformasi:
+Tampilan data setelah transformasi:
 
 
 
 
-  <div class="colab-df-container" id="df-6cd5c10c-c420-46f2-b9d2-f0c9202b801e">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+<Table border="1" Class="DataFrame">
 <thead>
-<tr style="text-align: right;">
+<tr Style="text-align: right;">
 <th></th>
-<th>Company Name</th>
+<th>Company name</th>
 <th>Model Name</th>
 <th>Mobile Weight (g)</th>
 <th>RAM (GB)</th>
 <th>Front Camera (MP)</th>
 <th>Back Camera (MP)</th>
-<th>Processor</th>
+<th>processor</th>
 <th>Battery Capacity (mAh)</th>
 <th>Screen Size (inches)</th>
 <th>Launched Price (Pakistan/PKR)</th>
@@ -721,7 +674,7 @@ display(data_gabungan.head())
 <tbody>
 <tr>
 <th>0</th>
-<td>apple</td>
+<td>Apple</td>
 <td>iPhone 16 128GB</td>
 <td>174.0</td>
 <td>6.0</td>
@@ -740,7 +693,7 @@ display(data_gabungan.head())
 </tr>
 <tr>
 <th>1</th>
-<td>apple</td>
+<td>Apple</td>
 <td>iPhone 16 256GB</td>
 <td>174.0</td>
 <td>6.0</td>
@@ -889,22 +842,22 @@ Langkah pertama dalam eksplorasi data adalah **menganalisis struktur dataset** u
 
 Berikut adalah deskripsi masing-masing kolom dalam dataset:
 
-1. **Company Name** *(object)* – Menunjukkan nama produsen atau merek ponsel, seperti *Apple, Samsung, Xiaomi, Oppo*.
-2. **Model Name** *(object)* – Menampilkan nama model spesifik dari ponsel, misalnya *iPhone 16 128GB*, *Galaxy S24 Ultra*, dll.
-3. **Mobile Weight (g)** *(float64)* – Berat ponsel dalam gram, berpengaruh terhadap kenyamanan penggunaan fisik.
-4. **RAM (GB)** *(float64)* – Kapasitas RAM dalam gigabyte, memengaruhi kemampuan multitasking perangkat.
-5. **Front Camera (MP)** *(float64)* – Resolusi kamera depan dalam megapiksel, menentukan kualitas foto selfie dan video call.
-6. **Back Camera (MP)** *(float64)* – Resolusi kamera belakang utama dalam megapiksel, berperan penting dalam hasil fotografi utama.
-7. **Processor** *(object)* – Jenis prosesor atau chipset yang digunakan, seperti *A17 Bionic*, *Snapdragon 8 Gen 2*, *Dimensity 9200*, dll.
-8. **Battery Capacity (mAh)** *(float64)* – Kapasitas baterai dalam satuan mAh, memengaruhi daya tahan perangkat selama penggunaan.
-9. **Screen Size (inches)** *(float64)* – Ukuran diagonal layar dalam inci, mempengaruhi tampilan visual dan kenyamanan pengguna.
-10. **Launched Price (Pakistan/PKR)** *(float64)* – Harga peluncuran dalam mata uang Rupee Pakistan. Memiliki beberapa nilai kosong.
-11. **Launched Price (India/INR)** *(float64)* – Harga peluncuran dalam Rupee India.
-12. **Launched Price (China/CNY)** *(float64)* – Harga peluncuran dalam Yuan Tiongkok.
-13. **Launched Price (USA/USD)** *(float64)* – Harga peluncuran dalam Dolar Amerika Serikat.
-14. **Launched Price (Dubai/AED)** *(float64)* – Harga peluncuran dalam Dirham Uni Emirat Arab.
+1. **Company name** *(OBJECT)* – Menunjukkan nama produsen atau merek ponsel, seperti *Apple, Samsung, Xiaomi, Oppo*.
+2. **Model Name** *(OBJECT)* – Menampilkan nama model spesifik dari ponsel, misalnya *iPhone 16 128GB*, *Galaxy S24 Ultra*, dll.
+3. **Mobile Weight (g)** *(Float64)* – Berat ponsel dalam gram, berpengaruh terhadap kenyamanan penggunaan fisik.
+4. **RAM (GB)** *(Float64)* – Kapasitas RAM dalam gigabyte, memengaruhi kemampuan multitasking perangkat.
+5. **Front Camera (MP)** *(Float64)* – Resolusi kamera depan dalam megapiksel, menentukan kualitas foto selfie dan video call.
+6. **Back Camera (MP)** *(Float64)* – Resolusi kamera belakang utama dalam megapiksel, berperan penting dalam hasil fotografi utama.
+7. **processor** *(OBJECT)* – Jenis prosesor atau chipset yang digunakan, seperti *A17 Bionic*, *Snapdragon 8 Gen 2*, *Dimensity 9200*, dll.
+8. **Battery Capacity (mAh)** *(Float64)* – Kapasitas baterai dalam satuan mAh, memengaruhi daya tahan perangkat selama penggunaan.
+9. **Screen Size (inches)** *(Float64)* – Ukuran diagonal layar dalam inci, mempengaruhi tampilan visual dan kenyamanan pengguna.
+10. **Launched Price (Pakistan/PKR)** *(Float64)* – Harga peluncuran dalam mata uang Rupee Pakistan. Memiliki beberapa nilai kosong.
+11. **Launched Price (India/INR)** *(Float64)* – Harga peluncuran dalam Rupee India.
+12. **Launched Price (China/CNY)** *(Float64)* – Harga peluncuran dalam Yuan Tiongkok.
+13. **Launched Price (USA/USD)** *(Float64)* – Harga peluncuran dalam Dolar Amerika Serikat.
+14. **Launched Price (Dubai/AED)** *(Float64)* – Harga peluncuran dalam Dirham Uni Emirat Arab.
 15. **Launched Year** *(int64)* – Tahun saat ponsel tersebut pertama kali dirilis ke pasar.
-16. **Performance Score** *(float64)* – Skor performa keseluruhan dari prosesor ponsel, berdasarkan data benchmark seperti *AnTuTu*, yang mencerminkan gabungan kemampuan CPU dan GPU. Beberapa entri masih memiliki nilai kosong pada kolom ini.
+16. **Performance Score** *(Float64)* – Skor performa keseluruhan dari prosesor ponsel, berdasarkan data benchmark seperti *AnTuTu*, yang mencerminkan gabungan kemampuan CPU dan GPU. Beberapa entri masih memiliki nilai kosong pada kolom ini.
 
 Dari keseluruhan fitur, kolom harga peluncuran dalam berbagai mata uang dapat dijadikan **variabel target** untuk analisis prediktif atau sistem rekomendasi harga, sementara fitur-fitur seperti spesifikasi perangkat dan performa dapat berfungsi sebagai **variabel input (independen)** untuk mendukung analisis tersebut.
 
@@ -917,25 +870,10 @@ data_gabungan.describe()
 
 
 
-  <div class="colab-df-container" id="df-2af08c52-5b9f-4898-99cb-244ce312031d">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+<Table border="1" Class="DataFrame">
 <thead>
-<tr style="text-align: right;">
-<th></th>
+<tr Style="text-align: right;">
+<th>
 <th>Mobile Weight (g)</th>
 <th>RAM (GB)</th>
 <th>Front Camera (MP)</th>
@@ -1760,7 +1698,7 @@ print(df_ponsel["Processor"].unique())
      'Dimensity 8400']
 
 
-Data pada kolom **"Processor"** telah diperbarui untuk memastikan konsistensi penulisan dan akurasi nama prosesor. Proses ini mencakup normalisasi nama-nama prosesor yang sebelumnya memiliki ejaan berbeda namun merujuk pada entitas yang sama. Dengan perbaikan ini, analisis selanjutnya—seperti visualisasi, klasifikasi, atau pencarian hubungan terhadap harga dan performa—akan menjadi lebih akurat dan representatif.
+Data pada kolom **"processor"** telah diperbarui untuk memastikan konsistensi penulisan dan akurasi nama prosesor. Proses ini mencakup normalisasi nama-nama prosesor yang sebelumnya memiliki ejaan berbeda namun merujuk pada entitas yang sama. Dengan perbaikan ini, analisis selanjutnya—seperti visualisasi, klasifikasi, atau pencarian hubungan terhadap harga dan performa—akan menjadi lebih akurat dan representatif.
 
 
 ```python
@@ -1817,24 +1755,9 @@ df_chipset.head()
 
 
 
-  <div class="colab-df-container" id="df-d3b32375-8909-44eb-b2fd-15a0dbc70199">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+<Table border="1" Class="DataFrame">
 <thead>
-<tr style="text-align: right;">
+<tr Style="text-align: right;">
 <th></th>
 <th>Platform</th>
 <th>Category</th>
@@ -1848,7 +1771,7 @@ df_chipset.head()
 <tr>
 <th>0</th>
 <td>Android</td>
-<td>SoC</td>
+<td>soc</td>
 <td>Snapdragon 8 Elite</td>
 <td>574641</td>
 <td>1134820</td>
@@ -1857,7 +1780,7 @@ df_chipset.head()
 <tr>
 <th>1</th>
 <td>Android</td>
-<td>SoC</td>
+<td>soc</td>
 <td>Dimensity 9400</td>
 <td>568400</td>
 <td>1132849</td>
@@ -1927,7 +1850,7 @@ Kolom Device telah melalui proses pembersihan sehingga format nama prosesor kini
 data_gabungan.info()
 ```
 
-    <class 'pandas.core.frame.dataframe'="">
+    <class 'pandas.core.frame.DataFrame'="">
     RangeIndex: 934 entries, 0 to 933
     Data columns (total 16 columns):
      #   Column                         Non-Null Count  Dtype  
@@ -1967,26 +1890,11 @@ data_gabungan.head()
 
 
 
-  <div class="colab-df-container" id="df-8b57b04e-a276-4460-b06c-ee7597744f9b">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+<Table border="1" Class="DataFrame">
 <thead>
-<tr style="text-align: right;">
+<tr Style="text-align: right;">
 <th></th>
-<th>Company Name</th>
+<th>Company name</th>
 <th>Model Name</th>
 <th>Mobile Weight (g)</th>
 <th>RAM (GB)</th>
@@ -2002,7 +1910,7 @@ data_gabungan.head()
 <tbody>
 <tr>
 <th>0</th>
-<td>apple</td>
+<td>Apple</td>
 <td>iPhone 16 128GB</td>
 <td>174.0</td>
 <td>6.0</td>
@@ -2016,7 +1924,7 @@ data_gabungan.head()
 </tr>
 <tr>
 <th>1</th>
-<td>apple</td>
+<td>Apple</td>
 <td>iPhone 16 256GB</td>
 <td>174.0</td>
 <td>6.0</td>
@@ -2127,7 +2035,7 @@ data_gabungan.info()
     memory usage: 80.4+ KB
 
 
-Setelah dilakukan proses penghapusan fitur, struktur dataset kini terdiri dari 11 kolom. Kolom-kolom seperti **"Launched Price (Pakistan/PKR)"**, **"Launched Price (India/INR)"**, **"Launched Price (USA/USD)"**, **"Launched Price (Dubai/AED)"**, dan **"Processor"** telah dihapus karena dianggap tidak diperlukan. Dataset saat ini telah lebih ringkas dan fokus pada fitur-fitur utama yang relevan untuk pengembangan sistem rekomendasi smartphone, termasuk fitur numerik seperti berat, RAM, kamera, kapasitas baterai, ukuran layar, harga dalam CNY, tahun rilis, serta skor performa.
+Setelah dilakukan proses penghapusan fitur, struktur dataset kini terdiri dari 11 kolom. Kolom-kolom seperti **"Launched Price (Pakistan/PKR)"**, **"Launched Price (India/INR)"**, **"Launched Price (USA/USD)"**, **"Launched Price (Dubai/AED)"**, dan **"processor"** telah dihapus karena dianggap tidak diperlukan. Dataset saat ini telah lebih ringkas dan fokus pada fitur-fitur utama yang relevan untuk pengembangan sistem rekomendasi smartphone, termasuk fitur numerik seperti berat, RAM, kamera, kapasitas baterai, ukuran layar, harga dalam CNY, tahun rilis, serta skor performa.
 
 Cek Missing Value
 
@@ -2139,30 +2047,16 @@ data_gabungan.isnull().sum()
 
 
 
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+<Table border="1" Class="DataFrame">
 <thead>
-<tr style="text-align: right;">
+<tr Style="text-align: right;">
 <th></th>
 <th>0</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<th>Company Name</th>
+<th>Company name</th>
 <td>0</td>
 </tr>
 <tr>
@@ -2286,7 +2180,7 @@ Setelah proses penghapusan baris dengan nilai kosong dilakukan, kini seluruh kol
 df.info()
 ```
 
-    <class 'pandas.core.frame.dataframe'="">
+    <class 'pandas.core.frame.DataFrame'="">
     Index: 710 entries, 97 to 933
     Data columns (total 11 columns):
      #   Column                      Non-Null Count  Dtype  
@@ -2317,24 +2211,9 @@ df.describe()
 
 
 
-  <div class="colab-df-container" id="df-61b51f8d-688a-4ebc-be0e-d90fdba98f33">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+<Table border="1" Class="DataFrame">
 <thead>
-<tr style="text-align: right;">
+<tr Style="text-align: right;">
 <th></th>
 <th>Mobile Weight (g)</th>
 <th>RAM (GB)</th>
@@ -2611,47 +2490,10 @@ df.drop(columns=["Company Name", "Model Name"], inplace=True)
 df.head()
 ```
 
-    <ipython-input-33-4069052426>:3: SettingWithCopyWarning: 
-    A value is trying to be set on a copy of a slice from a DataFrame.
-    Try using .loc[row_indexer,col_indexer] = value instead
-    
-    See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-      df["Company Name Encoded"] = df["Company Name"].map(rata_rata_skor_perusahaan)
-    <ipython-input-33-4069052426>:11: SettingWithCopyWarning: 
-    A value is trying to be set on a copy of a slice from a DataFrame.
-    Try using .loc[row_indexer,col_indexer] = value instead
-    
-    See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-      df["Model Name Encoded"] = encoder_model.fit_transform(df["Model Name"])
-    <ipython-input-33-4069052426>:18: SettingWithCopyWarning: 
-    A value is trying to be set on a copy of a slice from a DataFrame
-    
-    See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-      df.drop(columns=["Company Name", "Model Name"], inplace=True)
 
-
-
-
-
-
-  <div class="colab-df-container" id="df-7e698e0b-2a7a-4f2c-b271-d02d1b2baa23">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+<Table border="1" Class="DataFrame">
 <thead>
-<tr style="text-align: right;">
+<tr Style="text-align: right;">
 <th></th>
 <th>Mobile Weight (g)</th>
 <th>RAM (GB)</th>
@@ -2738,25 +2580,25 @@ df.head()
 <td>193</td>
 </tr>
 </tbody>
-</table>
+</Table>
 </div>
-<div class="colab-df-buttons">
-<div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-7e698e0b-2a7a-4f2c-b271-d02d1b2baa23')" style="display:none;" title="Convert this dataframe to an interactive table.">
-<svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
-<path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
-</svg>
+<div Class="colab-df-buttons">
+<div Class="colab-df-container">
+<button Class="colab-df-convert" onclick="convertToInteractive('df-7e698e0b-2a7a-4f2c-b271-d02d1b2baa23')" Style="display:none;" title="Convert this dataframe to an interactive table.">
+<SVG Height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
+<PATH D="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></PATH>
+</SVG>
 </button>
 
 
 </div>
-<div id="df-c0e2ed3a-02d7-4f7a-981b-795451d13bc6">
-<button class="colab-df-quickchart" onclick="quickchart('df-c0e2ed3a-02d7-4f7a-981b-795451d13bc6')" style="display:none;" title="Suggest charts">
-<svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
-<g>
-<path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
-</g>
-</svg>
+<div ID="df-c0e2ed3a-02d7-4f7a-981b-795451d13bc6">
+<button Class="colab-df-quickchart" onclick="quickchart('df-c0e2ed3a-02d7-4f7a-981b-795451d13bc6')" Style="display:none;" title="Suggest charts">
+<SVG Height="24px" viewbox="0 0 24 24" Width="24px" xmlns="http://www.w3.org/2000/svg">
+<G>
+<PATH D="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></PATH>
+</G>
+</SVG>
 </button>
 
 
@@ -2776,24 +2618,9 @@ df.describe()
 
 
 
-  <div class="colab-df-container" id="df-514ee312-a5f1-4aa8-9973-bae40d1d1f59">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+<Table border="1" Class="DataFrame">
 <thead>
-<tr style="text-align: right;">
+<tr Style="text-align: right;">
 <th></th>
 <th>Mobile Weight (g)</th>
 <th>RAM (GB)</th>
@@ -2922,25 +2749,25 @@ df.describe()
 <td>692.000000</td>
 </tr>
 </tbody>
-</table>
+</Table>
 </div>
-<div class="colab-df-buttons">
-<div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-514ee312-a5f1-4aa8-9973-bae40d1d1f59')" style="display:none;" title="Convert this dataframe to an interactive table.">
-<svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
-<path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
-</svg>
+<div Class="colab-df-buttons">
+<div Class="colab-df-container">
+<button Class="colab-df-convert" onclick="convertToInteractive('df-514ee312-a5f1-4aa8-9973-bae40d1d1f59')" Style="display:none;" title="Convert this dataframe to an interactive table.">
+<SVG Height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
+<PATH D="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></PATH>
+</SVG>
 </button>
 
 
 </div>
-<div id="df-beb315a2-a368-44a2-ae40-9ac3b19b4566">
-<button class="colab-df-quickchart" onclick="quickchart('df-beb315a2-a368-44a2-ae40-9ac3b19b4566')" style="display:none;" title="Suggest charts">
-<svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
-<g>
-<path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
-</g>
-</svg>
+<div ID="df-beb315a2-a368-44a2-ae40-9ac3b19b4566">
+<button Class="colab-df-quickchart" onclick="quickchart('df-beb315a2-a368-44a2-ae40-9ac3b19b4566')" Style="display:none;" title="Suggest charts">
+<SVG Height="24px" viewbox="0 0 24 24" Width="24px" xmlns="http://www.w3.org/2000/svg">
+<G>
+<PATH D="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></PATH>
+</G>
+</SVG>
 </button>
 
 
@@ -2975,36 +2802,10 @@ df[fitur_numerik] = standarisasi.fit_transform(df[fitur_numerik])
 df.head()
 ```
 
-    <ipython-input-35-396447864>:9: SettingWithCopyWarning: 
-    A value is trying to be set on a copy of a slice from a DataFrame.
-    Try using .loc[row_indexer,col_indexer] = value instead
-    
-    See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-      df[fitur_numerik] = standarisasi.fit_transform(df[fitur_numerik])
-
-
-
-
-
-
-  <div class="colab-df-container" id="df-b2d5a50d-9efa-4ea5-b48a-1c8a6f4124b9">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+ 
+<Table border="1" Class="DataFrame">
 <thead>
-<tr style="text-align: right;">
+<tr Style="text-align: right;">
 <th></th>
 <th>Mobile Weight (g)</th>
 <th>RAM (GB)</th>
@@ -3091,25 +2892,25 @@ df.head()
 <td>193</td>
 </tr>
 </tbody>
-</table>
+</Table>
 </div>
-<div class="colab-df-buttons">
-<div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-b2d5a50d-9efa-4ea5-b48a-1c8a6f4124b9')" style="display:none;" title="Convert this dataframe to an interactive table.">
-<svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
-<path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
-</svg>
+<div Class="colab-df-buttons">
+<div Class="colab-df-container">
+<button Class="colab-df-convert" onclick="convertToInteractive('df-b2d5a50d-9efa-4ea5-b48a-1c8a6f4124b9')" Style="display:none;" title="Convert this dataframe to an interactive table.">
+<SVG Height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
+<PATH D="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></PATH>
+</SVG>
 </button>
 
 
 </div>
-<div id="df-7c107433-8fd5-4991-a1b3-e4e19e015908">
-<button class="colab-df-quickchart" onclick="quickchart('df-7c107433-8fd5-4991-a1b3-e4e19e015908')" style="display:none;" title="Suggest charts">
-<svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
-<g>
-<path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
-</g>
-</svg>
+<div ID="df-7c107433-8fd5-4991-a1b3-e4e19e015908">
+<button Class="colab-df-quickchart" onclick="quickchart('df-7c107433-8fd5-4991-a1b3-e4e19e015908')" Style="display:none;" title="Suggest charts">
+<SVG Height="24px" viewbox="0 0 24 24" Width="24px" xmlns="http://www.w3.org/2000/svg">
+<G>
+<PATH D="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></PATH>
+</G>
+</SVG>
 </button>
 
 
@@ -3128,25 +2929,9 @@ df.describe().apply(lambda kolom: kolom.round(4))
 
 
 
-
-  <div class="colab-df-container" id="df-fa1c30af-a366-48d4-a493-e56a01f3a15a">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+<Table border="1" Class="DataFrame">
 <thead>
-<tr style="text-align: right;">
+<tr Style="text-align: right;">
 <th></th>
 <th>Mobile Weight (g)</th>
 <th>RAM (GB)</th>
@@ -3500,58 +3285,12 @@ for col in numerical_features:
 df_recommendation.head(10)
 ```
 
-    /usr/local/lib/python3.11/dist-packages/sklearn/utils/validation.py:2739: UserWarning: X does not have valid feature names, but StandardScaler was fitted with feature names
-      warnings.warn(
-    <ipython-input-39-3730015340>:53: SettingWithCopyWarning: 
-    A value is trying to be set on a copy of a slice from a DataFrame.
-    Try using .loc[row_indexer,col_indexer] = value instead
-    
-    See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-      df["Company Name"] = df_original["Company Name"]
-    <ipython-input-39-3730015340>:54: SettingWithCopyWarning: 
-    A value is trying to be set on a copy of a slice from a DataFrame.
-    Try using .loc[row_indexer,col_indexer] = value instead
-    
-    See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-      df["Model Name"] = df_original["Model Name"]
-    <ipython-input-39-3730015340>:57: SettingWithCopyWarning: 
-    A value is trying to be set on a copy of a slice from a DataFrame.
-    Try using .loc[row_indexer,col_indexer] = value instead
-    
-    See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-      df["Company Name Encoded"] = df["Company Name"].map(company_mapping)
-    <ipython-input-39-3730015340>:58: SettingWithCopyWarning: 
-    A value is trying to be set on a copy of a slice from a DataFrame.
-    Try using .loc[row_indexer,col_indexer] = value instead
-    
-    See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
-      df["Model Name Encoded"] = df["Model Name"].map(model_mapping)
 
-
-
-
-
-
-  <div class="colab-df-container" id="df-48784b24-b0a3-4bdd-9347-71a9bc8d12c5">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+<Table border="1" Class="DataFrame">
 <thead>
-<tr style="text-align: right;">
+<tr Style="text-align: right;">
 <th></th>
-<th>Company Name</th>
+<th>Company name</th>
 <th>Model Name</th>
 <th>Mobile Weight (g)</th>
 <th>RAM (GB)</th>
@@ -3568,7 +3307,7 @@ df_recommendation.head(10)
 <tbody>
 <tr>
 <th>0</th>
-<td>samsung</td>
+<td>Samsung</td>
 <td>Galaxy Tab S9 Ultra 256GB</td>
 <td>732.0</td>
 <td>12.0</td>
@@ -3812,29 +3551,15 @@ df_rekomendasi
 
 
 
-  <div class="colab-df-container" id="df-33fe69f6-1353-405a-b0c8-7b86caa84655">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
+<Table border="1" Class="DataFrame">
 <thead>
-<tr style="text-align: right;">
+<tr Style="text-align: right;">
 <th></th>
 <th>Model Name</th>
-<th>RAM</th>
+<th>ram</th>
 <th>Performance Score</th>
-<th>Relevan</th>
+<th>relevan</th>
 </tr>
 </thead>
 <tbody>
@@ -3843,21 +3568,21 @@ df_rekomendasi
 <td>Galaxy Tab S9 Ultra</td>
 <td>12.0</td>
 <td>991506.0</td>
-<td>True</td>
+<td>true</td>
 </tr>
 <tr>
 <th>1</th>
 <td>OnePlus Pad Pro</td>
 <td>12.0</td>
 <td>1272265.0</td>
-<td>True</td>
+<td>true</td>
 </tr>
 <tr>
 <th>2</th>
 <td>Pad 3 Pro 512GB</td>
 <td>16.0</td>
 <td>1272265.0</td>
-<td>True</td>
+<td>true</td>
 </tr>
 <tr>
 <th>3</th>
