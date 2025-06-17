@@ -34,7 +34,7 @@ Proyek ini bertujuan untuk membangun sistem rekomendasi smartphone yang dapat me
 3. Mengimplementasikan metode berbasis bobot (WSM) yang dapat menghitung skor komposit dari beberapa fitur penting dan mengurutkan pilihan secara objektif.
 
 
-## Solution Statements
+## Solution statements
 Untuk mencapai tujuan proyek, digunakan pendekatan sistem rekomendasi berbasis multi-kriteria:
 
 1. Menerapkan pendekatan sistem rekomendasi, yaitu Weighted Sum Model (WSM) untuk membangun model dalam memberikan rekomendasi smartphone berdasarkan spesifikasi teknis dan performa.
@@ -379,9 +379,9 @@ kolom_numerik = [
 
 # Daftar kolom yang berisi data kualitatif atau kategorikal (teks/label)
 kolom_kategorikal = [
-    "Company Name",
+    "Company name",
     "Model Name",
-    "Processor"
+    "processor"
 ]
 
 print("Fitur Numerik:", kolom_numerik)
@@ -425,6 +425,11 @@ for fitur in kolom_kategorikal:
     plt.tight_layout()
     plt.show()
 ```
+![image](https://github.com/user-attachments/assets/d5662c4e-64e3-4e93-a1b0-c0546f8bd376)
+
+![image](https://github.com/user-attachments/assets/156d32b2-3c43-4abe-976f-afc254a8cf3d)
+
+![image](https://github.com/user-attachments/assets/2d6f25bf-708e-4a9e-a459-8b75c0519ff7)
 
 
 Berdasarkan analisis data yang disajikan, dapat disimpulkan bahwa dataset ponsel ini didominasi oleh beberapa merek populer, dengan Oppo menjadi yang paling banyak muncul (13.8%), diikuti oleh Apple (10.4%) dan Samsung (9.9%). Sebaliknya, merek seperti iQOO dan Sony memiliki jumlah perwakilan yang sangat sedikit.
@@ -449,6 +454,7 @@ for i, nama_kolom in enumerate(kolom_numerik):
 fig.tight_layout()
 plt.show()
 ```
+![image](https://github.com/user-attachments/assets/9c3fb3f2-c332-4195-bf3f-7e37c6180000)
 
 
 ### **Distribusi Fitur Numerik – Analisis Visual**
@@ -480,13 +486,13 @@ plt.show()
 
 6. **Screen Size (inches)**
 
-   * Ukuran layar didominasi oleh perangkat dengan ukuran antara **6 hingga 6.8 inci**, dengan nilai terbanyak sekitar **6.7 inci**.
-   * Terdapat outlier dengan ukuran layar lebih dari **10 inci**, yang kemungkinan berasal dari tablet.
+   * Ukuran layar didominasi oleh perangkat dengan ukuran antara **6 hingga 6.8 inci**, dengan nilai terbanyak sekitar **6.7 Inci**.
+   * Terdapat outlier dengan ukuran layar lebih dari **10 Inci**, yang kemungkinan berasal dari tablet.
 
 7. **Launched Price (PKR, INR, CNY, USD, AED)**
 
    * Distribusi harga peluncuran di berbagai negara menunjukkan pola yang **mirip dan miring ke kanan (right-skewed)**.
-   * Artinya, sebagian besar perangkat memiliki harga **di kisaran rendah hingga menengah**, sedangkan **hanya sedikit perangkat dengan harga sangat tinggi**, mencerminkan kelas flagship atau premium.
+   * Artinya, sebagian besar perangkat memiliki harga **di kisaran rendah hingga menengah**, Sedangkan **hanya sedikit perangkat dengan harga sangat tinggi**, mencerminkan kelas flagship atau premium.
 
 8. **Launched Year**
 
@@ -541,13 +547,17 @@ for col in kolom_kategorikal:
     plt.tight_layout()
 plt.show()
 ```
+![image](https://github.com/user-attachments/assets/beb709e1-5c03-4484-ad27-037201407163)
 
+![image](https://github.com/user-attachments/assets/82f87e9a-7e3f-448c-8e90-a9394edd89d8)
+
+![image](https://github.com/user-attachments/assets/51335e58-40b8-4116-a9b4-d7d0785565f7)
 
 Dari analisis data grafik, dapat disimpulkan bahwa harga ponsel sangat dipengaruhi oleh tiga faktor utama:
 
 1. `Merek (Company Name)`: Merek adalah penentu harga yang paling kuat. Terdapat kesenjangan harga yang jelas antara merek premium seperti Apple dan Huawei dibandingkan dengan merek yang lebih ekonomis.
 
-2. `Model`: Jenis model spesifik, terutama yang inovatif seperti ponsel lipat (contoh: Galaxy Z Fold), secara drastis meningkatkan harga. Ini menunjukkan bahwa teknologi pada model lebih berpengaruh daripada sekadar namanya.
+2. `model`: Jenis model spesifik, terutama yang inovatif seperti ponsel lipat (contoh: Galaxy Z Fold), secara drastis meningkatkan harga. Ini menunjukkan bahwa teknologi pada model lebih berpengaruh daripada sekadar namanya.
 
 3. `Prosesor`: Chipset kelas atas (flagship) secara konsisten ditemukan pada ponsel berharga mahal, sementara mayoritas prosesor lain digunakan untuk perangkat di segmen harga menengah ke bawah.
 
@@ -559,12 +569,13 @@ Dari analisis data grafik, dapat disimpulkan bahwa harga ponsel sangat dipengaru
 sns.pairplot(data_gabungan, diag_kind = 'kde')
 ```
 
+![image](https://github.com/user-attachments/assets/dbede0da-49c3-4cff-8ca1-7657cecd36bd)
 
 Dari grafik pairplot diatas, jika fokus pada sumbu "Launched Price (China/CNY)" dimana merupakan fitur target, dapat disimpulkan bahwa:
 
-Fitur `Performance Score` menunjukkan korelasi positif yang paling jelas dengan harga; semakin tinggi skor performa, semakin tinggi pula harganya. Fitur-fitur lain seperti `ukuran layar`, `kapasitas baterai`, dan `berat ponsel` juga memperlihatkan tren positif yang serupa, meskipun lebih lemah, di mana kenaikannya cenderung diikuti oleh kenaikan harga.
+Fitur `Performance Score` menunjukkan korelasi positif yang paling jelas dengan harga; semakin tinggi skor performa, semakin tinggi pula harganya. Fitur-fitur lain seperti `ukuran layar`, `Kapasitas baterai`, dan `berat ponsel` juga memperlihatkan tren positif yang serupa, meskipun lebih lemah, di mana kenaikannya cenderung diikuti oleh kenaikan harga.
 
-Sementara itu, fitur seperti `RAM`, `resolusi kamera`, dan `tahun peluncuran` menunjukkan pola yang sangat acak terhadap harga, yang mengindikasikan bahwa fitur-fitur ini bukanlah prediktor harga yang baik secara individual. Adapun kolom harga dalam mata uang lain (USD, INR, dll.) memiliki korelasi linear yang sangat kuat karena pada dasarnya merepresentasikan nilai yang sama, sehingga bersifat redundan dan tidak perlu dianalisis lebih lanjut sebagai fitur prediktor.
+Sementara itu, fitur seperti `ram`, `resolusi kamera`, dan `tahun peluncuran` menunjukkan pola yang sangat acak terhadap harga, yang mengindikasikan bahwa fitur-fitur ini bukanlah prediktor harga yang baik secara individual. Adapun kolom harga dalam mata uang lain (USD, INR, dll.) memiliki korelasi linear yang sangat kuat karena pada dasarnya merepresentasikan nilai yang sama, sehingga bersifat redundan dan tidak perlu dianalisis lebih lanjut sebagai fitur prediktor.
 
 
 ```python
@@ -575,6 +586,7 @@ ax.set_title('Matriks Korelasi Antar Fitur Numerik', fontsize=20)
 
 plt.show()
 ```
+![image](https://github.com/user-attachments/assets/376d9a75-2075-40f5-b1b7-fe18d41888b6)
 
 
 ### **Analisis Korelasi Antar Fitur Numerik**
@@ -583,7 +595,7 @@ Berdasarkan matriks korelasi, beberapa hubungan yang menonjol antara fitur-fitur
 
 1. **Korelasi Harga Peluncuran Antar Negara**
 
-   * Harga peluncuran di negara-negara berbeda (PKR, INR, CNY, USD, AED) menunjukkan **korelasi sangat kuat satu sama lain** (nilai korelasi > 0.9), menandakan bahwa harga antar negara bergerak **proporsional dan saling mengikuti**.
+   * Harga peluncuran di negara-negara berbeda (PKR, INR, CNY, USD, AED) menunjukkan **korelasi sangat kuat satu sama lain** (nilai korelasi &gt; 0.9), menandakan bahwa harga antar negara bergerak **proporsional dan saling mengikuti**.
    * Fitur-fitur harga ini juga memiliki korelasi yang **cukup tinggi dengan skor performa** (sekitar 0.68–0.71), menunjukkan bahwa **perangkat yang lebih mahal cenderung memiliki performa lebih tinggi**.
 
 2. **RAM (GB)**
@@ -593,7 +605,7 @@ Berdasarkan matriks korelasi, beberapa hubungan yang menonjol antara fitur-fitur
 
 3. **Mobile Weight (g)**
 
-   * Memiliki **korelasi sangat kuat dengan Screen Size (0.98)** dan **Battery Capacity (0.85)**.
+   * memiliki **korelasi sangat kuat dengan Screen Size (0.98)** dan **Battery Capacity (0.85)**.
    * Artinya, **ponsel yang lebih besar dan berbaterai lebih kuat cenderung memiliki bobot yang lebih berat**, yang konsisten secara fisik.
 
 4. **Screen Size (inches)**
@@ -627,7 +639,7 @@ print(df_ponsel["Processor"].unique())
 ```
 
 
-Program tersebut digunakan untuk menampilkan semua nilai unik yang terdapat dalam kolom **"Processor"** pada dataset smartphone. Tujuan dari langkah ini adalah untuk mengeksplorasi dan memahami keragaman jenis prosesor yang digunakan dalam berbagai perangkat, serta membantu dalam proses analisis lebih lanjut seperti kategorisasi, pengelompokan, atau identifikasi prosesor-prosesor populer dan langka.
+Program tersebut digunakan untuk menampilkan semua nilai unik yang terdapat dalam kolom **"processor"** pada dataset smartphone. Tujuan dari langkah ini adalah untuk mengeksplorasi dan memahami keragaman jenis prosesor yang digunakan dalam berbagai perangkat, serta membantu dalam proses analisis lebih lanjut seperti kategorisasi, pengelompokan, atau identifikasi prosesor-prosesor populer dan langka.
 
 
 ```python
@@ -662,7 +674,7 @@ print(df_ponsel["Processor"].unique())
 ```
 
 
-Data pada kolom **"Processor"** telah diperbarui untuk memastikan konsistensi penulisan dan akurasi nama prosesor. Proses ini mencakup normalisasi nama-nama prosesor yang sebelumnya memiliki ejaan berbeda namun merujuk pada entitas yang sama. Dengan perbaikan ini, analisis selanjutnya—seperti visualisasi, klasifikasi, atau pencarian hubungan terhadap harga dan performa—akan menjadi lebih akurat dan representatif.
+Data pada kolom **"processor"** telah diperbarui untuk memastikan konsistensi penulisan dan akurasi nama prosesor. Proses ini mencakup normalisasi nama-nama prosesor yang sebelumnya memiliki ejaan berbeda namun merujuk pada entitas yang sama. Dengan perbaikan ini, analisis selanjutnya—seperti visualisasi, klasifikasi, atau pencarian hubungan terhadap harga dan performa—akan menjadi lebih akurat dan representatif.
 
 
 ```python
@@ -736,7 +748,7 @@ data_gabungan.head()
 ```
 
 
-Sebagai langkah awal dalam proses data preparation, dilakukan penghapusan beberapa fitur yang dianggap redundan atau tidak relevan untuk sistem rekomendasi. Fitur-fitur seperti **"Launched Price (Pakistan/PKR)"**, **"Launched Price (India/INR)"**, **"Launched Price (USA/USD)"**, dan **"Launched Price (Dubai/AED)"** dihapus karena informasi harga sudah cukup diwakili oleh **"Launched Price (China/CNY)"**. Selain itu, fitur **"Processor"** juga dihapus karena kemampuannya telah direpresentasikan secara lebih kuantitatif oleh fitur **"Performance Score"**, sehingga tidak perlu dimasukkan kembali.
+Sebagai langkah awal dalam proses data preparation, dilakukan penghapusan beberapa fitur yang dianggap redundan atau tidak relevan untuk sistem rekomendasi. Fitur-fitur seperti **"Launched Price (Pakistan/PKR)"**, **"Launched Price (India/INR)"**, **"Launched Price (USA/USD)"**, dan **"Launched Price (Dubai/AED)"** dihapus karena informasi harga sudah cukup diwakili oleh **"Launched Price (China/CNY)"**. Selain itu, fitur **"processor"** juga dihapus karena kemampuannya telah direpresentasikan secara lebih kuantitatif oleh fitur **"Performance Score"**, sehingga tidak perlu dimasukkan kembali.
 
 
 ```python
@@ -744,7 +756,7 @@ data_gabungan.info()
 ```
 
 
-Setelah dilakukan proses penghapusan fitur, struktur dataset kini terdiri dari 11 kolom. Kolom-kolom seperti **"Launched Price (Pakistan/PKR)"**, **"Launched Price (India/INR)"**, **"Launched Price (USA/USD)"**, **"Launched Price (Dubai/AED)"**, dan **"Processor"** telah dihapus karena dianggap tidak diperlukan. Dataset saat ini telah lebih ringkas dan fokus pada fitur-fitur utama yang relevan untuk pengembangan sistem rekomendasi smartphone, termasuk fitur numerik seperti berat, RAM, kamera, kapasitas baterai, ukuran layar, harga dalam CNY, tahun rilis, serta skor performa.
+Setelah dilakukan proses penghapusan fitur, struktur dataset kini terdiri dari 11 kolom. Kolom-kolom seperti **"Launched Price (Pakistan/PKR)"**, **"Launched Price (India/INR)"**, **"Launched Price (USA/USD)"**, **"Launched Price (Dubai/AED)"**, dan **"processor"** telah dihapus karena dianggap tidak diperlukan. Dataset saat ini telah lebih ringkas dan fokus pada fitur-fitur utama yang relevan untuk pengembangan sistem rekomendasi smartphone, termasuk fitur numerik seperti berat, RAM, kamera, kapasitas baterai, ukuran layar, harga dalam CNY, tahun rilis, serta skor performa.
 
 
 Cek Missing Value
@@ -767,7 +779,7 @@ print(missing_values_performance_score)
 Berdasarkan data di atas, terlihat bahwa sebagian besar perangkat dengan nilai `Performance Score` yang hilang berasal dari merek **Apple**, yang memiliki 97 entri. Hal ini kemungkinan disebabkan oleh keterbatasan pada dataset kedua yang digunakan dalam proses penggabungan, di mana data benchmark performa yang tersedia hanya mencakup prosesor atau SoC untuk perangkat **Android**. Akibatnya, perangkat non-Android seperti iPhone tidak memiliki nilai performa yang dapat dipadankan, sehingga kolom `Performance Score` untuk merek Apple menjadi kosong.
 
 
-## Menangani Missing Values & Outliers
+## Menangani Missing Values &amp; outliers
 
 Langkah kedua dalam proses data preparation adalah penanganan missing values dan outliers. Berdasarkan hasil sebelumnya, ditemukan cukup banyak data kosong khususnya pada perangkat Apple. Untuk menjaga keakuratan dan relevansi nilai pada fitur `Performance Score`—yang memiliki peran krusial dalam analisis—diputuskan untuk menghapus seluruh baris yang mengandung missing values, alih-alih melakukan imputasi.
 
@@ -825,6 +837,7 @@ for k in range(idx + 1, len(ax_array)):
 plt.tight_layout()
 plt.show()
 ```
+![image](https://github.com/user-attachments/assets/9fbdbf10-ea54-4e29-8bf5-9e8a5ebfd08c)
 
 
 Gambar boxplot di atas menunjukkan bahwa hampir semua fitur numerik dalam dataset memiliki outlier, ditandai dengan titik-titik di luar batas kotak plot. Fitur seperti Launched Price, Battery Capacity, Screen Size, dan Performance Score terlihat memiliki banyak nilai ekstrem. Oleh karena itu, diperlukan penanganan lebih lanjut, seperti menggunakan transformasi Box-Cox, agar distribusi data menjadi lebih normal dan dampak outlier terhadap model dapat diminimalkan tanpa kehilangan informasi penting.
@@ -884,6 +897,7 @@ for kosong in range(idx + 1, len(sumbu)):
 plt.tight_layout()
 plt.show()
 ```
+![image](https://github.com/user-attachments/assets/7c350981-43cf-4e6c-86ea-797794dc0deb)
 
 
 Setelah transformasi Box-Cox, distribusi data menjadi lebih normal dan outlier berkurang. Meski beberapa outlier masih ada, datanya kini lebih siap untuk analisis atau pemodelan lanjutan.
@@ -895,7 +909,7 @@ Langkah ketiga dalam data preparation adalah mengubah fitur kategorikal menjadi 
 
 ### Teknik yang Digunakan:
 
-* **Target Encoding** untuk `Company Name`:
+* **Target Encoding** untuk `Company name`:
   Mengubah nama perusahaan menjadi nilai berdasarkan rata-rata *Performance Score* masing-masing. Metode ini mempertahankan hubungan antara merek dan performa tanpa menambah dimensi.
 
 * **Label Encoding** untuk `Model Name`:
