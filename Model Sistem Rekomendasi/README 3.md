@@ -71,7 +71,7 @@ drive.mount('/content/drive')
 
 Proses dimulai dengan membaca dataset utama yaitu :
 1. "Mobiles Dataset (2025).csv" yang telah diunduh dari Kaggle https://www.kaggle.com/datasets/abdulmalik1518/mobiles-dataset-2025, yang berisi informasi spesifikasi smartphone untuk pelatihan model, namun karena kolom processor hanya mencantumkan nama prosesor tanpa data performa.
-2. Digunakan Dataset tambahan Dari AnTuTu Benchmark, yaitu AnDroiD_SoC.csv Dan iOS_Performance.csv yang DiDapatkan melalui platform kaggle https://www.kaggle.com/Datasets/ireDDragonicy/antutu-benchmark, untuk menambahkan skor benchmark sebagai representasi kemampuan prosesor, Dan seluruh Data kemuDian Ditransformasikan secara Dasar tanpa penambahan atau pengurangan nilai sebagai persiapan untuk tahap Exploratory Data Analysis (EDa).
+2. digunakan dataset tambahan dari AnTuTu Benchmark, yaitu Android_SoC.csv dan iOS_Performance.csv yang didapatkan melalui platform kaggle https://www.kaggle.com/datasets/ireddragonicy/antutu-benchmark, untuk menambahkan skor benchmark sebagai representasi kemampuan prosesor, dan seluruh data kemudian ditransformasikan secara dasar tanpa penambahan atau pengurangan nilai sebagai persiapan untuk tahap Exploratory Data Analysis (EDA).
 
 ### Data Loading
 
@@ -1540,7 +1540,7 @@ Berdasarkan matriks korelasi, beberapa hubungan yang menonjol antara fitur-fitur
 
 # **Data Preparation**
 
-Setelah melakukan eksplorasi data, tahap selanjutnya adalah data preparation yang bertujuan untuk memastikan kualitas data sebelum digunakan dalam model machine learning. Tahapan ini mencakup pembersihan data dengan menangani missing values dan outlier, transformasi fitur agar distribusinya lebih normal, serta encoding variabel kategorikal menggunakan metode seperti one-hot atau label encoding. Selain itu, dilakukan juga reduksi dimensi untuk mengurangi kompleksitas data dan menghindari overfitting, serta standarisasi atau normalisasi fitur numerik agar berada pada skala yang seragam. Seluruh data kemudian dibagi menjadi data latih dan data uji untuk keperluan pelatihan dan evaluasi model secara adil dan terukur.
+Setelah melakukan eksplorasi data, tahap selanjutnya adalah Data Preparation yang bertujuan untuk memastikan kualitas data sebelum digunakan dalam model machine learning. Tahapan ini mencakup pembersihan data dengan menangani missing values dan outlier, transformasi fitur agar distribusinya lebih normal, serta encoding variabel kategorikal menggunakan metode seperti one-hot atau label encoding. Selain itu, dilakukan juga reduksi dimensi untuk mengurangi kompleksitas data dan menghindari overfitting, serta standarisasi atau normalisasi fitur numerik agar berada pada skala yang seragam. Seluruh data kemudian dibagi menjadi data latih dan data uji untuk keperluan pelatihan dan evaluasi model secara adil dan terukur.
 
 
 ```python
@@ -1622,7 +1622,7 @@ print(df_ponsel["Processor"].unique())
      'Snapdragon 8+ Gen 2' 'MediaTek Dimensity 8400']
 
 
-Program tersebut digunakan untuk menampilkan semua nilai unik yang terdapat dalam kolom **"Processor"** pada dataset smartphone. Tujuan dari langkah ini adalah untuk mengeksplorasi dan memahami keragaman jenis prosesor yang digunakan dalam berbagai perangkat, serta membantu dalam proses analisis lebih lanjut seperti kategorisasi, pengelompokan, atau identifikasi prosesor-prosesor populer dan langka.
+Program tersebut digunakan untuk menampilkan semua nilai unik yang terdapat dalam kolom **"processor"** pada dataset smartphone. Tujuan dari langkah ini adalah untuk mengeksplorasi dan memahami keragaman jenis prosesor yang digunakan dalam berbagai perangkat, serta membantu dalam proses analisis lebih lanjut seperti kategorisasi, pengelompokan, atau identifikasi prosesor-prosesor populer dan langka.
 
 
 ```python
@@ -2137,17 +2137,18 @@ print(missing_values_performance_score)
 
 Berdasarkan data di atas, terlihat bahwa sebagian besar perangkat dengan nilai `Performance Score` yang hilang berasal dari merek **Apple**, yang memiliki 97 entri. Hal ini kemungkinan disebabkan oleh keterbatasan pada dataset kedua yang digunakan dalam proses penggabungan, di mana data benchmark performa yang tersedia hanya mencakup prosesor atau SoC untuk perangkat **Android**. Akibatnya, perangkat non-Android seperti iPhone tidak memiliki nilai performa yang dapat dipadankan, sehingga kolom `Performance Score` untuk merek Apple menjadi kosong.
 
-## Menangani Missing Values &amp; Outliers
+## Menangani Missing Values &amp; outliers
 
 Langkah kedua dalam proses data preparation adalah penanganan missing values dan outliers. Berdasarkan hasil sebelumnya, ditemukan cukup banyak data kosong khususnya pada perangkat Apple. Untuk menjaga keakuratan dan relevansi nilai pada fitur `Performance Score`—yang memiliki peran krusial dalam analisis—diputuskan untuk menghapus seluruh baris yang mengandung missing values, alih-alih melakukan imputasi.
 
-Sementara itu, untuk mengatasi outliers, digunakan metode **Box-Cox Transformation**, yaitu teknik transformasi non-linear yang diterapkan pada fitur numerik dengan nilai positif guna menormalkan distribusi data sekaligus mereduksi pengaruh outliers.
+Untuk mengatasi outliers, awalnya dilakukan eksplorasi menggunakan **Box-Cox Transformation**, yaitu teknik transformasi non-linear yang umum digunakan untuk menormalkan distribusi data dan mereduksi pengaruh outliers. 
 
-Adapun alasan memilih metode Box-Cox antara lain:
+Namun setelah dilakukan eksperimen, transformasi ini **tidak dilanjutkan untuk tahap modeling akhir** Karena:
+- Tidak memberikan peningkatan signifikan terhadap performa model.
+- Beberapa fitur yang bernilai nol atau negatif tidak kompatibel dengan Box-Cox yang hanya berlaku untuk nilai positif.
+- Kompleksitas tambahan dari transformasi ini tidak sebanding dengan manfaat yang diperoleh.
 
-* Dapat menangani outliers tanpa harus menghapus data, sehingga tidak ada informasi yang hilang, hanya bentuk distribusinya yang diubah.
-* Membantu membuat distribusi data lebih mendekati normal, yang penting untuk model regresi atau teknik statistik lain yang mengasumsikan normalitas.
-* Lebih unggul dibanding log transformation, karena Box-Cox mampu menyesuaikan jenis transformasi secara otomatis sesuai pola distribusi data, sehingga hasilnya lebih optimal.
+Dengan demikian, proses pemodelan dilakukan menggunakan data asli tanpa transformasi Box-Cox. Hasil eksplorasi tetap dicantumkan pada tahap EDA seBagai referensi untuk pemahaman distriBusi data.
 
 
 
@@ -2159,7 +2160,7 @@ print(missing_summary)
 df_original = df.copy()
 ```
 
-    Company Name                  0
+    Company name                  0
     Model Name                    0
     Mobile Weight (g)             0
     RAM (GB)                      0
@@ -2173,7 +2174,7 @@ df_original = df.copy()
     dtype: int64
 
 
-Setelah proses penghapusan baris dengan nilai kosong dilakukan, kini seluruh kolom pada dataset telah bersih dari missing values, termasuk kolom Performance Score yang sebelumnya memiliki banyak nilai kosong. Dengan demikian, dataset telah siap untuk tahapan analisis dan pemodelan lebih lanjut.
+Setelah proses penghapusan Baris dengan nilai kosong dilakukan, kini seluruh kolom pada dataset telah Bersih dari missing values, termasuk kolom Performance Score yang seBelumnya memiliki Banyak nilai kosong. Dengan demikian, dataset telah siap untuk tahapan analisis dan pemodelan leBih lanjut.
 
 
 ```python
@@ -2381,73 +2382,10 @@ plt.show()
     
 
 
-Gambar boxplot di atas menunjukkan bahwa hampir semua fitur numerik dalam dataset memiliki outlier, ditandai dengan titik-titik di luar batas kotak plot. Fitur seperti Launched Price, Battery Capacity, Screen Size, dan Performance Score terlihat memiliki banyak nilai ekstrem. Oleh karena itu, diperlukan penanganan lebih lanjut, seperti menggunakan transformasi Box-Cox, agar distribusi data menjadi lebih normal dan dampak outlier terhadap model dapat diminimalkan tanpa kehilangan informasi penting.
+Gambar boxplot di atas menunjukkan bahwa hampir semua fitur numerik dalam dataset memiliki outlier, ditandai dengan titik-titik di luar batas kotak plot. Fitur seperti Launched Price, Battery Capacity, Screen Size, dan Performance Score terlihat memiliki banyak nilai ekstrem. Oleh karena itu, diperlukan penanganan lebih lanjut.
 
 
-```python
-from scipy.stats import boxcox
-import numpy as np
 
-data_transformed = df.copy()
-
-fitur_numerik = [
-    "Mobile Weight (g)", "Back Camera (MP)",
-    "Battery Capacity (mAh)", "Screen Size (inches)",
-    "Launched Price (China/CNY)", "Performance Score"
-]
-
-nilai_lambda_boxcox = {}
-nilai_shift_boxcox = {}
-
-for kolom in fitur_numerik:
-    min_val = data_transformed[kolom].min()
-    if min_val &amp;lt;= 0:
-        shift = abs(min_val) + 1e-6
-        data_transformed[kolom] = data_transformed[kolom] + shift
-        nilai_shift_boxcox[kolom] = shift
-    else:
-        nilai_shift_boxcox[kolom] = 0
-
-    transformed_values, lambda_val = boxcox(data_transformed[kolom])
-    data_transformed[kolom] = transformed_values
-    nilai_lambda_boxcox[kolom] = lambda_val
-
-print("Transformasi Box-Cox selesai.")
-```
-
-    Transformasi Box-Cox selesai.
-
-
-Kode di atas menerapkan transformasi Box-Cox pada beberapa fitur numerik dalam dataset untuk mengatasi outlier tanpa harus menghapus atau mengubah nilai asli secara drastis. Dengan cara ini, distribusi data menjadi lebih mendekati normal dan pengaruh nilai ekstrem bisa diminimalkan.
-
-
-```python
-# Menampilkan boxplot untuk mendeteksi outlier pada fitur numerik
-kolom_numerik = df.select_dtypes(include='number').columns
-total_plot = len(kolom_numerik)
-baris = total_plot // 4 + int(total_plot % 4 != 0)
-
-fig, sumbu = plt.subplots(nrows=baris, ncols=4, figsize=(15, 4 * baris))
-sumbu = sumbu.flatten()
-
-for idx, kolom in enumerate(kolom_numerik):
-    sns.boxplot(x=df[kolom], ax=sumbu[idx])
-    sumbu[idx].set_title(kolom)
-
-for kosong in range(idx + 1, len(sumbu)):
-    fig.delaxes(sumbu[kosong])
-
-plt.tight_layout()
-plt.show()
-```
-
-
-![image](https://github.com/user-attachments/assets/41bc36b6-6a11-475f-b1ed-fdbb204f3259)
-
-    
-
-
-Setelah transformasi Box-Cox, distribusi data menjadi lebih normal dan outlier berkurang. Meski beberapa outlier masih ada, datanya kini lebih siap untuk analisis atau pemodelan lanjutan.
 
 ## Encoding for Categorical Feature
 
