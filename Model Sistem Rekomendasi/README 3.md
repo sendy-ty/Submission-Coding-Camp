@@ -83,7 +83,7 @@ path_dataset = "/content/drive/MyDrive/ML Terapan/Recommendation/Android_SoC.csv
 
 ## **Dataset 1**
 
-Memuat Dataset "Mobiles Dataset (2025).csv", yang berisi informasi lengkap mengenai spesifikasi teknis Dan fitur berbagai smartphone, seperti RAM, penyimpanan, ukuran layar, kapasitas baterai, kamera, harga, serta jenis prosesor, yang akan Digunakan sebagai Data utama Dalam proses pelatihan model rekomenDasi.
+Memuat dataset "Mobiles Dataset (2025).csv", yang berisi informasi lengkap mengenai spesifikasi teknis dan fitur berbagai smartphone, seperti RAM, penyimpanan, ukuran layar, kapasitas baterai, kamera, harga, serta jenis prosesor, yang akan digunakan sebagai data utama dalam proses pelatihan model rekomendasi.
 
 
 ```python
@@ -3412,7 +3412,7 @@ df_recommendation.head(10)
 <g>
 <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
 </g>
-</svg>
+</SVG>
 </button>
 
 
@@ -3427,7 +3427,7 @@ Tabel di atas menunjukkan rekomendasi 10 smartphone terbaik untuk pengguna yang 
 
 Berikut ini adalah hasil analisis relevansi dari 10 rekomendasi teratas oleh model WSM:
 
-| No | Model Name           | RAM (GB) | Performance Score | WSM Score | Relevan (Gaming) |
+| no | Model Name           | RAM (GB) | Performance Score | WSM Score | Relevan (Gaming) |
 | -- | -------------------- | -------- | ----------------- | --------- | ---------------- |
 | 0  | Galaxy Tab S9 Ultra  | 12.0     | 991506.0          | 2.627545  | ✅                |
 | 1  | OnePlus Pad Pro      | 12.0     | 1272265.0         | 2.586813  | ✅                |
@@ -3534,7 +3534,7 @@ df_rekomendasi
 <td>MagicPad 3</td>
 <td>12.0</td>
 <td>1272265.0</td>
-<td>True</td>
+<td>true</td>
 </tr>
 <tr>
 <th>5</th>
@@ -3562,7 +3562,7 @@ df_rekomendasi
 <td>Galaxy Tab S9+ 256GB</td>
 <td>12.0</td>
 <td>991506.0</td>
-<td>True</td>
+<td>true</td>
 </tr>
 <tr>
 <th>9</th>
@@ -3584,7 +3584,7 @@ df_rekomendasi
 
 
 </div>
-<div id="df-bf0b7eeb-6702-48de-a7e2-70bbd03f0f2e">
+<div ID="df-bf0b7eeb-6702-48de-a7e2-70bbd03f0f2e">
 <button class="colab-df-quickchart" onclick="quickchart('df-bf0b7eeb-6702-48de-a7e2-70bbd03f0f2e')" style="display:none;" title="Suggest charts">
 <svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
 <g>
@@ -3621,7 +3621,7 @@ Evaluasi dilakukan menggunakan metrik **Precision**, yang mengukur persentase re
 
 Berikut ini adalah hasil analisis relevansi dari 10 rekomendasi teratas oleh model WSM:
 
-| No | Model Name           | RAM (GB) | Performance Score | WSM Score | Relevan (Gaming) |
+| no | Model Name           | RAM (GB) | Performance Score | WSM Score | Relevan (Gaming) |
 | -- | -------------------- | -------- | ----------------- | --------- | ---------------- |
 | 0  | Galaxy Tab S9 Ultra  | 12.0     | 991506.0          | 2.627545  | ✅                |
 | 1  | OnePlus Pad Pro      | 12.0     | 1272265.0         | 2.586813  | ✅                |
@@ -3646,8 +3646,8 @@ $$
 
 Berdasarkan hasil pemeriksaan:
 
-* **Jumlah item relevan** = 10 item
-* **Total item yang direkomendasikan** = 10 item
+* **Jumlah Item Relevan** = 10 Item
+* **Total Item yang Direkomendasikan** = 10 Item
 
 Sehingga precision yang dihasilkan adalah:
 
@@ -3659,7 +3659,7 @@ Hasil ini menunjukkan bahwa seluruh item yang direkomendasikan oleh sistem **tel
 
 ## **Kesimpulan**
 
-* Model **WSM berhasil mencapai tingkat presisi 100%** dalam memberikan rekomendasi untuk preferensi gaming, berdasarkan dua kriteria utama: kapasitas RAM dan skor performa.
+* model **WSM berhasil mencapai tingkat presisi 100%** dalam memberikan rekomendasi untuk preferensi gaming, berdasarkan dua kriteria utama: kapasitas RAM dan skor performa.
 * Seluruh 10 produk yang direkomendasikan memiliki RAM minimal 12 GB dan skor performa jauh di atas ambang batas 400.000, menunjukkan bahwa sistem secara efektif mampu menyaring produk-produk dengan spesifikasi tinggi.
 * Skor WSM juga menunjukkan peringkat produk secara berurutan, di mana produk dengan kombinasi fitur unggulan memiliki skor lebih tinggi. Ini berarti sistem tidak hanya memilih produk yang relevan, tetapi juga mengurutkannya secara optimal berdasarkan kualitas fitur.
 * Tidak ada produk yang masuk daftar tetapi gagal memenuhi syarat spesifikasi, yang menandakan **akurasi tinggi dan minim kesalahan dalam pemfilteran.**
@@ -3667,12 +3667,12 @@ Hasil ini menunjukkan bahwa seluruh item yang direkomendasikan oleh sistem **tel
 
 ## **Conclusion**
 
-Evaluasi model **Weighted Sum Model (WSM)** menunjukkan bahwa pendekatan ini **sangat efektif** untuk membangun sistem rekomendasi berbasis spesifikasi teknis. Dengan Precision mencapai 100%, sistem menunjukkan performa yang **sangat baik** dalam memahami dan menerjemahkan preferensi pengguna terhadap perangkat gaming.
+Evaluasi Model **Weighted Sum Model (WSM)** menunjukkan bahwa pendekatan ini **sangat efektif** untuk membangun sistem rekomendasi berbasis spesifikasi teknis. Dengan Precision mencapai 100%, sistem menunjukkan performa yang **sangat baik** dalam memahami dan menerjemahkan preferensi pengguna terhadap perangkat gaming.
 
 ### Pencapaian dari sisi **Business Understanding**:
 
 1. Fitur utama seperti RAM dan skor performa berhasil diidentifikasi sebagai kriteria paling penting untuk kebutuhan gaming.
-2. Pengolahan data seperti normalisasi dan transformasi (misalnya Box-Cox) mendukung pemodelan yang akurat dan stabil.
+2. Pengolahan data seperti normalisasi dan transformasi mendukung pemodelan yang akurat dan stabil.
 3. Sistem rekomendasi berbasis fitur telah berhasil dibangun dan menunjukkan hasil yang relevan dengan kebutuhan pengguna.
 
 ### Pencapaian dari sisi **Solution Goals**:
@@ -3686,4 +3686,4 @@ Evaluasi model **Weighted Sum Model (WSM)** menunjukkan bahwa pendekatan ini **s
 1. Tahap preprocessing seperti pembersihan dan transformasi data memberikan kontribusi besar terhadap keberhasilan model.
 2. Pemilihan WSM memungkinkan pemeringkatan produk berdasarkan bobot fitur yang disesuaikan dengan preferensi pengguna.
 3. Evaluasi berbasis relevansi memberikan jaminan bahwa sistem tidak hanya mengurutkan, tapi juga menyesuaikan dengan kebutuhan pengguna secara aktual.
-</ipython-input-39-3730015340></ipython-input-39-3730015340></ipython-input-39-3730015340></ipython-input-39-3730015340></ipython-input-35-396447864></ipython-input-33-4069052426></ipython-input-33-4069052426></ipython-input-33-4069052426></class></class></class></seaborn.axisgrid.pairgrid></ipython-input-19-2539776928></ipython-input-19-2539776928></ipython-input-19-2539776928></ipython-input-17-1861681704></ipython-input-17-1861681704></ipython-input-17-1861681704></class></class></class>
+</ipython-input-39-3730015340></ipython-input-39-3730015340></ipython-input-39-3730015340></ipython-input-39-3730015340></ipython-input-35-396447864></ipython-input-33-4069052426></ipython-input-33-4069052426></ipython-input-33-4069052426></Class></Class></Class></seaborn.axisgrid.pairgrid></ipython-input-19-2539776928></ipython-input-19-2539776928></ipython-input-19-2539776928></ipython-input-17-1861681704></ipython-input-17-1861681704></ipython-input-17-1861681704></Class></Class></Class>
