@@ -2247,8 +2247,7 @@ for fitur in kolom_kategorikal:
 
 
 
-![image](https://github.com/user-attachments/assets/43b7cc24-acfa-4185-a6f3-458287c34607)
-![image](https://github.com/user-attachments/assets/43b7cc24-acfa-4185-a6f3-458287c34607)
+![image](https://github.com/user-attachments/assets/6824721d-4223-4947-aa5b-64047f2ed099)
 
 
     
@@ -2284,7 +2283,8 @@ for fitur in kolom_kategorikal:
 
 
     
-![png](output_36_5.png)
+![image](https://github.com/user-attachments/assets/4a1997a2-9488-4d36-b46c-fae980e62df2)
+
     
 
 
@@ -2316,9 +2316,7 @@ for fitur in kolom_kategorikal:
       plot_distribusi = sns.countplot(
 
 
-
-    
-![png](output_36_8.png)
+![image](https://github.com/user-attachments/assets/729e5c95-3a27-4982-a654-bad54a229223)
     
 
 
@@ -2346,7 +2344,8 @@ plt.show()
 
 
     
-![png](output_39_0.png)
+![image](https://github.com/user-attachments/assets/1473331e-34a9-4bb7-8915-e9a085b3d9da)
+
     
 
 
@@ -2462,20 +2461,21 @@ plt.show()
 
 
 
-    
-![png](output_43_3.png)
-    
+![image](https://github.com/user-attachments/assets/70e3b963-450e-4e6d-9e05-1cbba099688d)
 
-
-
-    
-![png](output_43_4.png)
     
 
 
 
     
-![png](output_43_5.png)
+![image](https://github.com/user-attachments/assets/27014849-ae4f-4991-b045-7aba37d9af53)
+
+    
+
+
+
+![image](https://github.com/user-attachments/assets/7dfbff46-f3e8-45ee-9ef7-e2dca4326ded)
+
     
 
 
@@ -2503,7 +2503,9 @@ sns.pairplot(data_gabungan, diag_kind = 'kde')
 
 
     
-![png](output_46_1.png)
+![image](https://github.com/user-attachments/assets/f68156c1-9e43-44c0-b6af-b7a79006bf91)
+
+
     
 
 
@@ -2525,7 +2527,8 @@ plt.show()
 
 
     
-![png](output_48_0.png)
+![image](https://github.com/user-attachments/assets/914cccd5-fe46-4ad6-9a53-d3f54582c35a)
+
     
 
 
@@ -4023,7 +4026,8 @@ plt.show()
 
 
     
-![png](output_74_0.png)
+![image](https://github.com/user-attachments/assets/db22c97f-26d2-40fd-8b55-aa7ebe713271)
+
     
 
 
@@ -4089,7 +4093,8 @@ plt.show()
 
 
     
-![png](output_78_0.png)
+![image](https://github.com/user-attachments/assets/4150edf7-8bab-41f2-b71f-8cb93f7495f4)
+
     
 
 
