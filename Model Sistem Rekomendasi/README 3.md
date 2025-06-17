@@ -1540,7 +1540,7 @@ Berdasarkan matriks korelasi, beberapa hubungan yang menonjol antara fitur-fitur
 
 # **Data Preparation**
 
-Setelah melakukan eksplorasi data, tahap selanjutnya adalah Data Preparation yang bertujuan untuk memastikan kualitas data sebelum digunakan dalam model machine learning. Tahapan ini mencakup pembersihan data dengan menangani missing values dan outlier, transformasi fitur agar distribusinya lebih normal, serta encoding variabel kategorikal menggunakan metode seperti one-hot atau label encoding. Selain itu, dilakukan juga reduksi dimensi untuk mengurangi kompleksitas data dan menghindari overfitting, serta standarisasi atau normalisasi fitur numerik agar berada pada skala yang seragam. Seluruh data kemudian dibagi menjadi data latih dan data uji untuk keperluan pelatihan dan evaluasi model secara adil dan terukur.
+Setelah melakukan eksplorasi data, tahap selanjutnya adalah Data Preparation yang bertujuan untuk memastikan kualitas data sebelum digunakan dalam model machine learning. Tahapan ini mencakup pembersihan data dengan Menangani Missing Values dan outlier, transformasi fitur agar distribusinya lebih normal, serta encoding variabel kategorikal menggunakan metode seperti one-hot atau label encoding. Selain itu, dilakukan juga reduksi dimensi untuk mengurangi kompleksitas data dan menghindari overfitting, serta standarisasi atau normalisasi fitur numerik agar berada pada skala yang seragam. Seluruh data kemudian dibagi menjadi data latih dan data uji untuk keperluan pelatihan dan evaluasi model secara adil dan terukur.
 
 
 ```python
@@ -2148,7 +2148,7 @@ Namun setelah dilakukan eksperimen, transformasi ini **tidak dilanjutkan untuk t
 - Beberapa fitur yang bernilai nol atau negatif tidak kompatibel dengan Box-Cox yang hanya berlaku untuk nilai positif.
 - Kompleksitas tambahan dari transformasi ini tidak sebanding dengan manfaat yang diperoleh.
 
-Dengan demikian, proses pemodelan dilakukan menggunakan data asli tanpa transformasi Box-Cox. Hasil eksplorasi tetap dicantumkan pada tahap EDA seBagai referensi untuk pemahaman distriBusi data.
+Dengan demikian, proses pemodelan dilakukan menggunakan data asli tanpa transformasi Box-Cox. 
 
 
 
