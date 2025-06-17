@@ -2247,8 +2247,10 @@ for fitur in kolom_kategorikal:
 
 
 
-    
-![png](output_36_2.png)
+![image](https://github.com/user-attachments/assets/43b7cc24-acfa-4185-a6f3-458287c34607)
+![image](https://github.com/user-attachments/assets/43b7cc24-acfa-4185-a6f3-458287c34607)
+
+
     
 
 
