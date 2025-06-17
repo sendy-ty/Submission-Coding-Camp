@@ -63,7 +63,6 @@ from google.colab import drive
 drive.mount('/content/drive')
 ```
 
-    Mounted at /content/drive
 
 
 
@@ -104,7 +103,7 @@ display(df_ponsel.head())
 <div>
 <Style scoped="">
     .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
+        vertical-align: Middle;
     }
 
     .dataframe tbody tr th {
@@ -114,18 +113,18 @@ display(df_ponsel.head())
     .dataframe thead th {
         text-align: right;
     }
-</style>
-<table border="1" class="dataframe">
+</Style>
+<Table border="1" Class="DataFrame">
 <thead>
-<tr style="text-align: right;">
+<tr Style="text-align: right;">
 <th></th>
-<th>Company Name</th>
+<th>Company name</th>
 <th>Model Name</th>
 <th>Mobile Weight</th>
-<th>RAM</th>
+<th>ram</th>
 <th>Front Camera</th>
 <th>Back Camera</th>
-<th>Processor</th>
+<th>processor</th>
 <th>Battery Capacity</th>
 <th>Screen Size</th>
 <th>Launched Price (Pakistan)</th>
@@ -141,7 +140,7 @@ display(df_ponsel.head())
 <th>0</th>
 <td>Apple</td>
 <td>iPhone 16 128GB</td>
-<td>174g</td>
+<td>174G</td>
 <td>6GB</td>
 <td>12MP</td>
 <td>48MP</td>
@@ -159,7 +158,7 @@ display(df_ponsel.head())
 <th>1</th>
 <td>Apple</td>
 <td>iPhone 16 256GB</td>
-<td>174g</td>
+<td>174G</td>
 <td>6GB</td>
 <td>12MP</td>
 <td>48MP</td>
@@ -177,7 +176,7 @@ display(df_ponsel.head())
 <th>2</th>
 <td>Apple</td>
 <td>iPhone 16 512GB</td>
-<td>174g</td>
+<td>174G</td>
 <td>6GB</td>
 <td>12MP</td>
 <td>48MP</td>
@@ -195,7 +194,7 @@ display(df_ponsel.head())
 <th>3</th>
 <td>Apple</td>
 <td>iPhone 16 Plus 128GB</td>
-<td>203g</td>
+<td>203G</td>
 <td>6GB</td>
 <td>12MP</td>
 <td>48MP</td>
@@ -213,7 +212,7 @@ display(df_ponsel.head())
 <th>4</th>
 <td>Apple</td>
 <td>iPhone 16 Plus 256GB</td>
-<td>203g</td>
+<td>203G</td>
 <td>6GB</td>
 <td>12MP</td>
 <td>48MP</td>
@@ -228,25 +227,25 @@ display(df_ponsel.head())
 <td>2024</td>
 </tr>
 </tbody>
-</table>
+</Table>
 </div>
-<div class="colab-df-buttons">
-<div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-a11b48d7-9fd6-4fab-949e-420546ee1b21')" style="display:none;" title="Convert this dataframe to an interactive table.">
-<svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
-<path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
-</svg>
+<div Class="colab-df-buttons">
+<div Class="colab-df-container">
+<button Class="colab-df-convert" onclick="convertToInteractive('df-a11b48d7-9fd6-4fab-949e-420546ee1b21')" Style="display:none;" title="Convert this dataframe to an interactive table.">
+<SVG Height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
+<PATH D="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></PATH>
+</SVG>
 </button>
 
 
 </div>
-<div id="df-bb991ef3-3173-40b6-856f-ff0d156ff35a">
-<button class="colab-df-quickchart" onclick="quickchart('df-bb991ef3-3173-40b6-856f-ff0d156ff35a')" style="display:none;" title="Suggest charts">
-<svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
-<g>
-<path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
-</g>
-</svg>
+<div ID="df-bb991ef3-3173-40b6-856f-ff0d156ff35a">
+<button Class="colab-df-quickchart" onclick="quickchart('df-bb991ef3-3173-40b6-856f-ff0d156ff35a')" Style="display:none;" title="Suggest charts">
+<SVG Height="24px" viewbox="0 0 24 24" Width="24px" xmlns="http://www.w3.org/2000/svg">
+<G>
+<PATH D="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></PATH>
+</G>
+</SVG>
 </button>
 
 
@@ -261,7 +260,7 @@ display(df_ponsel.head())
 df_ponsel.info()
 ```
 
-    <class 'pandas.core.frame.dataframe'="">
+    <class 'pandas.core.frame.DataFrame'="">
     RangeIndex: 930 entries, 0 to 929
     Data columns (total 15 columns):
      #   Column                     Non-Null Count  Dtype 
