@@ -94,10 +94,8 @@ print("Pratinjau Dataset Ponsel:")
 display(df_ponsel.head())
 ```
 
-    Pratinjau Dataset Ponsel:
+Pratinjau Dataset Ponsel:
 
-
-</Style>
 <Table border="1" Class="DataFrame">
 <thead>
 <tr Style="text-align: right;">
