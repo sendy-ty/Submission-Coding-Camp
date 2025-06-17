@@ -30,7 +30,7 @@ Proyek ini bertujuan untuk membangun sistem rekomendasi smartphone yang dapat me
 
 3. Mengimplementasikan metode berbasis bobot (WSM) yang dapat menghitung skor komposit dari beberapa fitur penting dan mengurutkan pilihan secara objektif.
 
-## Solution Statements
+## Solution statements
 Untuk mencapai tujuan proyek, digunakan pendekatan sistem rekomendasi berbasis multi-kriteria:
 
 1. Menerapkan pendekatan sistem rekomendasi, yaitu Weighted Sum Model (WSM) untuk membangun model dalam memberikan rekomendasi smartphone berdasarkan spesifikasi teknis dan performa.
@@ -100,9 +100,9 @@ display(df_ponsel.head())
 
 
 
-  <div class="colab-df-container" id="df-a11b48d7-9fd6-4fab-949e-420546ee1b21">
+  <div Class="colab-df-container" ID="df-a11b48d7-9fd6-4fab-949e-420546ee1b21">
 <div>
-<style scoped="">
+<Style scoped="">
     .dataframe tbody tr th:only-of-type {
         vertical-align: middle;
     }
@@ -1288,28 +1288,28 @@ for fitur in kolom_kategorikal:
     ================ Analisis untuk Fitur: Company Name ================
     Tabel Ringkasan Distribusi:
                   Frekuensi  Persentase (%)
-    Company Name                           
+    Company name                           
     oppo                129            13.8
-    apple                97            10.4
-    samsung              92             9.9
+    Apple                97            10.4
+    Samsung              92             9.9
     honor                91             9.7
     vivo                 86             9.2
     realme               69             7.4
     motorola             62             6.6
     infinix              56             6.0
     oneplus              53             5.7
-    huawei               42             4.5
+    Huawei               42             4.5
     tecno                39             4.2
     poco                 32             3.4
     xiaomi               27             2.9
-    google               21             2.2
-    lenovo               15             1.6
+    Google               21             2.2
+    Lenovo               15             1.6
     nokia                11             1.2
     sony                  9             1.0
     iqoo                  3             0.3
 
 
-    <ipython-input-17-1861681704>:19: FutureWarning: 
+    <ipython-input-17-1861681704&gt;:19: FutureWarning: 
     
     Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `y` variable to `hue` and set `legend=False` for the same effect.
     
@@ -1318,7 +1318,8 @@ for fitur in kolom_kategorikal:
 
 
     
-![png](output_36_2.png)
+![image](https://github.com/user-attachments/assets/008d5463-3dff-421d-8889-a97877e38a01)
+
     
 
 
@@ -1343,7 +1344,7 @@ for fitur in kolom_kategorikal:
     [908 rows x 2 columns]
 
 
-    <ipython-input-17-1861681704>:19: FutureWarning: 
+    <ipython-input-17-1861681704&gt;:19: FutureWarning: 
     
     Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `y` variable to `hue` and set `legend=False` for the same effect.
     
@@ -1352,7 +1353,8 @@ for fitur in kolom_kategorikal:
 
 
     
-![png](output_36_5.png)
+![image](https://github.com/user-attachments/assets/c18c4c48-c561-4bdd-bf40-e8d1c9557759)
+
     
 
 
@@ -1361,7 +1363,7 @@ for fitur in kolom_kategorikal:
     ================ Analisis untuk Fitur: Processor ================
     Tabel Ringkasan Distribusi:
                          Frekuensi  Persentase (%)
-    Processor                                     
+    processor                                     
     Snapdragon 8 Gen 2          38             4.1
     Snapdragon 695              30             3.2
     Snapdragon 8 Gen 3          27             2.9
@@ -1377,7 +1379,7 @@ for fitur in kolom_kategorikal:
     [161 rows x 2 columns]
 
 
-    <ipython-input-17-1861681704>:19: FutureWarning: 
+    <ipython-input-17-1861681704&gt;:19: FutureWarning: 
     
     Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `y` variable to `hue` and set `legend=False` for the same effect.
     
@@ -1386,7 +1388,8 @@ for fitur in kolom_kategorikal:
 
 
     
-![png](output_36_8.png)
+![image](https://github.com/user-attachments/assets/521570a0-15ef-4de0-9361-6db4ecf4b942)
+
     
 
 
@@ -1414,7 +1417,8 @@ plt.show()
 
 
     
-![png](output_39_0.png)
+![image](https://github.com/user-attachments/assets/31867daa-78c5-4de6-9f2d-4cee9ba808a2)
+
     
 
 
@@ -1447,13 +1451,13 @@ plt.show()
 
 6. **Screen Size (inches)**
 
-   * Ukuran layar didominasi oleh perangkat dengan ukuran antara **6 hingga 6.8 inci**, dengan nilai terbanyak sekitar **6.7 inci**.
-   * Terdapat outlier dengan ukuran layar lebih dari **10 inci**, yang kemungkinan berasal dari tablet.
+   * Ukuran layar didominasi oleh perangkat dengan ukuran antara **6 hingga 6.8 inci**, dengan nilai terbanyak sekitar **6.7 Inci**.
+   * Terdapat outlier dengan ukuran layar lebih dari **10 Inci**, yang kemungkinan berasal dari tablet.
 
 7. **Launched Price (PKR, INR, CNY, USD, AED)**
 
    * Distribusi harga peluncuran di berbagai negara menunjukkan pola yang **mirip dan miring ke kanan (right-skewed)**.
-   * Artinya, sebagian besar perangkat memiliki harga **di kisaran rendah hingga menengah**, sedangkan **hanya sedikit perangkat dengan harga sangat tinggi**, mencerminkan kelas flagship atau premium.
+   * Artinya, sebagian besar perangkat memiliki harga **di kisaran rendah hingga menengah**, Sedangkan **hanya sedikit perangkat dengan harga sangat tinggi**, mencerminkan kelas flagship atau premium.
 
 8. **Launched Year**
 
@@ -1507,43 +1511,24 @@ for col in kolom_kategorikal:
 plt.show()
 ```
 
-    <ipython-input-19-2539776928>:24: FutureWarning: 
-    
-    Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
-    
-      ax = sns.barplot(x=col, y="Launched Price (China/CNY)", data=data_gabungan, palette="Set3", errorbar=None)
-
-
-    Membuat plot khusus untuk 'Model Name' (20 termahal)...
-
-
-    <ipython-input-19-2539776928>:14: FutureWarning: 
-    
-    Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
-    
-      ax = sns.barplot(x=top_20_models.index, y=top_20_models.values, palette='viridis')
-    <ipython-input-19-2539776928>:24: FutureWarning: 
-    
-    Passing `palette` without assigning `hue` is deprecated and will be removed in v0.14.0. Assign the `x` variable to `hue` and set `legend=False` for the same effect.
-    
-      ax = sns.barplot(x=col, y="Launched Price (China/CNY)", data=data_gabungan, palette="Set3", errorbar=None)
-
 
 
     
-![png](output_43_3.png)
+![image](https://github.com/user-attachments/assets/fd409695-1477-4a52-bf2b-0bea17d5a2ea)
+
     
 
 
 
     
-![png](output_43_4.png)
-    
-
-
+![image](https://github.com/user-attachments/assets/75cc1e59-a400-4561-aa52-a36a4288b806)
 
     
-![png](output_43_5.png)
+
+
+
+![image](https://github.com/user-attachments/assets/1c4831de-25b5-4f6f-831b-a6aa8538535c)
+
     
 
 
@@ -1551,7 +1536,7 @@ Dari analisis data grafik, dapat disimpulkan bahwa harga ponsel sangat dipengaru
 
 1. `Merek (Company Name)`: Merek adalah penentu harga yang paling kuat. Terdapat kesenjangan harga yang jelas antara merek premium seperti Apple dan Huawei dibandingkan dengan merek yang lebih ekonomis.
 
-2. `Model`: Jenis model spesifik, terutama yang inovatif seperti ponsel lipat (contoh: Galaxy Z Fold), secara drastis meningkatkan harga. Ini menunjukkan bahwa teknologi pada model lebih berpengaruh daripada sekadar namanya.
+2. `model`: Jenis model spesifik, terutama yang inovatif seperti ponsel lipat (contoh: Galaxy Z Fold), secara drastis meningkatkan harga. Ini menunjukkan bahwa teknologi pada model lebih berpengaruh daripada sekadar namanya.
 
 3. `Prosesor`: Chipset kelas atas (flagship) secara konsisten ditemukan pada ponsel berharga mahal, sementara mayoritas prosesor lain digunakan untuk perangkat di segmen harga menengah ke bawah.
 
@@ -1565,21 +1550,18 @@ sns.pairplot(data_gabungan, diag_kind = 'kde')
 
 
 
-    <seaborn.axisgrid.pairgrid 0x7fb632af9c50="" at="">
 
 
+![image](https://github.com/user-attachments/assets/cff89790-7fd1-4d8b-b80b-6f6c5636374f)
 
-
-    
-![png](output_46_1.png)
     
 
 
 Dari grafik pairplot diatas, jika fokus pada sumbu "Launched Price (China/CNY)" dimana merupakan fitur target, dapat disimpulkan bahwa:
 
-Fitur `Performance Score` menunjukkan korelasi positif yang paling jelas dengan harga; semakin tinggi skor performa, semakin tinggi pula harganya. Fitur-fitur lain seperti `ukuran layar`, `kapasitas baterai`, dan `berat ponsel` juga memperlihatkan tren positif yang serupa, meskipun lebih lemah, di mana kenaikannya cenderung diikuti oleh kenaikan harga.
+Fitur `Performance Score` menunjukkan korelasi positif yang paling jelas dengan harga; semakin tinggi skor performa, semakin tinggi pula harganya. Fitur-fitur lain seperti `ukuran layar`, `Kapasitas baterai`, dan `berat ponsel` juga memperlihatkan tren positif yang serupa, meskipun lebih lemah, di mana kenaikannya cenderung diikuti oleh kenaikan harga.
 
-Sementara itu, fitur seperti `RAM`, `resolusi kamera`, dan `tahun peluncuran` menunjukkan pola yang sangat acak terhadap harga, yang mengindikasikan bahwa fitur-fitur ini bukanlah prediktor harga yang baik secara individual. Adapun kolom harga dalam mata uang lain (USD, INR, dll.) memiliki korelasi linear yang sangat kuat karena pada dasarnya merepresentasikan nilai yang sama, sehingga bersifat redundan dan tidak perlu dianalisis lebih lanjut sebagai fitur prediktor.
+Sementara itu, fitur seperti `ram`, `resolusi kamera`, dan `tahun peluncuran` menunjukkan pola yang sangat acak terhadap harga, yang mengindikasikan bahwa fitur-fitur ini bukanlah prediktor harga yang baik secara individual. Adapun kolom harga dalam mata uang lain (USD, INR, dll.) memiliki korelasi linear yang sangat kuat karena pada dasarnya merepresentasikan nilai yang sama, sehingga bersifat redundan dan tidak perlu dianalisis lebih lanjut sebagai fitur prediktor.
 
 
 ```python
@@ -1593,7 +1575,8 @@ plt.show()
 
 
     
-![png](output_48_0.png)
+![image](https://github.com/user-attachments/assets/7e6b34e3-7b7a-4ceb-b9f9-0fc2a4da650e)
+
     
 
 
@@ -1613,7 +1596,7 @@ Berdasarkan matriks korelasi, beberapa hubungan yang menonjol antara fitur-fitur
 
 3. **Mobile Weight (g)**
 
-   * Memiliki **korelasi sangat kuat dengan Screen Size (0.98)** dan **Battery Capacity (0.85)**.
+   * memiliki **korelasi sangat kuat dengan Screen Size (0.98)** dan **Battery Capacity (0.85)**.
    * Artinya, **ponsel yang lebih besar dan berbaterai lebih kuat cenderung memiliki bobot yang lebih berat**, yang konsisten secara fisik.
 
 4. **Screen Size (inches)**
@@ -2481,25 +2464,25 @@ df.describe()
 <td>1.709461e+06</td>
 </tr>
 </tbody>
-</table>
+</Table>
 </div>
-<div class="colab-df-buttons">
-<div class="colab-df-container">
-<button class="colab-df-convert" onclick="convertToInteractive('df-61b51f8d-688a-4ebc-be0e-d90fdba98f33')" style="display:none;" title="Convert this dataframe to an interactive table.">
-<svg height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
-<path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></path>
-</svg>
+<div Class="colab-df-buttons">
+<div Class="colab-df-container">
+<button Class="colab-df-convert" onclick="convertToInteractive('df-61b51f8d-688a-4ebc-be0e-d90fdba98f33')" Style="display:none;" title="Convert this dataframe to an interactive table.">
+<SVG Height="24px" viewbox="0 -960 960 960" xmlns="http://www.w3.org/2000/svg">
+<PATH D="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"></PATH>
+</SVG>
 </button>
 
 
 </div>
-<div id="df-5d136d08-2067-469b-a59c-679f78d5fa3d">
-<button class="colab-df-quickchart" onclick="quickchart('df-5d136d08-2067-469b-a59c-679f78d5fa3d')" style="display:none;" title="Suggest charts">
-<svg height="24px" viewbox="0 0 24 24" width="24px" xmlns="http://www.w3.org/2000/svg">
-<g>
-<path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></path>
-</g>
-</svg>
+<div ID="df-5d136d08-2067-469b-a59c-679f78d5fa3d">
+<button Class="colab-df-quickchart" onclick="quickchart('df-5d136d08-2067-469b-a59c-679f78d5fa3d')" Style="display:none;" title="Suggest charts">
+<SVG Height="24px" viewbox="0 0 24 24" Width="24px" xmlns="http://www.w3.org/2000/svg">
+<G>
+<PATH D="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"></PATH>
+</G>
+</SVG>
 </button>
 
 
@@ -2533,7 +2516,8 @@ plt.show()
 
 
     
-![png](output_74_0.png)
+![image](https://github.com/user-attachments/assets/306afbfa-6343-4a38-96f7-cf58ac9312b7)
+
     
 
 
@@ -2557,7 +2541,7 @@ nilai_shift_boxcox = {}
 
 for kolom in fitur_numerik:
     min_val = data_transformed[kolom].min()
-    if min_val &lt;= 0:
+    if min_val &amp;lt;= 0:
         shift = abs(min_val) + 1e-6
         data_transformed[kolom] = data_transformed[kolom] + shift
         nilai_shift_boxcox[kolom] = shift
@@ -2598,8 +2582,8 @@ plt.show()
 ```
 
 
-    
-![png](output_78_0.png)
+![image](https://github.com/user-attachments/assets/41bc36b6-6a11-475f-b1ed-fdbb204f3259)
+
     
 
 
@@ -2611,7 +2595,7 @@ Langkah ketiga dalam data preparation adalah mengubah fitur kategorikal menjadi 
 
 ### Teknik yang Digunakan:
 
-* **Target Encoding** untuk `Company Name`:
+* **Target Encoding** untuk `Company name`:
   Mengubah nama perusahaan menjadi nilai berdasarkan rata-rata *Performance Score* masing-masing. Metode ini mempertahankan hubungan antara merek dan performa tanpa menambah dimensi.
 
 * **Label Encoding** untuk `Model Name`:
