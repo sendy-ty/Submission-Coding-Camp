@@ -30,7 +30,7 @@ Proyek ini bertujuan untuk membangun sistem rekomendasi smartphone yang dapat me
 
 3. Mengimplementasikan metode berbasis bobot (WSM) yang dapat menghitung skor komposit dari beberapa fitur penting dan mengurutkan pilihan secara objektif.
 
-## Solution statements
+## Solution Statements
 Untuk mencapai tujuan proyek, digunakan pendekatan sistem rekomendasi berbasis multi-kriteria:
 
 1. Menerapkan pendekatan sistem rekomendasi, yaitu Weighted Sum Model (WSM) untuk membangun model dalam memberikan rekomendasi smartphone berdasarkan spesifikasi teknis dan performa.
@@ -2998,7 +2998,7 @@ df.describe().apply(lambda kolom: kolom.round(4))
 <td>692.0000</td>
 </tr>
 </tbody>
-</table>
+</Table>
 </div>
 <div class="colab-df-buttons">
 <div class="colab-df-container">
@@ -3493,7 +3493,7 @@ df_rekomendasi
 <Table border="1" Class="DataFrame">
 <thead>
 <tr Style="text-align: right;">
-<th></th>
+<th&gt;>
 <th>Model Name</th>
 <th>ram</th>
 <th>Performance Score</th>
@@ -3686,4 +3686,3 @@ Evaluasi Model **Weighted Sum Model (WSM)** menunjukkan bahwa pendekatan ini **s
 1. Tahap preprocessing seperti pembersihan dan transformasi data memberikan kontribusi besar terhadap keberhasilan model.
 2. Pemilihan WSM memungkinkan pemeringkatan produk berdasarkan bobot fitur yang disesuaikan dengan preferensi pengguna.
 3. Evaluasi berbasis relevansi memberikan jaminan bahwa sistem tidak hanya mengurutkan, tapi juga menyesuaikan dengan kebutuhan pengguna secara aktual.
-</ipython-input-39-3730015340></ipython-input-39-3730015340></ipython-input-39-3730015340></ipython-input-39-3730015340></ipython-input-35-396447864></ipython-input-33-4069052426></ipython-input-33-4069052426></ipython-input-33-4069052426></Class></Class></Class></seaborn.axisgrid.pairgrid></ipython-input-19-2539776928></ipython-input-19-2539776928></ipython-input-19-2539776928></ipython-input-17-1861681704></ipython-input-17-1861681704></ipython-input-17-1861681704></Class></Class></Class>
